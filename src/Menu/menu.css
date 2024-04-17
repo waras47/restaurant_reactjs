@@ -1,3 +1,19 @@
+/*-----------------------------------*\
+  #index.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
 :root {
 
   /**
@@ -1026,7 +1042,9 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #MENU
 \*-----------------------------------*/
-
+.menu {
+  margin-top: -50px;
+}
 .menu .section-title { margin-block-end: 40px; }
 
 .menu .grid-list { margin-block-end: 50px; }
@@ -1088,7 +1106,7 @@ body.nav-active { overflow: hidden; }
 
 .menu .shape {
   display: block;
-  width: 70%;
+  width: 80%;
 }
 
 .menu .shape-2 {
