@@ -1,8 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { imageData } from "../assets/images-data/ImageData";
-import  './menu.css';
 import Navbar from "../components/Navbar";
-import Slider2 from "../assets/images/hero-slider-2.jpg";
+import './menu.css';
 
 const Menu = () => {
   const { Menu1, Menu2, Menu3, Menu4, Menu5, Menu6, Shape5, Shape6 } = imageData;
@@ -39,7 +38,7 @@ const Menu = () => {
 
           <p className="section-subtitle text-center label-2">Special Selection</p>
 
-          <h2 className="headline-1 section-title text-center">Delicious Menu</h2>
+          <h2 className="headline-1 section-title text-center">Delicious Menus</h2>
 
           <ul className="grid-list">
 
