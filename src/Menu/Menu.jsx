@@ -37,9 +37,9 @@ const Menu = () => {
         <div className="container">
 
           <p className="section-subtitle text-center label-2">Special Selection</p>
-
-          <h2 className="headline-1 section-title text-center">Delicious Menus</h2>
-
+          <h2 className="headline-1 section-title text-center">Maaltijden</h2>
+          <p className="headline-3 section-title text-center">Keuze uit witte rust, Nasi kuning, Bami of Nasi</p>
+        
           <ul className="grid-list">
 
             <li>
@@ -207,6 +207,7 @@ const Menu = () => {
 
               </div>
             </li>
+            
 
           </ul>
 

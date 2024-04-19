@@ -1,11 +1,10 @@
-import React from "react";
 
 export const imageData = {
 
- Logo : "../images/logo.svg",
- Slider1 : "../images/hero-slider-1.jpg",
- Slider2 : "../images/hero-slider-2.jpg",
- Slider3 : "../images/hero-slider-3.jpg",
+ Logo : "../images/warung-niang-logo.png",
+ Slider1 : "../images/hero-niang-1.jpg",
+ Slider2 : "../images/hero-niang-2.jpg",
+ Slider3 : "../images/hero-niang-3.jpg",
 
 //hero
  HeroIcon : "../images/hero-icon.png",
@@ -32,7 +31,7 @@ export const imageData = {
  Shape9 : "../images/shape-9.png",
 
 // menus
- Menu1 : "../images/menu-1.png",
+ Menu1 : "../images/menu-2.png",
  Menu2 : "../images/menu-2.png",
  Menu3 : "../images/menu-3.png",
  Menu4 : "../images/menu-4.png",
@@ -40,6 +39,7 @@ export const imageData = {
  Menu6 : "../images/menu-6.png",
  Shape5 :"../images/shape-5.png", 
  Shape6 :"../images/shape-6.png", 
+ Shape7 :"../images/dummy.png", 
 
 // testimonials
   TestimonialBg : "../images/testimonial-bg.jpg",

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import './home.css';
 import { imageData } from '../assets/images-data/ImageData';
 import Navbar from '../components/Navbar';
+import './home.css';
 
 
 const Home = () => {
@@ -1084,8 +1084,9 @@ const Home = () => {
             <div className="footer-bottom">
 
               <p className="copyright">
-                &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-                  target="_blank" className="link">codewithsadee</a>
+                &copy; 2024 Taste of Niang. All Rights Reserved
+                {/* Crafted by <a href="https://github.com/codewithsadee"
+                  target="_blank" className="link">codewithsadee</a> */}
               </p>
 
             </div>
