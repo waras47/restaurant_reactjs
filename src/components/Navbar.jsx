@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState, useRef } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 import './style.css';
@@ -8,17 +8,33 @@ import { imageData } from '../assets/images-data/ImageData';
 const Navbar = ({ isNavbarActive }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [showPreloader, setShowPreloader] = useState(true);
   const [currentSlidePos, setCurrentSlidePos] = useState(0);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [xOffset, setXOffset] = useState(0);
   const [yOffset, setYOffset] = useState(0);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
-  const  { 
-    Logo,
-    Slider1,
-    Slider2,
-    Slider3,
-  } = imageData;
+  const { Logo, Slider1, Slider2, Slider3 } = imageData;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const dropdownRef = useRef(null);
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoaded(true);
+      setShowPreloader(false); // Hide preloader once the page is fully loaded
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
+
+  useEffect(() => {
+    setShowPreloader(true);
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -94,17 +110,33 @@ const Navbar = ({ isNavbarActive }) => {
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
     document.body.classList.toggle("nav-active");
+    setActiveDropdown(null); 
   };
 
-  const slideNext = () => {
-    setCurrentSlidePos((prevPos) => (prevPos >= slides.length - 1 ? 0 : prevPos + 1));
+  // const slideNext = () => {
+  //   setCurrentSlidePos((prevPos) => (prevPos >= slides.length - 1 ? 0 : prevPos + 1));
+  // };
+
+  // const slidePrev = () => {
+  //   setCurrentSlidePos((prevPos) => (prevPos <= 0 ? slides.length - 1 : prevPos - 1));
+  // };
+
+  const handleNavigation = (route) => {
+    navigate(route); // Use navigate to navigate to the specified route
+    toggleNavbar(); // Close the navbar after navigation
   };
 
-  const slidePrev = () => {
-    setCurrentSlidePos((prevPos) => (prevPos <= 0 ? slides.length - 1 : prevPos - 1));
+  const isActiveLink = (route) => {
+    return location.pathname === route ? 'active' : '';
   };
 
+  const handleDropdownToggle = (dropdownName) => {
+    setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+  };
 
+  const handleMenuClick = (route) => {
+    handleNavigation(route);
+  };
   const slides = [
     {
       image: Slider1,
@@ -115,7 +147,13 @@ const Navbar = ({ isNavbarActive }) => {
     {
       image: Slider2,
       subtitle: 'Delightful Experience',
-      title: (<>Flavors Inspired by<br/> the Seasons</>),
+      title: (
+        <>
+          Flavors Inspired by
+          <br />
+          the Seasons
+        </>
+      ),
       text: 'Come with family & feel the joy of mouthwatering food',
     },
     {
@@ -210,18 +248,37 @@ const Navbar = ({ isNavbarActive }) => {
               <ul className="navbar-list">
 
                 <li className="navbar-item">
-                  <a href="#home" className="navbar-link hover-underline active">
+                  <a href="" 
+                    className={`navbar-link hover-underline ${isActiveLink('/')}`}  
+                    onClick={() => handleNavigation('/')}
+                  >
                     <div className="separator"></div>
-
-                    <Link to="/" ><span className="span">Home</span></Link>
+                    <span className="span">Home</span>
                   </a>
                 </li>
-
                 <li className="navbar-item">
-                  <a href="#menu" className="navbar-link hover-underline">
-                    <div className="separator"></div>
-
-                       <Link to="/menu" ><span className="span">Menus</span></Link>
+                  <a
+                    href="#"
+                    className={`navbar-link hover-underline ${activeDropdown === 'menus' ? 'active' : ''}`}
+                    onClick={() => handleDropdownToggle('menus')}
+                  >
+                    <span className="span">Menus</span>
+                    {activeDropdown === 'menus' && (
+                      <div className="dropdown" ref={dropdownRef}>
+                        <ul>
+                          <li>
+                            <a href="" onClick={() => handleMenuClick('/food')}>
+                              Foods
+                            </a>
+                          </li>
+                          <li>
+                            <Link to="/drinks" onClick={() => handleMenuClick('/drink')}>
+                              Drinks
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
                   </a>
                 </li>
 
@@ -249,7 +306,7 @@ const Navbar = ({ isNavbarActive }) => {
                   </a>
                 </li>
 
-              </ul>
+            </ul>
 
               <div className="text-center">
                 <p className="headline-1 navbar-title">Visit Us</p>

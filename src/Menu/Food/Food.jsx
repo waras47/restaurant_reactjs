@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
-import { imageData } from "../assets/images-data/ImageData";
-import  './menu.css';
-import Navbar from "../components/Navbar";
-import Slider2 from "../assets/images/hero-slider-2.jpg";
+import { imageData } from "../../assets/images-data/ImageData";
+import  './Food.css';
+import Navbar from "../../components/Navbar";
+import Slider2 from "../../assets/images/hero-slider-2.jpg";
 
 const Menu = () => {
   const { Menu1, Menu2, Menu3, Menu4, Menu5, Menu6, Shape5, Shape6 } = imageData;

@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar';
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isNavbarActive, setIsNavbarActive] = useState(false);
   const [currentSlidePos, setCurrentSlidePos] = useState(0);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [xOffset, setXOffset] = useState(0);
@@ -68,6 +69,23 @@ const Home = () => {
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 50) {
+        setIsNavbarActive(true);
+      } else {
+        setIsNavbarActive(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -165,7 +183,7 @@ const Home = () => {
   return (
     <div>
       <>
-      <Navbar />
+      <Navbar isNavbarActive={isNavbarActive} />
         <main>
             {/* ====#HERO===== */}
             
