@@ -1,14 +1,14 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-import './style.css';
 import { imageData } from '../assets/images-data/ImageData';
+import './style.css';
 
 const Navbar = ({ isNavbarActive }) => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const [showPreloader, setShowPreloader] = useState(true);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(true);
+  const [showPreloader, setShowPreloader] = useState(false);
   const [currentSlidePos, setCurrentSlidePos] = useState(0);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [xOffset, setXOffset] = useState(0);
@@ -267,13 +267,18 @@ const Navbar = ({ isNavbarActive }) => {
                       <div className="dropdown" ref={dropdownRef}>
                         <ul>
                           <li>
-                            <a href="" onClick={() => handleMenuClick('/food')}>
-                              Foods
+                            <a href="/meals" onClick={() => handleMenuClick('/meals')}>
+                              Meals
                             </a>
                           </li>
                           <li>
-                            <Link to="/drinks" onClick={() => handleMenuClick('/drink')}>
-                              Drinks
+                            <Link to="/sandwiches" onClick={() => handleMenuClick('/sandwiches')}>
+                              Sandwiches
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/meat_and_vegetables" onClick={() => handleMenuClick('/meat_and_vegetables')}>
+                              Meat & Vegetables
                             </Link>
                           </li>
                         </ul>
@@ -286,7 +291,7 @@ const Navbar = ({ isNavbarActive }) => {
                   <a href="#about" className="navbar-link hover-underline">
                     <div className="separator"></div>
 
-                    <span className="span">About Us</span>
+                    <Link to="/about_us" ><span className="span">About Us</span></Link>
                   </a>
                 </li>
 
@@ -302,7 +307,7 @@ const Navbar = ({ isNavbarActive }) => {
                   <a href="#" className="navbar-link hover-underline">
                     <div className="separator"></div>
 
-                    <span className="span">Contact</span>
+                    <Link to="/contact" ><span className="span">Contact</span></Link>
                   </a>
                 </li>
 
