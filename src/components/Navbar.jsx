@@ -6,7 +6,7 @@ import { imageData } from '../assets/images-data/ImageData';
 import './style.css';
 
 const Navbar = ({ isNavbarActive }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
   const [isNavbarOpen, setIsNavbarOpen] = useState(true);
   const [showPreloader, setShowPreloader] = useState(false);
   const [currentSlidePos, setCurrentSlidePos] = useState(0);
@@ -191,7 +191,7 @@ const Navbar = ({ isNavbarActive }) => {
               </div>
 
               <span className="span">
-                Restaurant St, Delicious City, London 9578, UK
+              Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
               </span>
             </address>
 
@@ -202,7 +202,7 @@ const Navbar = ({ isNavbarActive }) => {
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-              <span className="span">Daily : 8.00 am to 10.00 pm</span>
+              <span className="span">Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten</span>
             </div>
 
             <a href="tel:+11234567890" className="topbar-item link">
@@ -232,7 +232,7 @@ const Navbar = ({ isNavbarActive }) => {
           <div className="container">
 
             <a href="#" className="logo">
-              <img src={Logo} width="160" height="50" alt="Grilli - Home" />
+              <img src={Logo} width="250" height="100" alt="Grilli - Home" />
             </a>
 
             <nav className={`navbar ${isNavbarOpen ? 'active' : ''}`} data-navbar>
