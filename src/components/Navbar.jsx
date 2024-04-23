@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
-import './style.css';
+import '../assets/css/style.css';
 import { imageData } from '../assets/images-data/ImageData';
 
 const Navbar = ({ isNavbarActive }) => {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(true);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(true);
   const [currentSlidePos, setCurrentSlidePos] = useState(0);
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [xOffset, setXOffset] = useState(0);
   const [yOffset, setYOffset] = useState(0);
 
-  const  { 
+  const {
     Logo,
     Slider1,
     Slider2,
@@ -115,7 +115,7 @@ const Navbar = ({ isNavbarActive }) => {
     {
       image: Slider2,
       subtitle: 'Delightful Experience',
-      title: (<>Flavors Inspired by<br/> the Seasons</>),
+      title: (<>Flavors Inspired by<br /> the Seasons</>),
       text: 'Come with family & feel the joy of mouthwatering food',
     },
     {
@@ -127,7 +127,7 @@ const Navbar = ({ isNavbarActive }) => {
   ];
   return (
     <div>
-        <Helmet>
+      <Helmet>
         {/* Preload slider images */}
         {slides.map((slide, index) => (
           <link key={index} rel="preload" as="image" href={slide.image} />
@@ -137,64 +137,64 @@ const Navbar = ({ isNavbarActive }) => {
       {/* Preloader component */}
       <div className={`preload ${isLoaded ? 'loaded' : ''}`} data-preaload>
         <div className="circle"></div>
-        <p className="text">Grilli</p>
+        <p className="text">Taste of Niang</p>
       </div>
-      
+
       {/* navbar item */}
       <div>
-            {/* ===TOP BAR=== */}
-      {isLoaded && (
-        <div className="topbar">
-          <div className="container">
+        {/* ===TOP BAR=== */}
+        {isLoaded && (
+          <div className="topbar">
+            <div className="container">
 
-            <address className="topbar-item">
-              <div className="icon">
-                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
-              </div>
+              <address className="topbar-item">
+                <div className="icon">
+                  <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+                </div>
 
-              <span className="span">
-                Restaurant St, Delicious City, London 9578, UK
-              </span>
-            </address>
+                <span className="span">
+                  Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
+                </span>
+              </address>
 
-            <div className="separator"></div>
+              <div className="separator"></div>
 
-            <div className="topbar-item item-2">
+              <div className="topbar-item item-2">
                 <div className="icon">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
                 </div>
 
-              <span className="span">Daily : 8.00 am to 10.00 pm</span>
+                <span className="span">Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten</span>
+              </div>
+
+              <a href="tel:+11234567890" className="topbar-item link">
+                <div className="icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span className="span">+01 101010101010</span>
+              </a>
+
+              <div className="separator"></div>
+
+              <a href="mailto:booking@restaurant.com" className="topbar-item link">
+                <div className="icon">
+                  <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <span className="span">niang@restaurant.com</span>
+              </a>
+
             </div>
-
-            <a href="tel:+11234567890" className="topbar-item link">
-              <div className="icon">
-                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
-              </div>
-
-              <span className="span">+1 123 456 7890</span>
-            </a>
-
-            <div className="separator"></div>
-
-            <a href="mailto:booking@restaurant.com" className="topbar-item link">
-              <div className="icon">
-                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
-              </div>
-
-              <span className="span">booking@restaurant.com</span>
-            </a>
-
           </div>
-        </div>
-      )}
+        )}
 
         {/* // ==== #HEADER====// */}
         <header className={`header ${isNavbarActive ? 'active' : ''}`}>
           <div className="container">
 
             <a href="#" className="logo">
-              <img src={Logo} width="160" height="50" alt="Grilli - Home" />
+              <img src={Logo} width="160" height="50" alt="Niang - Home" />
             </a>
 
             <nav className={`navbar ${isNavbarOpen ? 'active' : ''}`} data-navbar>
@@ -204,13 +204,13 @@ const Navbar = ({ isNavbarActive }) => {
               </button>
 
               <a href="#" className="logo">
-                <img src={Logo} width="160" height="50" alt="Grilli - Home" />
+                <img src={Logo} width="160" height="50" alt="Niang - Home" />
               </a>
 
               <ul className="navbar-list">
 
                 <li className="navbar-item">
-                  <a href="#home" className="navbar-link hover-underline active">
+                  <a href="#home" className="navbar-link hover-underline  ">
                     <div className="separator"></div>
 
                     <Link to="/" ><span className="span">Home</span></Link>
@@ -218,10 +218,10 @@ const Navbar = ({ isNavbarActive }) => {
                 </li>
 
                 <li className="navbar-item">
-                  <a href="#menu" className="navbar-link hover-underline">
+                  <a href="#menu" className="navbar-link hover-underline ">
                     <div className="separator"></div>
 
-                       <Link to="/menu" ><span className="span">Menus</span></Link>
+                    <Link to="/menu" ><span className="span">Menus</span></Link>
                   </a>
                 </li>
 
@@ -229,23 +229,23 @@ const Navbar = ({ isNavbarActive }) => {
                   <a href="#about" className="navbar-link hover-underline">
                     <div className="separator"></div>
 
-                    <span className="span">About Us</span>
+                    <Link to="/about_us" ><span className="span">About Us</span></Link>
                   </a>
                 </li>
 
-                <li className="navbar-item">
+                {/* <li className="navbar-item">
                   <a href="#" className="navbar-link hover-underline">
                     <div className="separator"></div>
 
                     <span className="span">Our Chefs</span>
                   </a>
-                </li>
+                </li> */}
 
                 <li className="navbar-item">
-                  <a href="#" className="navbar-link hover-underline">
+                  <a href="#contact" className="navbar-link hover-underline">
                     <div className="separator"></div>
 
-                    <span className="span">Contact</span>
+                    <Link to="/contact" ><span className="span">Contact</span></Link>
                   </a>
                 </li>
 
@@ -255,8 +255,8 @@ const Navbar = ({ isNavbarActive }) => {
                 <p className="headline-1 navbar-title">Visit Us</p>
 
                 <address className="body-4">
-                  Restaurant St, Delicious City, <br />
-                  London 9578, UK
+                  Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
+
                 </address>
 
                 <p className="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
@@ -275,12 +275,12 @@ const Navbar = ({ isNavbarActive }) => {
             </nav>
 
             <a href="#" className="btn btn-secondary">
-              <span className="text text-1">Find A Table</span>
+              <span className="text text-1">Whatsapp</span>
 
-              <span className="text text-2" aria-hidden="true">Find A Table</span>
+              <span className="text text-2" aria-hidden="true">Whatsapp</span>
             </a>
 
-            <button className="nav-open-btn" aria-label="open menu" data-nav-toggler  onClick={toggleNavbar}>
+            <button className="nav-open-btn" aria-label="open menu" data-nav-toggler onClick={toggleNavbar}>
               <span className="line line-1"></span>
               <span className="line line-2"></span>
               <span className="line line-3"></span>

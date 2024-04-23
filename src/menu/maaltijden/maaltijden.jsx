@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
+import '../assets/css/style.css';
 import { imageData } from "../assets/images-data/ImageData";
 import Navbar from "../components/Navbar";
-import '../components/style.css';
 
 const Maaltijden = () => {
     const { Menu1, Menu2, Menu3, Menu4, Menu5, Menu6, Shape5, Shape6 } = imageData;

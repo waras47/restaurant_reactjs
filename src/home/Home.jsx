@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+import '../assets/css/style.css';
 import { imageData } from '../assets/images-data/ImageData';
 import Navbar from '../components/Navbar';
-import './home.css';
 
 
 const Home = () => {
@@ -356,7 +356,7 @@ const Home = () => {
 
             {/* -====#ABOUT==== */}
 
-            <section className="section about text-center" aria-labelledby="about-label" id="about">
+            {/* <section className="section about text-center" aria-labelledby="about-label" id="about">
               <div className="container">
 
                 <div className="about-content">
@@ -395,10 +395,8 @@ const Home = () => {
                         transform: `translate(${xOffset}px, ${yOffset}px)`
                       }}
                     />
-                  {/* <img src={AboutBanner} width="570" height="570" loading="lazy" alt="about banner"
-                    className="w-100" data-parallax-item data-parallax-speed="1" /> */}
+                  
 
-                  {/* <div className="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75"> */}
                   <div
                     className="abs-img abs-img-1 has-before"
                     style={{
@@ -418,7 +416,7 @@ const Home = () => {
                 <img src={Shape3} width="197" height="194" loading="lazy" alt="" className="shape" />
 
               </div>
-            </section>
+            </section> */}
 
           {/* -====#SPECIAL DISH==== */}
 
@@ -692,7 +690,7 @@ const Home = () => {
 
           {/* -====#RESERVATION==== */}
 
-          <section className="reservation">
+          {/* <section className="reservation">
             <div className="container">
 
               <div className="form reservation-form bg-black-10">
@@ -810,7 +808,7 @@ const Home = () => {
               </div>
 
             </div>
-          </section>
+          </section> */}
 
           {/* -====#FEATURES==== */}
 
