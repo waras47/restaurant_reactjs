@@ -197,7 +197,7 @@ const Home = () => {
 
                   <p className="label-2 section-subtitle slider-reveal">{slide.subtitle}</p>
 
-                  <h1 className="display-1 hero-title slider-reveal">{slide.title}</h1>
+                  <h1 className="headline-1 hero-title slider-reveal">{slide.title}</h1>
 
                   <p className="body-2 hero-text slider-reveal">{slide.text}</p>
 
@@ -370,73 +370,7 @@ const Home = () => {
 
               </div>
             </section>
-
-            {/* -====#ABOUT==== */}
-
-            <section className="section about text-center" aria-labelledby="about-label" id="about">
-              <div className="container">
-
-                <div className="about-content">
-
-                  <p className="label-2 section-subtitle" id="about-label">Our Story</p>
-
-                  <h2 className="headline-1 section-title">Every Flavor Tells a Story</h2>
-
-                  <p className="section-text">
-                    Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book It has survived not only five centuries, but also the leap into.
-                  </p>
-
-                  <div className="contact-label">Book Through Call</div>
-
-                  <a href="tel:+804001234567" className="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
-
-                  <a href="#" className="btn btn-primary">
-                    <span className="text text-1">Read More</span>
-
-                    <span className="text text-2" aria-hidden="true">Read More</span>
-                  </a>
-
-                </div>
-
-                <figure className="about-banner">
-                  <img
-                      src={AboutBanner}
-                      width="570"
-                      height="570"
-                      loading="lazy"
-                      alt="about banner"
-                      className="w-100"
-                      style={{
-                        transform: `translate(${xOffset}px, ${yOffset}px)`
-                      }}
-                    />
-                  {/* <img src={AboutBanner} width="570" height="570" loading="lazy" alt="about banner"
-                    className="w-100" data-parallax-item data-parallax-speed="1" /> */}
-
-                  {/* <div className="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75"> */}
-                  <div
-                    className="abs-img abs-img-1 has-before"
-                    style={{
-                      transform: `translate(${xOffset * 1}px, ${yOffset * 1}px)`
-                    }}
-                  >
-                    <img src={AboutAbs} width="285" height="285" loading="lazy" alt=""
-                      className="w-100" />
-                  </div>
-
-                  <div className="abs-img abs-img-2 has-before">
-                    <img src={Badge2} width="133" height="134" loading="lazy" alt="" />
-                  </div>
-
-                </figure>
-
-                <img src={Shape3} width="197" height="194" loading="lazy" alt="" className="shape" />
-
-              </div>
-            </section>
-
+          
           {/* -====#SPECIAL DISH==== */}
 
             <section className="special-dish text-center" aria-labelledby="dish-label">
@@ -706,129 +640,7 @@ const Home = () => {
 
             </div>
           </section>
-
-          {/* -====#RESERVATION==== */}
-
-          <section className="reservation">
-            <div className="container">
-
-              <div className="form reservation-form bg-black-10">
-
-                <form action="" className="form-left">
-
-                  <h2 className="headline-1 text-center">Online Reservation</h2>
-
-                  <p className="form-text text-center">
-                    Booking request <a href="tel:+88123123456" className="link">+88-123-123456</a>
-                    or fill out the order form
-                  </p>
-
-                  <div className="input-wrapper">
-                    <input type="text" name="name" placeholder="Your Name" autocomplete="off" className="input-field" />
-
-                    <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" className="input-field" />
-                  </div>
-
-                  <div className="input-wrapper">
-
-                    <div className="icon-wrapper">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <select name="person" className="input-field">
-                        <option value="1-person">1 Person</option>
-                        <option value="2-person">2 Person</option>
-                        <option value="3-person">3 Person</option>
-                        <option value="4-person">4 Person</option>
-                        <option value="5-person">5 Person</option>
-                        <option value="6-person">6 Person</option>
-                        <option value="7-person">7 Person</option>
-                      </select>
-
-                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <div className="icon-wrapper">
-                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-
-                      <input type="date" name="reservation-date" className="input-field" />
-
-                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                    </div>
-
-                    <div className="icon-wrapper">
-                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-
-                      <select name="person" className="input-field">
-                        <option value="08:00am">08 : 00 am</option>
-                        <option value="09:00am">09 : 00 am</option>
-                        <option value="010:00am">10 : 00 am</option>
-                        <option value="011:00am">11 : 00 am</option>
-                        <option value="012:00am">12 : 00 am</option>
-                        <option value="01:00pm">01 : 00 pm</option>
-                        <option value="02:00pm">02 : 00 pm</option>
-                        <option value="03:00pm">03 : 00 pm</option>
-                        <option value="04:00pm">04 : 00 pm</option>
-                        <option value="05:00pm">05 : 00 pm</option>
-                        <option value="06:00pm">06 : 00 pm</option>
-                        <option value="07:00pm">07 : 00 pm</option>
-                        <option value="08:00pm">08 : 00 pm</option>
-                        <option value="09:00pm">09 : 00 pm</option>
-                        <option value="10:00pm">10 : 00 pm</option>
-                      </select>
-
-                      <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                    </div>
-
-                  </div>
-
-                  <textarea name="message" placeholder="Message" autocomplete="off" className="input-field"></textarea>
-
-                  <button type="submit" className="btn btn-secondary">
-                    <span className="text text-1">Book A Table</span>
-
-                    <span className="text text-2" aria-hidden="true">Book A Table</span>
-                  </button>
-
-                </form>
-
-                <div className="form-right text-center" style={{backgroundImage: `url(${FormPattern})` }} >
-
-                  <h2 className="headline-1 text-center">Contact Us</h2>
-
-                  <p className="contact-label">Booking Request</p>
-
-                  <a href="tel:+88123123456" className="body-1 contact-number hover-underline">+88-123-123456</a>
-
-                  <div className="separator"></div>
-
-                  <p className="contact-label">Location</p>
-
-                  <address className="body-4">
-                    Restaurant St, Delicious City, <br />
-                    London 9578, UK
-                  </address>
-
-                  <p className="contact-label">Lunch Time</p>
-
-                  <p className="body-4">
-                    Monday to Sunday <br />
-                    11.00 am - 2.30pm
-                  </p>
-
-                  <p className="contact-label">Dinner Time</p>
-
-                  <p className="body-4">
-                    Monday to Sunday <br />
-                    05.00 pm - 10.00pm
-                  </p>
-
-                </div>
-
-              </div>
-
-            </div>
-          </section>
-
+      
           {/* -====#FEATURES==== */}
 
           <section className="section features text-center" aria-label="features">

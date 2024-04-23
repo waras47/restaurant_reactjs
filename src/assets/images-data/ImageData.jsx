@@ -1,11 +1,10 @@
-import React from "react";
 
 export const imageData = {
 
- Logo : "../images/logo.svg",
- Slider1 : "../images/hero-slider-1.jpg",
- Slider2 : "../images/hero-slider-2.jpg",
- Slider3 : "../images/hero-slider-3.jpg",
+ Logo : "../images/logo.png",
+ Slider1 : "../images/hero-niang-1.jpg",
+ Slider2 : "../images/hero-niang-2.jpg",
+ Slider3 : "../images/hero-niang-3.jpg",
 
 //hero
  HeroIcon : "../images/hero-icon.png",
