@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-import './home.css';
+import '../assets/css/style.css';
 import { imageData } from '../assets/images-data/ImageData';
 import Navbar from '../components/Navbar';
 
