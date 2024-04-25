@@ -670,9 +670,14 @@ body.nav-active { overflow: hidden; }
   right: 0;
 }
 
+/* .menu-container {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
-
-
+.menu-container.show {
+  opacity: 1;
+} */
 
 /*-----------------------------------*\
   #TESTIMONIALS

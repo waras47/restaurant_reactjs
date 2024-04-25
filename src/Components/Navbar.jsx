@@ -14,7 +14,7 @@ import {
   setLastScrollPos,
   setXOffset,
   setYOffset,
-  setActiveDropdown
+  setActiveDropdown,
 } from '../Store/Actions/index';
 
 import { 
@@ -35,7 +35,8 @@ const Navbar = ({
   setYOffset,
   setActiveDropdown,
   lastScrollPos,
-  activeDropdown
+  activeDropdown,
+  setIsNavbarOpen
 }) => {
 
   const navigate = useNavigate();
@@ -139,6 +140,7 @@ const Navbar = ({
   const handleNavigation = (route) => {
     navigate(route);
     toggleNavbar();
+    setIsNavbarOpen(!isNavbarOpen);
   };
 
   const isActiveLink = (route) => {
@@ -279,8 +281,9 @@ const Navbar = ({
                   <a
                     href=""
                     className={`navbar-link hover-underline ${activeDropdown === 'menus' ? 'active' : ''}`}
-                    onClick={(e) => e.preventDefault()}
                   >
+                    {/* onClick={(e) => e.preventDefault()} */}
+                    
                   <span className="span">Menus</span>
                   {activeDropdown === 'menus' && (
                     <div className="dropdown" ref={dropdownRef}>
