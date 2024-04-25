@@ -4,15 +4,15 @@ import '../Menu.css';
 import Navbar from "../../Components/Navbar";
 
 import {
-    Shape5,
-    Shape6,
     Menu1,
     Menu2,
     Menu3,
     Menu4,
     Menu5,
-    Menu6
-  } from '../../assets/js/images';
+    Menu6,
+    Shape5,
+    Shape6
+} from '../../assets/js/images';
 
 const Sandwich = () => {
     const [isNavbarActive, setIsNavbarActive] = useState(false);
@@ -222,11 +222,11 @@ const Sandwich = () => {
             During winter daily from <span className="span">7:00 pm</span> to <span className="span">9:00 pm</span>
           </p> */}
 
-                    <a href="#" className="btn btn-primary">
+                    {/* <a href="#" className="btn btn-primary">
                         <span className="text text-1">View All Menu</span>
 
                         <span className="text text-2" aria-hidden="true">View All Menu</span>
-                    </a>
+                    </a> */}
 
                     <img src={Shape5} width="921" height="1036" loading="lazy" alt="shape"
                         className="shape shape-2 move-anim" style={{ marginTop: '50px' }} />

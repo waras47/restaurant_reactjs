@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import './Contact.css';
-import Navbar from "../Components/Navbar";
+import React, { useEffect } from "react";
 import { connect } from 'react-redux';
+import Navbar from "../Components/Navbar";
 import { setIsNavbarActive } from '../Store/Actions/index';
+import './Contact.css';
 
 import { FormPattern } from '../assets/js/images';
 
-const Contact = ({isNavbarActive, setIsNavbarActive}) => {
+const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
     useEffect(() => {
         const handleScroll = () => {
@@ -146,6 +146,17 @@ const Contact = ({isNavbarActive, setIsNavbarActive}) => {
                         </div>
 
                     </div>
+                    {/* -====#FOOTER==== */}
+
+                    <footer className="footer section has-bg-image text-center" >
+                        <div className="container">
+                            <div className="footer-bottom">
+                                <p className="copyright">
+                                    &copy; 2024 Taste of Niang. All Rights Reserved
+                                </p>
+                            </div>
+                        </div>
+                    </footer>
 
                 </div>
             </section>
@@ -155,10 +166,10 @@ const Contact = ({isNavbarActive, setIsNavbarActive}) => {
 
 const mapStateToProps = (state) => ({
     isNavbarActive: state.isNavbarActive,
-  });
-  
-  const mapDispatchToProps = {
+});
+
+const mapDispatchToProps = {
     setIsNavbarActive,
-  };
-  
-  export default connect(mapStateToProps, mapDispatchToProps)(Contact);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contact);

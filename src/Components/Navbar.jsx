@@ -1,28 +1,28 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-import '../assets/css/style.css';
 import '../assets/css/dropdown.css';
+import '../assets/css/style.css';
 
 import {
+  setActiveDropdown,
+  setCurrentSlidePos,
   setIsLoaded,
   setIsNavbarOpen,
-  setShowPreloader,
-  setCurrentSlidePos,
   setLastScrollPos,
+  setShowPreloader,
   setXOffset,
-  setYOffset,
-  setActiveDropdown,
+  setYOffset
 } from '../Store/Actions/index';
 
-import { 
+import {
   Logo,
   Slider1,
   Slider2,
   Slider3,
- } from '../assets/js/images';
+} from '../assets/js/images';
 
 const Navbar = ({
   isNavbarActive,
@@ -290,7 +290,7 @@ const Navbar = ({
                       <ul>
                         <li>
                           <a href="/meals" className={`navbar-link hover-underline ${isActiveLink('/meals')}`} onClick={() => handleMenuClick('/meals')}>
-                            Meals
+                          Maaltijden
                           </a>
                         </li>
                         <li>
