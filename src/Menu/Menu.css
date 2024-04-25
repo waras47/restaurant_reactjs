@@ -643,6 +643,7 @@ body.nav-active { overflow: hidden; }
 .menu-card .card-text {
   color: var(--quick-silver);
   line-height: var(--lineHeight-4);
+  width: 365px;
 }
 
 .menu-text .span {

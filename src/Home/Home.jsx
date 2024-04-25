@@ -1,47 +1,42 @@
 import React, { useEffect, useState } from 'react';
-import './Home.css';
 import Navbar from '../Components/Navbar';
+import './Home.css';
 
 import {
-  Logo,
-  Slider1,
-  Slider2,
-  Slider3,
-  HeroIcon,
-  Service1,
-  Service2,
-  Service3,
-  Shape1,
-  Shape2,
-  Shape3,
-  Shape4,
-  Shape5,
-  Shape6,
-  Shape7,
-  Shape8,
-  Shape9,
-  AboutBanner,
-  AboutAbs,
   Badge1,
-  Badge2,
-  SpecialDish,
+  Event1,
+  Event2,
+  Event3,
+  Feature1,
+  Feature2,
+  Feature3,
+  Feature4,
+  FooterBg,
+  HeroIcon,
+  Logo,
   Menu1,
   Menu2,
   Menu3,
   Menu4,
   Menu5,
   Menu6,
-  TestimonialBg,
+  Service1,
+  Service2,
+  Service3,
+  Shape1,
+  Shape2,
+  Shape4,
+  Shape5,
+  Shape6,
+  Shape7,
+  Shape8,
+  Shape9,
+  Slider1,
+  Slider2,
+  Slider3,
+  SpecialDish,
   TestAvatar,
-  FormPattern,
-  Feature1,
-  Feature2,
-  Feature3,
-  Feature4,
-  Event1,
-  Event2,
-  Event3,
-  FooterBg
+  TestimonialBg
 } from '../assets/js/images';
 
 const Home = () => {
@@ -863,8 +858,7 @@ const Home = () => {
             <div className="footer-bottom">
 
               <p className="copyright">
-                &copy; 2022 Grilli. All Rights Reserved | Crafted by <a href="https://github.com/codewithsadee"
-                  target="_blank" className="link">codewithsadee</a>
+                &copy; 2024 Taste of Niang. All Rights Reserved 
               </p>
 
             </div>
