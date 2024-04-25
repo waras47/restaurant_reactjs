@@ -294,13 +294,18 @@ const Navbar = ({
                           </a>
                         </li>
                         <li>
-                          <a href="/sandwich" className={`navbar-link hover-underline ${isActiveLink('/sandwich')}`} onClick={() => handleMenuClick('/sandwich')}>
-                            Sandwiches
+                          <a href="/meat-vegetables" className={`navbar-link hover-underline ${isActiveLink('/meat-vegetables')}`} onClick={() => handleMenuClick('/meals-vegetables')}>
+                          Vlees & Groenten
                           </a>
                         </li>
                         <li>
-                          <a href="/meals-vegetables" className={`navbar-link hover-underline ${isActiveLink('/meals-vegetables')}`} onClick={() => handleMenuClick('/meals-vegetables')}>
-                            Meat & Vegetables
+                          <a href="/side-dishes" className={`navbar-link hover-underline ${isActiveLink('/side-dishes')}`} onClick={() => handleMenuClick('/meals-vegetables')}>
+                          Bijgerchten
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/sandwich" className={`navbar-link hover-underline ${isActiveLink('/sandwich')}`} onClick={() => handleMenuClick('/sandwich')}>
+                          Broodjes
                           </a>
                         </li>
                       </ul>

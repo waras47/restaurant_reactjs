@@ -4,11 +4,6 @@ import '../Menu.css';
 import Navbar from "../../Components/Navbar";
 
 import {
-    Menu1,
-    Menu2,
-    Menu3,
-    Menu4,
-    Menu5,
     Menu6,
     Shape5,
     Shape6
@@ -44,150 +39,10 @@ const Sandwich = () => {
                 <div className="container">
 
                     {/* <p className="section-subtitle text-center label-2">Special Selection</p> */}
-                    <h2 className="headline-1 section-title text-center">Sandwiches</h2>
+                    <h2 className="headline-1 section-title text-center">Surinaamse Broodjes</h2>
                     {/* <p className="headline-3 section-title text-center">Keuze uit witte rust, Nasi kuning, Bami of Nasi</p> */}
 
                     <ul className="grid-list">
-
-                        <li>
-                            <div className="menu-card hover:card">
-
-                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu1} width="100" height="100" loading="lazy" alt="Greek Salad"
-                                        className="img-cover" />
-                                </figure>
-
-                                <div>
-
-                                    <div className="title-wrapper">
-                                        <h3 className="title-3">
-                                            <a href="#" className="card-title">Greek Salad</a>
-                                        </h3>
-
-                                        <span className="badge label-1">Seasonal</span>
-
-                                        <span className="span title-2">$25.50</span>
-                                    </div>
-
-                                    <p className="card-text label-1">
-                                        Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div className="menu-card hover:card">
-
-                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu2} width="100" height="100" loading="lazy" alt="Lasagne"
-                                        className="img-cover" />
-                                </figure>
-
-                                <div>
-
-                                    <div className="title-wrapper">
-                                        <h3 className="title-3">
-                                            <a href="#" className="card-title">Lasagne</a>
-                                        </h3>
-
-                                        <span className="span title-2">$40.00</span>
-                                    </div>
-
-                                    <p className="card-text label-1">
-                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div className="menu-card hover:card">
-
-                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu3} width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
-                                        className="img-cover" />
-                                </figure>
-
-                                <div>
-
-                                    <div className="title-wrapper">
-                                        <h3 className="title-3">
-                                            <a href="#" className="card-title">Butternut Pumpkin</a>
-                                        </h3>
-
-                                        <span className="span title-2">$10.00</span>
-                                    </div>
-
-                                    <p className="card-text label-1">
-                                        Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div className="menu-card hover:card">
-
-                                <figure className="card-banner img-holder" style={{ width: '100', height: '100px' }}>
-                                    <img src={Menu4} width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
-                                        className="img-cover" />
-                                </figure>
-
-                                <div>
-
-                                    <div className="title-wrapper">
-                                        <h3 className="title-3">
-                                            <a href="#" className="card-title">Tokusen Wagyu</a>
-                                        </h3>
-
-                                        <span className="badge label-1">New</span>
-
-                                        <span className="span title-2">$39.00</span>
-                                    </div>
-
-                                    <p className="card-text label-1">
-                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li>
-                            <div className="menu-card hover:card">
-
-                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu5} width="100" height="100" loading="lazy" alt="Olivas Rellenas"
-                                        className="img-cover" />
-                                </figure>
-
-                                <div>
-
-                                    <div className="title-wrapper">
-                                        <h3 className="title-3">
-                                            <a href="#" className="card-title">Olivas Rellenas</a>
-                                        </h3>
-
-                                        <span className="span title-2">$25.00</span>
-                                    </div>
-
-                                    <p className="card-text label-1">
-                                        Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-
                         <li>
                             <div className="menu-card hover:card">
 
@@ -200,33 +55,229 @@ const Sandwich = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Opu Fish</a>
+                                            <a href="#" className="card-title">Broodje Kerrie / Tempe / Veg</a>
                                         </h3>
 
-                                        <span className="span title-2">$49.00</span>
+                                        <span className="span title-2">€4.80</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
                                     </p>
 
                                 </div>
 
                             </div>
                         </li>
+                        <li>
+                            <div className="menu-card hover:card">
 
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
 
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Rendang</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.50</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Kip Kerrie</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.00</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Semur Daging</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.50</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Kip Char Sieuw</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.00</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Garnalen</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.50</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Dynamite</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.00</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Kouseband Garnalen</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.80</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">Broodje Bakkeljauw</a>
+                                        </h3>
+
+                                        <span className="span title-2">€5.50</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
                     </ul>
-
-                    {/* <p className="menu-text text-center">
-            During winter daily from <span className="span">7:00 pm</span> to <span className="span">9:00 pm</span>
-          </p> */}
-
-                    {/* <a href="#" className="btn btn-primary">
-                        <span className="text text-1">View All Menu</span>
-
-                        <span className="text text-2" aria-hidden="true">View All Menu</span>
-                    </a> */}
 
                     <img src={Shape5} width="921" height="1036" loading="lazy" alt="shape"
                         className="shape shape-2 move-anim" style={{ marginTop: '50px' }} />
@@ -235,6 +286,17 @@ const Sandwich = () => {
 
                 </div>
             </section>
+            {/* -====#FOOTER==== */}
+
+            <footer className="footer section has-bg-image text-center" >
+                <div className="container">
+                    <div className="footer-bottom">
+                        <p className="copyright">
+                            &copy; 2024 Taste of Niang. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }

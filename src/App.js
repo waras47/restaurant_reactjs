@@ -1,14 +1,15 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import { Route, Routes } from 'react-router-dom';
 import store from './Store';
 
-import Home from './Home/Home';
 import About from './About/About';
 import Contact from './Contact/Contact';
-import Sandwich from './Menu/Sandwich/Sandwich';
-import MeatAndVegetables from './Menu/MeatAndVegetables/MeatAndVegetables';
+import Home from './Home/Home';
 import Meals from './Menu/Meals/Meals';
+import MeatAndVegetables from './Menu/MeatAndVegetables/MeatAndVegetables';
+import Sandwich from './Menu/Sandwich/Sandwich';
+import SideDishes from './Menu/SideDishes/SideDishes';
 
 
 const App = () => {
@@ -20,7 +21,8 @@ const App = () => {
             <Route path="/contact" exact element={<Contact />} />
             <Route path="/about_us" exact element={<About />} />
             <Route path="/meals" exact element={<Meals />} />
-            <Route path="/meals-vegetables" exact element={<MeatAndVegetables />} />
+            <Route path="/meat-vegetables" exact element={<MeatAndVegetables />} />
+            <Route path="/side-dishes" exact element={<SideDishes />} />
             <Route path="/sandwich" exact element={<Sandwich />} />
           </Routes>
       </div>
