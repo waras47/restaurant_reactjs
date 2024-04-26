@@ -1,6 +1,6 @@
 const initialState = {
   isLoaded: true,
-  isNavbarOpen: true,
+  isNavbarOpen: false,
   showPreloader: false,
   currentSlidePos: 0,
   lastScrollPos: 0,

@@ -138,26 +138,28 @@ const Navbar = ({
   };
 
   const handleNavigation = (route) => {
-    navigate(route);
     toggleNavbar();
+    navigate(route);
     setIsNavbarOpen(!isNavbarOpen);
   };
 
   const isActiveLink = (route) => {
     return location.pathname === route ? 'active hover-underline' : '';
   };
-
   const handleDropdownToggle = (dropdownName) => {
     setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+    setIsNavbarOpen(true); // Always open navbar when dropdown toggled
   };
-
+  
   const handleDropdownHover = (dropdownName) => {
     setActiveDropdown(dropdownName);
   };
 
-  const handleMenuClick = (route) => {
-    handleNavigation(route);
+  const handleMenuClick = async (route) => {
+    await handleNavigation(route);
+    toggleNavbar();
   };
+  
 
   const slides = [
     {
@@ -264,12 +266,10 @@ const Navbar = ({
               <ul className="navbar-list">
 
                 <li className="navbar-item">
-                  <a href="" 
-                    className={`navbar-link ${isActiveLink('/')}`}  
-                    onClick={() => handleNavigation('/')}
-                  >
+                  <a href="" className={`navbar-link hover-underline  ${isActiveLink('/')}`} onClick={toggleNavbar}>
                     <div className="separator"></div>
-                    <span className="span">Home</span>
+
+                    <Link to="/" ><span className="span">Home</span></Link>
                   </a>
                 </li>
                 
@@ -278,34 +278,38 @@ const Navbar = ({
                   onMouseEnter={() => handleDropdownHover('menus')}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <a
+                  {/* <a
                     href=""
                     className={`navbar-link hover-underline ${activeDropdown === 'menus' ? 'active' : ''}`}
-                  >
+                  > */}
                     {/* onClick={(e) => e.preventDefault()} */}
-                    
+                    <a
+                    href=""
+                    className={`navbar-link hover-underline ${activeDropdown === 'menus' ? 'active' : ''}`}
+                    onClick={(e) => { e.preventDefault(); handleDropdownToggle('menus'); }}
+                  >
                   <span className="span">Menus</span>
                   {activeDropdown === 'menus' && (
                     <div className="dropdown" ref={dropdownRef}>
                       <ul>
                         <li>
-                          <a href="/meals" className={`navbar-link hover-underline ${isActiveLink('/meals')}`} onClick={() => handleMenuClick('/meals')}>
-                          Maaltijden
+                          <a href="" className={`navbar-link hover-underline ${isActiveLink('/meals')}`} onClick={() => handleMenuClick('/meals')}>
+                            <Link to="/meals" ><span className="span">Maaltijden</span></Link>
                           </a>
                         </li>
                         <li>
-                          <a href="/meat-vegetables" className={`navbar-link hover-underline ${isActiveLink('/meat-vegetables')}`} onClick={() => handleMenuClick('/meals-vegetables')}>
-                          Vlees & Groenten
+                          <a href="" className={`navbar-link hover-underline ${isActiveLink('/meat-vegetables')}`} onClick={() => handleMenuClick('/meat-vegetables')}>
+                            <Link to="/meat-vegetables" ><span className="span">Vlees & Groenten</span></Link>
                           </a>
                         </li>
                         <li>
-                          <a href="/side-dishes" className={`navbar-link hover-underline ${isActiveLink('/side-dishes')}`} onClick={() => handleMenuClick('/meals-vegetables')}>
-                          Bijgerchten
+                          <a href="" className={`navbar-link hover-underline ${isActiveLink('/side-dishes')}`} onClick={() => handleMenuClick('/side-dishes')}>
+                            <Link to="/side-dishes" ><span className="span">Bijgerchten</span></Link>
                           </a>
                         </li>
                         <li>
-                          <a href="/sandwich" className={`navbar-link hover-underline ${isActiveLink('/sandwich')}`} onClick={() => handleMenuClick('/sandwich')}>
-                          Broodjes
+                          <a href="" className={`navbar-link hover-underline ${isActiveLink('/sandwich')}`} onClick={() => handleMenuClick('/sandwich')}>
+                            <Link to="/sandwich" ><span className="span">Broodjes</span></Link>
                           </a>
                         </li>
                       </ul>
@@ -314,32 +318,32 @@ const Navbar = ({
                 </a>
               </li>
 
-                <li className="navbar-item">
-                  <a href="" className={`navbar-link hover-underline  ${isActiveLink('/about_us')}`}>
-                    <div className="separator"></div>
+              <li className="navbar-item">
+                <a href="" className={`navbar-link hover-underline  ${isActiveLink('/about_us')}`} onClick={toggleNavbar}>
+                  <div className="separator"></div>
 
-                    <Link to="/about_us" ><span className="span">About Us</span></Link>
-                  </a>
-                </li>
+                  <Link to="/about_us" ><span className="span">About Us</span></Link>
+                </a>
+              </li>
 
-                <li className="navbar-item">
-                  <a href="#" className="navbar-link hover-underline">
-                    <div className="separator"></div>
+              <li className="navbar-item">
+                <a href="#" className="navbar-link hover-underline">
+                  <div className="separator"></div>
 
-                    <span className="span">Our Chefs</span>
-                  </a>
-                </li>
+                  <span className="span">Our Chefs</span>
+                </a>
+              </li>
 
-                <li className="navbar-item">
-                  <a 
-                    href="" 
-                    className={`navbar-link hover-underline ${isActiveLink('/contact')}`}
-                  >
-                    <div className="separator"></div>
-                    <Link to="/contact" ><span className="span">Contact</span></Link>
-                  </a>
-                </li>
-
+              <li className="navbar-item">
+                <a 
+                  href="" 
+                  className={`navbar-link hover-underline ${isActiveLink('/contact')}`}
+                  onClick={toggleNavbar}
+                >
+                  <div className="separator"></div>
+                  <Link to="/contact" ><span className="span">Contact</span></Link>
+                </a>
+              </li>
             </ul>
 
               <div className="text-center">
