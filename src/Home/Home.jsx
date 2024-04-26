@@ -211,6 +211,7 @@ const Home = () => {
                 <ion-icon name="chevron-back"></ion-icon>
               </button>
 
+
               <button className="slider-btn next" aria-label="slide to next" data-next-btn onClick={slideNext}>
                 <ion-icon name="chevron-forward"></ion-icon>
               </button>
@@ -681,7 +682,7 @@ const Home = () => {
                       <img src={Event1} width="350" height="450" loading="lazy"
                         alt="Flavour so good you’ll try to eat with your eyes." className="img-cover" />
 
-                      <time className="publish-date label-2" datetime="2022-09-15">15/09/2022</time>
+                      <time className="publish-date label-2" dateTime="2022-09-15">15/09/2022</time>
                     </div>
 
                     <div className="card-content">
@@ -702,7 +703,7 @@ const Home = () => {
                       <img src={Event2} width="350" height="450" loading="lazy"
                         alt="Flavour so good you’ll try to eat with your eyes." className="img-cover" />
 
-                      <time className="publish-date label-2" datetime="2022-09-08">08/09/2022</time>
+                      <time className="publish-date label-2" dateTime="2022-09-08">08/09/2022</time>
                     </div>
 
                     <div className="card-content">
@@ -723,7 +724,7 @@ const Home = () => {
                       <img src={Event3} width="350" height="450" loading="lazy"
                         alt="Flavour so good you’ll try to eat with your eyes." className="img-cover" />
 
-                      <time className="publish-date label-2" datetime="2022-09-03">03/09/2022</time>
+                      <time className="publish-date label-2" dateTime="2022-09-03">03/09/2022</time>
                     </div>
 
                     <div className="card-content">
@@ -793,7 +794,7 @@ const Home = () => {
                   <div className="icon-wrapper">
                     <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-                    <input type="email" name="email_address" placeholder="Your email" autocomplete="off" className="input-field" />
+                    <input type="email" name="email_address" placeholder="Your email" autoComplete="off" className="input-field" />
                   </div>
 
                   <button type="submit" className="btn btn-secondary">
@@ -867,7 +868,7 @@ const Home = () => {
         </footer>
 
         {/* -====#BACK TO TOP==== */}
-        <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <a href="#top" className="back-top-btn active" aria-label="back to top" data-back-top-btn>
           <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
         </a>
 

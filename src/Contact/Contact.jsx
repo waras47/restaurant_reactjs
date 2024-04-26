@@ -45,9 +45,9 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                             </p>
 
                             <div className="input-wrapper">
-                                <input type="text" name="name" placeholder="Your Name" autocomplete="off" className="input-field" />
+                                <input type="text" name="name" placeholder="Your Name" autoComplete="off" className="input-field" />
 
-                                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" className="input-field" />
+                                <input type="tel" name="phone" placeholder="Phone Number" autoComplete="off" className="input-field" />
                             </div>
 
                             <div className="input-wrapper">
@@ -102,7 +102,7 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                             </div>
 
-                            <textarea name="message" placeholder="Message" autocomplete="off" className="input-field"></textarea>
+                            <textarea name="message" placeholder="Message" autoComplete="off" className="input-field"></textarea>
 
                             <button type="submit" className="btn btn-secondary">
                                 <span className="text text-1">Book A Table</span>
