@@ -40,7 +40,7 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                             <h2 className="headline-1 text-center">Online Reservation</h2>
 
                             <p className="form-text text-center">
-                                Booking request <a href="tel:+88123123456" className="link">+88-123-123456</a>
+                                Booking request <a href="tel:+88123123456" className="link"> +62-123-123456 </a>
                                 or fill out the order form
                             </p>
 
@@ -63,6 +63,9 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                                         <option value="5-person">5 Person</option>
                                         <option value="6-person">6 Person</option>
                                         <option value="7-person">7 Person</option>
+                                        <option value="8-person">8 Person</option>
+                                        <option value="9-person">9 Person</option>
+                                        <option value="10-person">10 Person</option>
                                     </select>
 
                                     <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
@@ -118,29 +121,26 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                             <p className="contact-label">Booking Request</p>
 
-                            <a href="tel:+88123123456" className="body-1 contact-number hover-underline">+88-123-123456</a>
+                            <a href="tel:+88123123456" className="body-1 contact-number hover-underline">+62-123-123456</a>
 
                             <div className="separator"></div>
 
                             <p className="contact-label">Location</p>
 
                             <address className="body-4">
-                                Restaurant St, Delicious City, <br />
-                                London 9578, UK
+                            Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
                             </address>
 
-                            <p className="contact-label">Lunch Time</p>
+                            <p className="contact-label">Dinsdag T/M Zaterdag</p>
 
                             <p className="body-4">
-                                Monday to Sunday <br />
-                                11.00 am - 2.30pm
+                            12.00 - 20.00
                             </p>
 
-                            <p className="contact-label">Dinner Time</p>
+                            <p className="contact-label">Zondag</p>
 
                             <p className="body-4">
-                                Monday to Sunday <br />
-                                05.00 pm - 10.00pm
+                            14.00 - 20.00
                             </p>
 
                         </div>

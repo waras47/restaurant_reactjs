@@ -194,7 +194,7 @@ const Navbar = ({
       {/* Preloader component */}
       <div className={`preload ${isLoaded ? 'loaded' : ''}`} data-preaload>
         <div className="circle"></div>
-        <p className="text">Grilli</p>
+        <p className="text">Taste of Niang</p>
       </div>
 
       {/* ===TOP BAR=== */}
@@ -238,7 +238,7 @@ const Navbar = ({
                 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
               </div>
 
-              <span className="span">booking@restaurant.com</span>
+              <span className="span">booking@gmail.com</span>
             </a>
 
           </div>
@@ -304,6 +304,16 @@ const Navbar = ({
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/sandwich')}`} onClick={() => handleMenuClick('/sandwich')}>
                             <Link to="/sandwich" ><span className="span">Broodjes</span></Link>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" className={`navbar-link hover-underline ${isActiveLink('/snacks')}`} onClick={() => handleMenuClick('/snacks')}>
+                            <Link to="/snacks" ><span className="span">Snacks</span></Link>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="" className={`navbar-link hover-underline ${isActiveLink('/drinks')}`} onClick={() => handleMenuClick('/drinks')}>
+                            <Link to="/drinks" ><span className="span">Dranken</span></Link>
                           </a>
                         </li>
                       </ul>

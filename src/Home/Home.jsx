@@ -767,15 +767,15 @@ const Home = () => {
                 </a>
 
                 <address className="body-4">
-                  Restaurant St, Delicious City, London 9578, UK
+                Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
                 </address>
 
-                <a href="mailto:booking@grilli.com" className="body-4 contact-link">booking@grilli.com</a>
+                <a href="mailto:booking@grilli.com" className="body-4 contact-link">booking@gmail.com</a>
 
                 <a href="tel:+88123123456" className="body-4 contact-link">Booking Request : +88-123-123456</a>
 
                 <p className="body-4">
-                  Open : 09:00 am - 01:00 pm
+                Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten
                 </p>
 
                 <div className="wrapper">
@@ -787,7 +787,7 @@ const Home = () => {
                 <p className="title-1">Get News & Offers</p>
 
                 <p className="label-1">
-                  Subscribe us & Get <span className="span">25% Off.</span>
+                  Subscribe us & Get <span className="span">20% Off.</span>
                 </p>
 
                 <form action="" className="input-wrapper">
@@ -820,9 +820,9 @@ const Home = () => {
                   <a href="#" className="label-2 footer-link hover-underline">About Us</a>
                 </li>
 
-                <li>
+                {/* <li>
                   <a href="#" className="label-2 footer-link hover-underline">Our Chefs</a>
-                </li>
+                </li> */}
 
                 <li>
                   <a href="#" className="label-2 footer-link hover-underline">Contact</a>
@@ -840,13 +840,13 @@ const Home = () => {
                   <a href="#" className="label-2 footer-link hover-underline">Instagram</a>
                 </li>
 
-                <li>
+                {/* <li>
                   <a href="#" className="label-2 footer-link hover-underline">Twitter</a>
                 </li>
 
                 <li>
                   <a href="#" className="label-2 footer-link hover-underline">Youtube</a>
-                </li>
+                </li> */}
 
                 <li>
                   <a href="#" className="label-2 footer-link hover-underline">Google Map</a>
