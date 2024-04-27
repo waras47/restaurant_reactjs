@@ -1000,6 +1000,12 @@ textarea.input-field {
 /**
  * responsive for larger than 575px screen
  */
+/*-----------------------------------*\
+  #RESERVATION
+\*-----------------------------------*/
+@media (max-width: 375px) {
+  .reservation-form { margin-block-start: 127px; }
+}
 
 @media (min-width: 575px) {
 

@@ -140,23 +140,24 @@ const Navbar = ({
   const handleNavigation = (route) => {
     toggleNavbar();
     navigate(route);
-    setIsNavbarOpen(!isNavbarOpen);
+    // setIsNavbarOpen(!isNavbarOpen);
   };
 
   const isActiveLink = (route) => {
     return location.pathname === route ? 'active hover-underline' : '';
   };
+
   const handleDropdownToggle = (dropdownName) => {
     setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
-    setIsNavbarOpen(true); // Always open navbar when dropdown toggled
+    // setIsNavbarOpen(true); 
   };
   
-  const handleDropdownHover = (dropdownName) => {
-    setActiveDropdown(dropdownName);
-  };
+  // const handleDropdownHover = (dropdownName) => {
+  //   setActiveDropdown(dropdownName);
+  // };
 
   const handleMenuClick = async (route) => {
-    await handleNavigation(route);
+    handleNavigation(route);
     toggleNavbar();
   };
   
@@ -195,10 +196,9 @@ const Navbar = ({
         <div className="circle"></div>
         <p className="text">Grilli</p>
       </div>
-      
-      {/* navbar item */}
+
+      {/* ===TOP BAR=== */}
       <div>
-            {/* ===TOP BAR=== */}
       {isLoaded && (
         <div className="topbar">
           <div className="container">
@@ -259,7 +259,7 @@ const Navbar = ({
                 <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
               </button>
 
-              <a href="#" className="logo">
+              <a href="" className="logo">
                 <img src={Logo} width="160" height="50" alt="Grilli - Home" />
               </a>
 
@@ -275,18 +275,12 @@ const Navbar = ({
                 
                 <li
                   className="navbar-item"
-                  onMouseEnter={() => handleDropdownHover('menus')}
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseEnter={() => handleDropdownToggle('menus')}
+                  onMouseLeave={() => handleDropdownToggle('menus')}
                 >
-                  {/* <a
-                    href=""
+                  <a
+                    href="#"
                     className={`navbar-link hover-underline ${activeDropdown === 'menus' ? 'active' : ''}`}
-                  > */}
-                    {/* onClick={(e) => e.preventDefault()} */}
-                    <a
-                    href=""
-                    className={`navbar-link hover-underline ${activeDropdown === 'menus' ? 'active' : ''}`}
-                    onClick={(e) => { e.preventDefault(); handleDropdownToggle('menus'); }}
                   >
                   <span className="span">Menus</span>
                   {activeDropdown === 'menus' && (
