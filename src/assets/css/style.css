@@ -183,7 +183,7 @@ body {
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-5);
   overflow: hidden;
-  height: 300vh;
+  height: fit-content;
 }
 
 body.loaded { overflow: overlay; }
@@ -1163,8 +1163,7 @@ body.nav-active { overflow: auto; }
 /*-----------------------------------*\
   #RESERVATION
 \*-----------------------------------*/
-
-.reservation-form { margin-block-start: -270px; }
+.reservation-form { margin-block-start: 192px; }
 
 .form-text { margin-block-end: 40px; }
 
@@ -1439,6 +1438,10 @@ textarea.input-field {
 /**
  * responsive for larger than 575px screen
  */
+
+ @media (max-width: 375px) {
+  .reservation-form { margin-block-start: 127px; }
+}
 
 @media (min-width: 575px) {
 
@@ -1956,6 +1959,9 @@ textarea.input-field {
   .navbar.active { margin-inline: auto 20px; }
 
   .navbar-list {
+    margin-top: -24px;
+    position: absolute;
+    right: 30px;
     display: flex;
     gap: 30px;
   }

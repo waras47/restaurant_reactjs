@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 import Navbar from "../Components/Navbar";
 import { setIsNavbarActive } from '../Store/Actions/index';
-import './Contact.css';
+import '../assets/css/style.css';
 
 import { FormPattern } from '../assets/js/images';
 
