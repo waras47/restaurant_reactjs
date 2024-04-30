@@ -1164,7 +1164,7 @@ body.nav-active { overflow: auto; }
   #RESERVATION
 \*-----------------------------------*/
 
-.reservation-form { margin-block-start: -270px; }
+.reservation-form { margin-block-start: 180px; }
 
 .form-text { margin-block-end: 40px; }
 
@@ -1440,6 +1440,17 @@ textarea.input-field {
  * responsive for larger than 575px screen
  */
 
+@media (max-width: 375px) {
+  .reservation-form{
+    margin-block-start: 127px;
+  }
+
+  .img-holder {
+    margin: auto;
+    position: relative;
+  }
+}
+
 @media (min-width: 575px) {
 
   /**
@@ -1507,7 +1518,7 @@ textarea.input-field {
 
   .topbar-item ion-icon { --ionicon-stroke-width: 60px; }
 
-  .topbar-item .span { font-size: var(--fontSize-label-1); }
+  .topbar-item .span { font-size: 1.34rem; }
 
   .topbar .link { transition: var(--transition-1); }
 
@@ -1956,6 +1967,9 @@ textarea.input-field {
   .navbar.active { margin-inline: auto 20px; }
 
   .navbar-list {
+    position: absolute;
+    right: 25px;
+    margin-top: -27px;
     display: flex;
     gap: 30px;
   }

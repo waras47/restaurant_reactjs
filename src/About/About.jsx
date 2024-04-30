@@ -1,14 +1,8 @@
 import React, { useEffect, useState } from "react";
-import './About.css';
 import Navbar from "../Components/Navbar";
+import '../assets/css/style.css';
 
-import AboutBanner from '../assets/images/about-banner.jpg';
-import AboutAbs from '../assets/images/about-abs-image.jpg';
-
-import Badge2 from '../assets/images/badge-2.png';
-
-import Shape3 from '../assets/images/shape-3.png';
-
+import { AboutBanner, AboutAbs, Badge2, Shape3} from '../assets/js/images';
 
 const AboutUs = () => {
     const [xOffset, setXOffset] = useState(0);
@@ -63,11 +57,11 @@ const AboutUs = () => {
 
                         <a href="tel:+804001234567" className="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
 
-                        <a href="#" className="btn btn-primary">
+                        {/* <a href="#" className="btn btn-primary">
                             <span className="text text-1">Read More</span>
 
                             <span className="text text-2" aria-hidden="true">Read More</span>
-                        </a>
+                        </a> */}
 
                     </div>
 
@@ -83,7 +77,7 @@ const AboutUs = () => {
                                 transform: `translate(${xOffset}px, ${yOffset}px)`
                             }}
                         />
-                        <div
+                        {/* <div
                             className="abs-img abs-img-1 has-before"
                             style={{
                                 transform: `translate(${xOffset * 1}px, ${yOffset * 1}px)`
@@ -91,7 +85,7 @@ const AboutUs = () => {
                         >
                             <img src={AboutAbs} width="285" height="285" loading="lazy" alt=""
                                 className="w-100" />
-                        </div>
+                        </div> */}
 
                         <div className="abs-img abs-img-2 has-before">
                             <img src={Badge2} width="133" height="134" loading="lazy" alt="" />
