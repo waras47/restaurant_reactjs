@@ -373,11 +373,11 @@ const Navbar = ({
 
             </nav>
 
-            {/* <a href="#" className="btn btn-secondary">
+            <a href="#" className="btn btn-secondary">
               <span className="text text-1">Find A Table</span>
 
               <span className="text text-2" aria-hidden="true">Find A Table</span>
-            </a> */}
+            </a>
 
             <button className="nav-open-btn" aria-label="open menu" data-nav-toggler  onClick={toggleNavbar}>
               <span className="line line-1"></span>
