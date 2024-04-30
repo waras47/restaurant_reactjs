@@ -183,7 +183,7 @@ body {
   font-weight: var(--weight-regular);
   line-height: var(--lineHeight-5);
   overflow: hidden;
-  height: 300vh;
+  height: fit-content;
 }
 
 body.loaded { overflow: overlay; }
@@ -1088,6 +1088,7 @@ body.nav-active { overflow: auto; }
 .menu-card .card-text {
   color: var(--quick-silver);
   line-height: var(--lineHeight-4);
+  width: 370px;
 }
 
 .menu-text .span {
@@ -1440,7 +1441,7 @@ textarea.input-field {
  * responsive for larger than 575px screen
  */
 
-@media (max-width: 375px) {
+@media (max-width: 435px) {
   .reservation-form{
     margin-block-start: 127px;
   }
@@ -1449,6 +1450,22 @@ textarea.input-field {
     margin: auto;
     position: relative;
   }
+
+  .menu-card .card-text {
+    color: var(--quick-silver);
+    line-height: var(--lineHeight-4);
+    max-width: 224px;
+  }
+
+  .about-banner {
+    right: 23px;
+  }
+
+  .menu-card .card-title{
+    width: 240px;
+    word-wrap: break-word;
+  }
+  
 }
 
 @media (min-width: 575px) {
