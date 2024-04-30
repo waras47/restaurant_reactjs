@@ -4,6 +4,9 @@ import '../assets/css/style.css';
 
 import {
   Badge1,
+  Event1,
+  Event2,
+  Event3,
   Feature1,
   Feature2,
   Feature3,
@@ -330,18 +333,18 @@ const Home = () => {
 
                   <p className="section-subtitle label-2">Special Dish</p>
 
-                  <h2 className="headline-1 section-title">Nasi Tumpeng</h2>
+                  <h2 className="headline-1 section-title">Lobster Tortellini</h2>
 
                   <p className="section-text">
                     Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
                     industrys standard dummy text ever since the when an unknown printer took a galley of type.
                   </p>
 
-                  {/* <div className="wrapper">
+                  <div className="wrapper">
                     <del className="del body-3">$40.00</del>
 
                     <span className="span body-1">$20.00</span>
-                  </div> */}
+                  </div>
 
                   <a href="#" className="btn btn-primary">
                     <span className="text text-1">View All Menu</span>
@@ -381,16 +384,16 @@ const Home = () => {
 
                       <div className="title-wrapper">
                         <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
+                          <a href="#" className="card-title">Greek Salad</a>
                         </h3>
 
                         <span className="badge label-1">Seasonal</span>
 
-                        <span className="span title-2">€0.00</span>
+                        <span className="span title-2">$25.50</span>
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                        Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
                       </p>
 
                     </div>
@@ -408,16 +411,16 @@ const Home = () => {
 
                     <div>
 
-                    <div className="title-wrapper">
+                      <div className="title-wrapper">
                         <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
+                          <a href="#" className="card-title">Lasagne</a>
                         </h3>
 
-                        <span className="span title-2">€0.00</span>
+                        <span className="span title-2">$40.00</span>
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
                       </p>
 
                     </div>
@@ -435,16 +438,16 @@ const Home = () => {
 
                     <div>
 
-                    <div className="title-wrapper">
+                      <div className="title-wrapper">
                         <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
+                          <a href="#" className="card-title">Butternut Pumpkin</a>
                         </h3>
 
-                        <span className="span title-2">€0.00</span>
+                        <span className="span title-2">$10.00</span>
                       </div>
 
                       <p className="card-text label-1">
-                       Sample: Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                        Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
                       </p>
 
                     </div>
@@ -461,16 +464,19 @@ const Home = () => {
                     </figure>
 
                     <div>
-                    <div className="title-wrapper">
+
+                      <div className="title-wrapper">
                         <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
+                          <a href="#" className="card-title">Tokusen Wagyu</a>
                         </h3>
 
-                        <span className="span title-2">€0.00</span>
+                        <span className="badge label-1">New</span>
+
+                        <span className="span title-2">$39.00</span>
                       </div>
 
                       <p className="card-text label-1">
-                       Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
                       </p>
 
                     </div>
@@ -488,16 +494,16 @@ const Home = () => {
 
                     <div>
 
-                    <div className="title-wrapper">
+                      <div className="title-wrapper">
                         <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
+                          <a href="#" className="card-title">Olivas Rellenas</a>
                         </h3>
 
-                        <span className="span title-2">€0.00</span>
+                        <span className="span title-2">$25.00</span>
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                        Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
                       </p>
 
                     </div>
@@ -517,14 +523,14 @@ const Home = () => {
 
                       <div className="title-wrapper">
                         <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
+                          <a href="#" className="card-title">Opu Fish</a>
                         </h3>
 
-                        <span className="span title-2">€0.00</span>
+                        <span className="span title-2">$49.00</span>
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                        Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
                       </p>
 
                     </div>
@@ -534,15 +540,15 @@ const Home = () => {
 
               </ul>
 
-              {/* <p className="menu-text text-center">
+              <p className="menu-text text-center">
                 During winter daily from <span className="span">7:00 pm</span> to <span className="span">9:00 pm</span>
-              </p> */}
+              </p>
 
-              {/* <a href="#" className="btn btn-primary">
+              <a href="#" className="btn btn-primary">
                 <span className="text text-1">View All Menu</span>
 
                 <span className="text text-2" aria-hidden="true">View All Menu</span>
-              </a> */}
+              </a>
 
               <img src={Shape5} width="921" height="1036" loading="lazy" alt="shape"
                 className="shape shape-2 move-anim" />
@@ -660,7 +666,7 @@ const Home = () => {
           </section>
 
           {/* -====#EVENT==== */}
-          {/* <section className="section event bg-black-10" aria-label="event">
+          <section className="section event bg-black-10" aria-label="event">
             <div className="container">
 
               <p className="section-subtitle label-2 text-center">Recent Updates</p>
@@ -741,7 +747,7 @@ const Home = () => {
               </a>
 
             </div>
-          </section> */}
+          </section>
 
           </main>
 
