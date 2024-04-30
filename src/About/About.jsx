@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
-import './About.css';
 
 import AboutBanner from '../assets/images/about-banner.jpg';
 
