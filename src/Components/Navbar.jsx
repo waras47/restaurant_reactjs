@@ -372,8 +372,8 @@ const Navbar = ({
               </div>
 
             </nav>
-
-            {/* <a href="#" className="btn btn-secondary">
+{/* 
+            <a href="#" className="btn btn-secondary">
               <span className="text text-1">Find A Table</span>
 
               <span className="text text-2" aria-hidden="true">Find A Table</span>

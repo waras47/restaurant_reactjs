@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import '../assets/css/style.css';
-
-import AboutBanner from '../assets/images/about-banner.jpg';
-
-import Badge2 from '../assets/images/badge-2.png';
-
-import Shape3 from '../assets/images/shape-3.png';
-
+import { AboutBanner, Badge2, Shape3 } from '../assets/js/images';
 
 const AboutUs = () => {
     const [xOffset, setXOffset] = useState(0);

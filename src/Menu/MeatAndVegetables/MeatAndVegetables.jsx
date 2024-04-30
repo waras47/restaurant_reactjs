@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import '../../assets/css/style.css';
 
-
 import Navbar from "../../Components/Navbar";
 
 import {
-    Menu6,
+    DummyImage,
     Shape5,
     Shape6
 } from '../../assets/js/images';
@@ -49,7 +48,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -78,7 +77,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -105,7 +104,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -134,7 +133,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -161,7 +160,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
