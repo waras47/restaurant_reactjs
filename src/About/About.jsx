@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Components/Navbar";
 import '../assets/css/style.css';
-
-import { AboutBanner, AboutAbs, Badge2, Shape3} from '../assets/js/images';
+import { AboutBanner, Badge2, Shape3 } from '../assets/js/images';
 
 const AboutUs = () => {
     const [xOffset, setXOffset] = useState(0);
@@ -55,7 +54,7 @@ const AboutUs = () => {
 
                         <div className="contact-label">Book Through Call</div>
 
-                        <a href="tel:+804001234567" className="body-1 contact-number hover-underline">+80 (400) 123 4567</a>
+                        <a href="tel:+804001234567" className="body-1 contact-number hover-underline">12 (345) 678910</a>
 
                         {/* <a href="#" className="btn btn-primary">
                             <span className="text text-1">Read More</span>

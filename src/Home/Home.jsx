@@ -336,6 +336,8 @@ const Home = () => {
                     Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
                     industrys standard dummy text ever since the when an unknown printer took a galley of type.
                   </p>
+
+                  {/* <div className="wrapper">
 {/* 
                   <div className="wrapper">
                     <del className="del body-3">$40.00</del>
@@ -408,7 +410,7 @@ const Home = () => {
 
                     <div>
 
-                      <div className="title-wrapper">
+                    <div className="title-wrapper">
                         <h3 className="title-3">
                           <a href="#" className="card-title">Nama Menu</a>
                         </h3>
@@ -435,7 +437,7 @@ const Home = () => {
 
                     <div>
 
-                      <div className="title-wrapper">
+                    <div className="title-wrapper">
                         <h3 className="title-3">
                           <a href="#" className="card-title">Nama Menu</a>
                         </h3>
@@ -444,6 +446,7 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
+                       Sample: Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
                         Sample: Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
                       </p>
 
@@ -461,8 +464,7 @@ const Home = () => {
                     </figure>
 
                     <div>
-
-                      <div className="title-wrapper">
+                    <div className="title-wrapper">
                         <h3 className="title-3">
                           <a href="#" className="card-title">Nama Menu</a>
                         </h3>
@@ -471,6 +473,7 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
+                       Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
                         Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
                       </p>
 
@@ -489,7 +492,7 @@ const Home = () => {
 
                     <div>
 
-                      <div className="title-wrapper">
+                    <div className="title-wrapper">
                         <h3 className="title-3">
                           <a href="#" className="card-title">Nama Menu</a>
                         </h3>
