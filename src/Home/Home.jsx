@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
-import '../assets/css/style.css';
+import './Home.css';
 
 import {
   Badge1,
