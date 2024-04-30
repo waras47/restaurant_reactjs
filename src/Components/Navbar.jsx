@@ -330,13 +330,13 @@ const Navbar = ({
                 </a>
               </li>
 
-              <li className="navbar-item">
+              {/* <li className="navbar-item">
                 <a href="#" className="navbar-link hover-underline">
                   <div className="separator"></div>
 
                   <span className="span">Our Chefs</span>
                 </a>
-              </li>
+              </li> */}
 
               <li className="navbar-item">
                 <a 
