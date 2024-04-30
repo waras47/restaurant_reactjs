@@ -330,13 +330,13 @@ const Navbar = ({
                 </a>
               </li>
 
-              <li className="navbar-item">
+              {/* <li className="navbar-item">
                 <a href="#" className="navbar-link hover-underline">
                   <div className="separator"></div>
 
                   <span className="span">Our Chefs</span>
                 </a>
-              </li>
+              </li> */}
 
               <li className="navbar-item">
                 <a 
@@ -372,12 +372,12 @@ const Navbar = ({
               </div>
 
             </nav>
-
+{/* 
             <a href="#" className="btn btn-secondary">
               <span className="text text-1">Find A Table</span>
 
               <span className="text text-2" aria-hidden="true">Find A Table</span>
-            </a>
+            </a> */}
 
             <button className="nav-open-btn" aria-label="open menu" data-nav-toggler  onClick={toggleNavbar}>
               <span className="line line-1"></span>
