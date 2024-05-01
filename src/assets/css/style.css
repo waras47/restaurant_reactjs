@@ -513,10 +513,6 @@ body.nav-active { overflow: auto; }
 
 .icon-wrapper ion-icon:last-child { right: 10px; }
 
-
-
-
-
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
@@ -1466,6 +1462,10 @@ textarea.input-field {
     word-wrap: break-word;
   }
   
+  .input-field[type="time"]::-webkit-calendar-picker-indicator {
+    background: var(--eerie-black-2);
+    margin-right: -10px;
+  }
 }
 
 @media (min-width: 575px) {
@@ -1874,7 +1874,10 @@ textarea.input-field {
     border-inline-start: 1px solid var(--white-alpha-20);
   }
 
-
+  .input-field[type="time"]::-webkit-calendar-picker-indicator {
+    background: var(--eerie-black-2);
+    margin-right: -10px;
+  }
 
   /**
    * TESTIMONIALS
