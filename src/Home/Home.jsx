@@ -338,6 +338,11 @@ const Home = () => {
                   </p>
 
                   {/* <div className="wrapper">
+<<<<<<< HEAD
+=======
+{/* 
+                  <div className="wrapper">
+>>>>>>> 8fbad81df9876535435ec9792d20c8dec75f5a34
                     <del className="del body-3">$40.00</del>
 
                     <span className="span body-1">$20.00</span>
@@ -445,6 +450,10 @@ const Home = () => {
 
                       <p className="card-text label-1">
                        Sample: Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+<<<<<<< HEAD
+=======
+                        Sample: Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+>>>>>>> 8fbad81df9876535435ec9792d20c8dec75f5a34
                       </p>
 
                     </div>
@@ -471,6 +480,10 @@ const Home = () => {
 
                       <p className="card-text label-1">
                        Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+<<<<<<< HEAD
+=======
+                        Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+>>>>>>> 8fbad81df9876535435ec9792d20c8dec75f5a34
                       </p>
 
                     </div>
