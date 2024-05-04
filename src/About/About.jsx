@@ -1,12 +1,19 @@
+<<<<<<< HEAD
 import React from "react";
 import './About.css';
 
+=======
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next"
+import Navbar from "../Components/Navbar";
+>>>>>>> 5384eb67a51b12a01bb4a8e0d9f7de89b75125da
 import '../assets/css/style.css';
 
 import { AboutBanner, Badge2, Shape3 } from '../assets/js/images';
 
 
 const AboutUs = () => {
+    const {t}  = useTranslation();
     const [xOffset, setXOffset] = useState(0);
     const [yOffset, setYOffset] = useState(0);
 
@@ -47,13 +54,9 @@ const AboutUs = () => {
 
                         <p className="label-2 section-subtitle" id="about-label">Our Story</p>
 
-                        <h2 className="headline-1 section-title">Every Flavor Tells a Story</h2>
+                        <h2 className="headline-1 section-title">{t("title")}</h2>
 
-                        <p className="section-text">
-                            Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-                            industrys standard dummy text ever since the when an unknown printer took a galley of type and scrambled
-                            it to make a type specimen book It has survived not only five centuries, but also the leap into.
-                        </p>
+                        <p className="section-text">{t("description")}</p>
 
                         <div className="contact-label">Book Through Call</div>
 
