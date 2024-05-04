@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { connect } from 'react-redux';
 import Navbar from "../Components/Navbar";
 import { setIsNavbarActive } from '../Store/Actions/index';
@@ -7,6 +7,15 @@ import '../assets/css/style.css';
 import { FormPattern } from '../assets/js/images';
 
 const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        number: "",
+        person: "",
+        date: "",
+        hour: "",
+        message: ""
+    });
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,6 +35,34 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
     }, [setIsNavbarActive]);
 
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let { name, number, person, date, hour, message } = formData;
+
+        // Format the time to display AM/PM
+        let hourValue = parseInt(hour.split(":")[0]);
+        const minuteValue = parseInt(hour.split(":")[1]);
+        let amPm = "AM";
+        if (hourValue >= 12) {
+            amPm = "PM";
+            if (hourValue > 12) {
+                hourValue -= 12;
+            }
+        }
+        hour = `${hourValue}:${minuteValue < 10 ? "0" + minuteValue : minuteValue} ${amPm}`;
+        const whatsappMessage = `Hallo i want booking%AName: ${name}%0ANumber: ${number}%0APerson: ${person}%0ADate: ${date}%0AHour: ${hour}%0AMessage: ${message}`;
+        const whatsappLink = `https://wa.me/6285291932739/?text=${whatsappMessage}`;
+        window.open(whatsappLink, '_blank');
+    };
+
 
     return (
         <div>
@@ -35,7 +72,7 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                     <div className="form reservation-form bg-black-0">
 
-                        <form action="" className="form-left">
+                        <form action="" onSubmit={handleSubmit} className="form-left">
 
                             <h2 className="headline-1 text-center">Online Reservation</h2>
 
@@ -45,14 +82,13 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                             </p>
 
                             <div className="input-wrapper">
-                                <input type="text" name="name" placeholder="Your Name" autoComplete="off" className="input-field" />
-
-                                <input type="tel" name="phone" placeholder="Phone Number" autoComplete="off" className="input-field" />
+                                <input type="text" name="name" placeholder="Your Name" autoComplete="off" className="input-field" onChange={handleChange} />
+                                <input type="tel" name="number" placeholder="Phone Number" autoComplete="off" className="input-field" onChange={handleChange} pattern="[0-9]*" inputMode="numeric" />
                             </div>
 
                             <div className="input-wrapper">
-
-                                <div className="icon-wrapper">
+                                <input type="text" name="person" placeholder="Number Of Persons" autoComplete="off" className="input-field" onChange={handleChange} />
+                                {/* <div className="icon-wrapper">
                                     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
                                     <select name="person" className="input-field">
@@ -69,17 +105,17 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                                     </select>
 
                                     <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
-                                </div>
+                                </div> */}
 
                                 <div className="icon-wrapper">
                                     <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
 
-                                    <input type="date" name="reservation-date" className="input-field" />
+                                    <input type="date" name="date" className="input-field" onChange={handleChange}/>
 
                                     <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                                 </div>
 
-                                <div className="icon-wrapper">
+                                {/* <div className="icon-wrapper">
                                     <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
 
                                     <select name="person" className="input-field">
@@ -101,11 +137,17 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                                     </select>
 
                                     <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                                </div> */}
+
+                                <div className="icon-wrapper">
+                                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                                    <input type="time" name="hour" className="input-field" onChange={handleChange} />
+                                    <ion-icon name="chevron-down" aria-hidden="true"className="time-picker-icon"></ion-icon>
                                 </div>
 
                             </div>
 
-                            <textarea name="message" placeholder="Message" autoComplete="off" className="input-field"></textarea>
+                            <textarea name="message" placeholder="Message" autoComplete="off" className="input-field" onChange={handleChange}   ></textarea>
 
                             <button type="submit" className="btn btn-secondary">
                                 <span className="text text-1">Book A Table</span>
