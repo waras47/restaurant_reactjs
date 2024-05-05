@@ -1,12 +1,38 @@
 import React, { useEffect, useState } from "react";
 import { connect } from 'react-redux';
+import i18n from 'i18next';
 import Navbar from "../Components/Navbar";
 import { setIsNavbarActive } from '../Store/Actions/index';
 import '../assets/css/style.css';
 
 import { FormPattern } from '../assets/js/images';
+import useTranslations from "../assets/js/useTranslations";
 
 const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
+
+    const translations = useTranslations();
+    const {
+        onlineReservation,
+        bookingRequest,
+        fillForm,
+        yourName,
+        phoneNumber,
+        numberPersons,
+        message,
+        bookTable,
+        location,
+        tuesdayToSaturday,
+        sunday,
+        whatsTitle,
+        whatsName,
+        whatsNumber,
+        whatsPerson,
+        whatsDate,
+        whatsHour,
+        whatsMessage,
+        whatsNL,
+        whatsEN
+    } = translations.contact;
 
     const [formData, setFormData] = useState({
         name: "",
@@ -58,9 +84,13 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
             }
         }
         hour = `${hourValue}:${minuteValue < 10 ? "0" + minuteValue : minuteValue} ${amPm}`;
-        const whatsappMessage = `Hallo ik wil reserveren%0AName: ${name}%0ANumber: ${number}%0APerson: ${person}%0ADate: ${date}%0AHour: ${hour}%0AMessage: ${message}`;
-        const whatsappLink = `https://wa.me/+31631034439/?text=${whatsappMessage}`;
-        window.open(whatsappLink, '_blank');
+          // Get the WhatsApp message format based on the selected language
+    const whatsTitle = i18n.language === 'en' ? whatsEN : whatsNL;
+
+    // Construct the WhatsApp message
+    const whatsappMessageText = `${whatsTitle}%0A${whatsName}: ${name}%0A${whatsNumber}: ${number}%0A${whatsPerson}: ${person}%0A${whatsDate}: ${date}%0A${whatsHour}: ${hour}%0A${whatsMessage}: ${message}`;
+    const whatsappLink = `https://wa.me/+31631034439/?text=${encodeURIComponent(whatsappMessageText)}`;
+    window.open(whatsappLink, '_blank');
     };
 
 
@@ -74,20 +104,20 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                         <form action="" onSubmit={handleSubmit} className="form-left">
 
-                            <h2 className="headline-1 text-center">Online Reserveren</h2>
+                            <h2 className="headline-1 text-center">{onlineReservation}</h2>
 
                             <p className="form-text text-center">
-                            Reserveringsaanvraag <a href="tel:+31631034439" className="link"> +31 6 31034439 </a>
-                            of vul het bestelformulier in
+                            {bookingRequest}<a href="tel:+31631034439" className="link"> +31 6 31034439 </a>
+                            {fillForm}
                             </p>
 
                             <div className="input-wrapper">
-                                <input type="text" name="name" placeholder="Your Name" autoComplete="off" className="input-field" onChange={handleChange} />
-                                <input type="tel" name="number" placeholder="Phone Number" autoComplete="off" className="input-field" onChange={handleChange} pattern="[0-9]*" inputMode="numeric" />
+                                <input type="text" name="name" placeholder={yourName} autoComplete="off" className="input-field" onChange={handleChange} />
+                                <input type="tel" name="number" placeholder={phoneNumber} autoComplete="off" className="input-field" onChange={handleChange} pattern="[0-9]*" inputMode="numeric" />
                             </div>
 
                             <div className="input-wrapper">
-                                <input type="text" name="person" placeholder="Number Of Persons" autoComplete="off" className="input-field" onChange={handleChange} />
+                                <input type="text" name="person" placeholder={numberPersons} autoComplete="off" className="input-field" onChange={handleChange} />
                                 {/* <div className="icon-wrapper">
                                     <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
@@ -147,12 +177,12 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                             </div>
 
-                            <textarea name="message" placeholder="Message" autoComplete="off" className="input-field" onChange={handleChange}   ></textarea>
+                            <textarea name="message" placeholder={message} autoComplete="off" className="input-field" onChange={handleChange}  ></textarea>
 
                             <button type="submit" className="btn btn-secondary">
-                                <span className="text text-1">Reserveer een tafel</span>
+                                <span className="text text-1">{bookTable}</span>
 
-                                <span className="text text-2" aria-hidden="true">Reserveer een tafel</span>
+                                <span className="text text-2" aria-hidden="true">{bookTable}</span>
                             </button>
 
                         </form>
@@ -161,25 +191,25 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                             <h2 className="headline-1 text-center">Contact Us</h2>
 
-                            <p className="contact-label"> Reserveringsaanvraag</p>
+                            <p className="contact-label">{bookingRequest}</p>
 
                             <a href="tel:+31631034439" className="body-1 contact-number hover-underline">+31 6 31034439</a>
 
                             <div className="separator"></div>
 
-                            <p className="contact-label">Location</p>
+                            <p className="contact-label">{location}</p>
 
                             <address className="body-4">
                             Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
                             </address>
 
-                            <p className="contact-label">Dinsdag T/M Zaterdag</p>
+                            <p className="contact-label">{tuesdayToSaturday}</p>
 
                             <p className="body-4">
                             12.00 - 20.00
                             </p>
 
-                            <p className="contact-label">Zondag</p>
+                            <p className="contact-label">{sunday}</p>
 
                             <p className="body-4">
                             14.00 - 20.00

@@ -3,8 +3,8 @@ import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const languages = [
-  { code: "en", lang: "EN" },
   { code: "nl", lang: "NL" },
+  { code: "en", lang: "EN" },
 ];
 
 const LanguageSelector = ({
@@ -96,8 +96,6 @@ const LanguageSelector = ({
         className="navbar-link "
         onChange={changeLanguage}
         style={{
-          borderBottom: isNavbarOpen ? "2px solid red" : "none",
-          border: !isNavbarOpen ? "2px solid red" : "none",
           marginTop: "5px",
           color: "white",
         }}      

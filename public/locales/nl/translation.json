@@ -1,11 +1,57 @@
 
   {
+    "home" : {
+      "traditionalHygines" : "Traditioneel & Hygiëne",
+      "loveFood": "Voor de liefde van heerlijk eten",
+      "comeFamily" : "Kom met je gezin en geniet van het heerlijke eten",
+      "delightExp": "Heerlijke ervaring",
+      "inspiredSeasons": "Smaken geïnspireerd door de seizoenen",
+      "AmazingDelicious": "Verbazingwekkend & Heerlijk",
+      "tellStory": "Waar elke smaak een verhaal vertelt",
+      "bookTable": "Reserver Een Tafel",
+      "flavorRoyalty" : "Smaken Voor Royalty",
+      "topQuality" : "We Bieden Topkwaliteit",
+      "breakfeast" : "Ontbijt",
+      "appetizers" : "Voorgerechten",
+      "drink" : "Dranken",
+      "specialDish" : "Speciaal gerecht",
+      "specialSelection" : "Speciale selectie",
+      "deliciousMenu" : "Heerlijk Menu",
+      "homeThanks" : "Ik wilde je bedanken dat je me hebt uitgenodigd voor dat geweldige diner gisteravond. Het eten was buitengewoon."
+    },
+    "menu" : {
+      "meals" : {
+        "meal" : "Maaltijden",
+        "descRames" : "1 Soorten vlees of kip naar keuze, 1 groenten."
+        
+      }
+    },
     "about": {
-      "title": "Elke Smaak Vertelt een Verhaal",
-      "description": "In het hart van de bruisende stad biedt Niang een authentiek Indonesisch culinair aanbod. De gerechten worden met liefde en zorg bereid en belichamen het diverse culinaire landschap van Indonesië. Van de vurige rendang van Padang tot de geurige gebakken rijst van Java, elk gerecht vertelt een verhaal van traditie en smaak. Niang is niet zomaar een restaurant; het is een culturele mijlpaal, waar gasten met verschillende achtergronden samenkomen om te lachen en contact te maken onder het genot van een schaal heerlijk eten. Met elke hap levert Niang de smaken van Indonesië, waardoor gasten betoverd achterblijven en verlangen naar meer."
+      "ourStory": "Ons Verhaal",
+      "flavorStory": "Elke Smaak Vertelt Een Verhaal",
+      "descStory": " en verlangen naar meer."
     },
     "contact": {
-      "title": "Elke Smaak Vertelt een Verhaal",
-      "description": "In het hart van de bruisende stad biedt Niang een authentiek Indonesisch culinair aanbod. De gerechten worden met liefde en zorg bereid en belichamen het diverse culinaire landschap van Indonesië. Van de vurige rendang van Padang tot de geurige gebakken rijst van Java, elk gerecht vertelt een verhaal van traditie en smaak. Niang is niet zomaar een restaurant; het is een culturele mijlpaal, waar gasten met verschillende achtergronden samenkomen om te lachen en contact te maken onder het genot van een schaal heerlijk eten. Met elke hap levert Niang de smaken van Indonesië, waardoor gasten betoverd achterblijven en verlangen naar meer."
+      "onlineReservation" : "Online Reserveren",
+      "bookingRequest" : "Reservering Aanvraag",
+      "fillForm": "of vul het bestelformulier in",
+      "yourName": "Uw naam",
+      "phoneNumber" : "Telefoon Nummer",
+      "numberPersons": "Aantal Personen",
+      "message": "Bericht",
+      "bookTable": "Reserver Een Tafel",
+      "reservationRequest": "Reservering Aanvraag",
+      "location": "Locatie",
+      "tuesdayToSaturday": "Dinsdag T/M Zaterdag",
+      "sunday": "Zondag",
+      "whatsTitle": "Hallo ik wil reserveren",
+      "whatsName" : "Naam",
+      "whatsNumber" : "Telefoon",
+      "whatsPerson" : "Persoon",
+      "whatsDate" : "NamDatum",
+      "whatsHour" : "Uur",
+      "whatsMessage" : "Bericht",
+      "whatsEN": "en",
+      "whatsNL": "nl"
     }
   }
