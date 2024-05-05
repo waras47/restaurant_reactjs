@@ -5,6 +5,9 @@ import Navbar from "../../Components/Navbar";
 
 import {
     DummyImage,
+    Gadogado,
+    NasiRames,
+    SateMaaltijden,
     Shape5,
     Shape6
 } from '../../assets/js/images';
@@ -47,7 +50,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiRames} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -102,7 +105,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={Gadogado} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -128,7 +131,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiRames} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -180,7 +183,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiRames} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -232,7 +235,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiRames} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -258,7 +261,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiRames} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -310,7 +313,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={SateMaaltijden} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 

@@ -1,8 +1,13 @@
+// import React from "react";
+// import './About.css';
+
 import React, { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 import Navbar from "../Components/Navbar";
 import '../assets/css/style.css';
+
 import { AboutBanner, Badge2, Shape3 } from '../assets/js/images';
+
 
 const AboutUs = () => {
     const {t}  = useTranslation();
@@ -52,7 +57,7 @@ const AboutUs = () => {
 
                         <div className="contact-label">Book Through Call</div>
 
-                        <a href="tel:+804001234567" className="body-1 contact-number hover-underline">12 (345) 678910</a>
+                        <a href="tel:+31631034439" className="body-1 contact-number hover-underline">+31 6 31034439</a>
 
                         {/* <a href="#" className="btn btn-primary">
                             <span className="text text-1">Read More</span>

@@ -5,6 +5,9 @@ import Navbar from "../../Components/Navbar";
 
 import {
     DummyImage,
+    EsCampur,
+    EsCendol,
+    EsTeller,
     Shape5,
     Shape6
 } from '../../assets/js/images';
@@ -73,7 +76,7 @@ const Drinks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={EsCampur} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -125,7 +128,7 @@ const Drinks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={EsTeller} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -151,7 +154,7 @@ const Drinks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={EsCendol} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 

@@ -151,21 +151,21 @@ const Home = () => {
   const slides = [
     {
       image: Slider1,
-      subtitle: 'Traditional & Hygiene',
-      title: 'For the love of delicious food',
-      text: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Traditioneel & Hygiëne',
+      title: 'Voor de liefde van heerlijk eten',
+      text: 'Kom met je gezin en geniet van het heerlijke eten',
     },
     {
       image: Slider2,
-      subtitle: 'Delightful Experience',
-      title: 'Flavors Inspired by the Seasons',
-      text: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Heerlijke ervaring',
+      title: 'Smaken geïnspireerd door de seizoenen',
+      text: 'Kom met je gezin en geniet van het heerlijke eten',
     },
     {
       image: Slider3,
-      subtitle: 'Amazing & Delicious',
-      title: 'Where every flavor tells a story',
-      text: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Verbazingwekkend & Heerlijk',
+      title: 'Waar elke smaak een verhaal vertelt',
+      text: 'Kom met je gezin en geniet van het heerlijke eten',
     },
   ];
 
@@ -192,11 +192,11 @@ const Home = () => {
 
                   <p className="body-2 hero-text slider-reveal">{slide.text}</p>
 
-                  <a href="#" className="btn btn-primary slider-reveal">
-                    <span className="text text-1">View Our Menu</span>
+                  {/* <a href="#" className="btn btn-primary slider-reveal">
+                    <span className="text text-1">Bekijk ons menu</span>
 
-                    <span className="text text-2" aria-hidden="true">View Our Menu</span>
-                  </a>
+                    <span className="text text-2" aria-hidden="true">Bekijk ons menu</span>
+                  </a> */}
 
                 </li>
                 ))}
@@ -216,7 +216,7 @@ const Home = () => {
               <a href="#" className="hero-btn has-after" style={{position: 'absolute'}}>
                 <img src={HeroIcon} width="48" height="48" alt="booking icon" />
 
-                <span className="label-2 text-center span">Book A Table</span>
+                <span className="label-2 text-center span">Reserveer een tafel</span>
               </a>                
             </section>
 
@@ -224,13 +224,12 @@ const Home = () => {
             <section className="section service bg-black-10 text-center" aria-label="service">
               <div className="container">
 
-                <p className="section-subtitle label-2">Flavors For Royalty</p>
+                <p className="section-subtitle label-2">Smaken voor Royalty</p>
 
-                <h2 className="headline-1 section-title">We Offer Top Notch</h2>
+                <h2 className="headline-1 section-title">We bieden topkwaliteit</h2>
 
                 <p className="section-text">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
-                  standard dummy text ever.
+                Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
                 </p>
 
                 <ul className="grid-list">
@@ -248,10 +247,10 @@ const Home = () => {
                       <div className="card-content">
 
                         <h3 className="title-4 card-title">
-                          <a href="#">Breakfast</a>
+                          <a href="#">Ontbijt</a>
                         </h3>
 
-                        <a href="#" className="btn-text hover-underline label-2">View Menu</a>
+                        <a href="/snacks" className="btn-text hover-underline label-2">View Menu</a>
 
                       </div>
 
@@ -271,10 +270,10 @@ const Home = () => {
                       <div className="card-content">
 
                         <h3 className="title-4 card-title">
-                          <a href="#">Appetizers</a>
+                          <a href="#">Voorgerechten</a>
                         </h3>
 
-                        <a href="#" className="btn-text hover-underline label-2">View Menu</a>
+                        <a href="/meals" className="btn-text hover-underline label-2">View Menu</a>
 
                       </div>
 
@@ -294,10 +293,10 @@ const Home = () => {
                       <div className="card-content">
 
                         <h3 className="title-4 card-title">
-                          <a href="#">Drinks</a>
+                          <a href="#">Dranken</a>
                         </h3>
 
-                        <a href="#" className="btn-text hover-underline label-2">View Menu</a>
+                        <a href="/drinks" className="btn-text hover-underline label-2">View Menu</a>
 
                       </div>
 
@@ -328,28 +327,35 @@ const Home = () => {
 
                   <img src={Badge1} width="28" height="41" loading="lazy" alt="badge" className="abs-img" />
 
-                  <p className="section-subtitle label-2">Special Dish</p>
+                  <p className="section-subtitle label-2">Speciaal gerecht</p>
 
                   <h2 className="headline-1 section-title">Nasi Tumpeng</h2>
 
                   <p className="section-text">
-                    Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has been the
-                    industrys standard dummy text ever since the when an unknown printer took a galley of type.
+                  Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
                   </p>
 
                   {/* <div className="wrapper">
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 {/* 
                   <div className="wrapper">
+>>>>>>> 8fbad81df9876535435ec9792d20c8dec75f5a34
+=======
+{/* 
+                  <div className="wrapper">
+>>>>>>> 2601a49a7fb1191932e41740715730f45365630d
                     <del className="del body-3">$40.00</del>
 
                     <span className="span body-1">$20.00</span>
                   </div> */}
 
-                  <a href="#" className="btn btn-primary">
+                  {/* <a href="#" className="btn btn-primary">
                     <span className="text text-1">View All Menu</span>
 
                     <span className="text text-2" aria-hidden="true">View All Menu</span>
-                  </a>
+                  </a> */}
 
                 </div>
               </div>
@@ -365,9 +371,9 @@ const Home = () => {
           <section className="section menu" aria-label="menu-label" id="menu">
             <div className="container">
 
-              <p className="section-subtitle text-center label-2">Special Selection</p>
+              <p className="section-subtitle text-center label-2">Speciale selectie</p>
 
-              <h2 className="headline-1 section-title text-center">Delicious Menu</h2>
+              <h2 className="headline-1 section-title text-center">Heerlijk menu</h2>
 
               <ul className="grid-list">
 
@@ -392,7 +398,7 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.
+                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
                       </p>
 
                     </div>
@@ -419,7 +425,7 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
                       </p>
 
                     </div>
@@ -446,8 +452,8 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
-                       Sample: Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
-                        Sample: Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
+                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
+
                       </p>
 
                     </div>
@@ -473,8 +479,8 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
-                       Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
-                        Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
+                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
+
                       </p>
 
                     </div>
@@ -501,7 +507,7 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
+                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
                       </p>
 
                     </div>
@@ -528,7 +534,7 @@ const Home = () => {
                       </div>
 
                       <p className="card-text label-1">
-                        Sample: Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices
+                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
                       </p>
 
                     </div>
@@ -565,8 +571,7 @@ const Home = () => {
               <div className="quote">”</div>
 
               <p className="headline-2 testi-text">
-                I wanted to thank you for inviting me down for that amazing dinner the other night. The food was
-                extraordinary.
+              Ik wilde je bedanken dat je me hebt uitgenodigd voor dat geweldige diner gisteravond. Het eten was buitengewoon.
               </p>
 
               <div className="wrapper">
@@ -768,9 +773,9 @@ const Home = () => {
                 Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
                 </address>
 
-                <a href="mailto:booking@grilli.com" className="body-4 contact-link">booking@gmail.com</a>
+                <a href="mailto:booking@grilli.com" className="body-4 contact-link">niang@gmail.com</a>
 
-                <a href="tel:+88123123456" className="body-4 contact-link">Booking Request : +88-123-123456</a>
+                <a href="tel:+31631034439" className="body-4 contact-link">Booking Request : +31 6 31034439</a>
 
                 <p className="body-4">
                 Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten
