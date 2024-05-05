@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import '../../assets/css/style.css';
+import axios from "axios";
 
 import Navbar from "../../Components/Navbar";
-
+import useExchangeRates from "../../assets/js/useExchangeRates";
 import {
     DummyImage,
     Gadogado,
@@ -11,9 +12,10 @@ import {
     Shape5,
     Shape6
 } from '../../assets/js/images';
-
+import { useTranslation } from "react-i18next";
 const Meals = () => {
     const [isNavbarActive, setIsNavbarActive] = useState(false);
+    const { calculateConvertedPrice } = useExchangeRates();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,8 +33,6 @@ const Meals = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-
 
     return (
         <div>
@@ -61,7 +61,7 @@ const Meals = () => {
                                             <a href="#" className="card-title">Rames Regular</a>
                                         </h3>
 
-                                        <span className="span title-2">€12.95</span>
+                                        <span className="span title-2">{calculateConvertedPrice(12.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">

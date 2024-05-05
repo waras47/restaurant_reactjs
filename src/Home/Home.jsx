@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import '../assets/css/style.css';
+import useTranslations from "../assets/js/useTranslations";
 
 import {
   Badge1,
@@ -45,6 +46,26 @@ const Home = () => {
   const [xOffset, setXOffset] = useState(0);
   const [yOffset, setYOffset] = useState(0);
 
+  const translations = useTranslations();
+  const {
+    traditionalHygines,
+    loveFood,
+    comeFamily,
+    delightExp,
+    inspiredSeasons,
+    AmazingDelicious,
+    tellStory,
+    bookTable,
+    flavorRoyalty,
+    topQuality,
+    appetizers,
+    breakfeast,
+    drink,
+    specialDish,
+    specialSelection,
+    deliciousMenu,
+    homeThanks,
+  } = translations.home;
  
   useEffect(() => {
     const handleMouseMove = (event) => {
@@ -151,21 +172,21 @@ const Home = () => {
   const slides = [
     {
       image: Slider1,
-      subtitle: 'Traditioneel & Hygiëne',
-      title: 'Voor de liefde van heerlijk eten',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
+      subtitle: `${traditionalHygines}`,
+      title: `${loveFood}`,
+      text: `${comeFamily}`,
     },
     {
       image: Slider2,
-      subtitle: 'Heerlijke ervaring',
-      title: 'Smaken geïnspireerd door de seizoenen',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
+      subtitle: `${delightExp}`,
+      title: `${inspiredSeasons}`,
+      text: `${comeFamily}`,
     },
     {
       image: Slider3,
-      subtitle: 'Verbazingwekkend & Heerlijk',
-      title: 'Waar elke smaak een verhaal vertelt',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
+      subtitle:`${AmazingDelicious}`,
+      title: `${tellStory}`,
+      text: `${comeFamily}`,
     },
   ];
 
@@ -216,7 +237,7 @@ const Home = () => {
               <a href="#" className="hero-btn has-after" style={{position: 'absolute'}}>
                 <img src={HeroIcon} width="48" height="48" alt="booking icon" />
 
-                <span className="label-2 text-center span">Reserveer een tafel</span>
+                <span className="label-2 text-center span">{bookTable}</span>
               </a>                
             </section>
 
@@ -224,9 +245,9 @@ const Home = () => {
             <section className="section service bg-black-10 text-center" aria-label="service">
               <div className="container">
 
-                <p className="section-subtitle label-2">Smaken voor Royalty</p>
+                <p className="section-subtitle label-2">{flavorRoyalty}</p>
 
-                <h2 className="headline-1 section-title">We bieden topkwaliteit</h2>
+                <h2 className="headline-1 section-title">{topQuality}</h2>
 
                 <p className="section-text">
                 Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
@@ -247,7 +268,7 @@ const Home = () => {
                       <div className="card-content">
 
                         <h3 className="title-4 card-title">
-                          <a href="#">Ontbijt</a>
+                          <a href="#">{breakfeast}</a>
                         </h3>
 
                         <a href="/snacks" className="btn-text hover-underline label-2">View Menu</a>
@@ -270,7 +291,7 @@ const Home = () => {
                       <div className="card-content">
 
                         <h3 className="title-4 card-title">
-                          <a href="#">Voorgerechten</a>
+                          <a href="#">{appetizers}</a>
                         </h3>
 
                         <a href="/meals" className="btn-text hover-underline label-2">View Menu</a>
@@ -293,7 +314,7 @@ const Home = () => {
                       <div className="card-content">
 
                         <h3 className="title-4 card-title">
-                          <a href="#">Dranken</a>
+                          <a href="#">{drink}</a>
                         </h3>
 
                         <a href="/drinks" className="btn-text hover-underline label-2">View Menu</a>
@@ -327,7 +348,7 @@ const Home = () => {
 
                   <img src={Badge1} width="28" height="41" loading="lazy" alt="badge" className="abs-img" />
 
-                  <p className="section-subtitle label-2">Speciaal gerecht</p>
+                  <p className="section-subtitle label-2">{specialDish}</p>
 
                   <h2 className="headline-1 section-title">Nasi Tumpeng</h2>
 
@@ -336,16 +357,8 @@ const Home = () => {
                   </p>
 
                   {/* <div className="wrapper">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 {/* 
                   <div className="wrapper">
->>>>>>> 8fbad81df9876535435ec9792d20c8dec75f5a34
-=======
-{/* 
-                  <div className="wrapper">
->>>>>>> 2601a49a7fb1191932e41740715730f45365630d
                     <del className="del body-3">$40.00</del>
 
                     <span className="span body-1">$20.00</span>
@@ -371,9 +384,9 @@ const Home = () => {
           <section className="section menu" aria-label="menu-label" id="menu">
             <div className="container">
 
-              <p className="section-subtitle text-center label-2">Speciale selectie</p>
+              <p className="section-subtitle text-center label-2">{specialSelection}</p>
 
-              <h2 className="headline-1 section-title text-center">Heerlijk menu</h2>
+              <h2 className="headline-1 section-title text-center">{deliciousMenu}</h2>
 
               <ul className="grid-list">
 
@@ -570,9 +583,7 @@ const Home = () => {
 
               <div className="quote">”</div>
 
-              <p className="headline-2 testi-text">
-              Ik wilde je bedanken dat je me hebt uitgenodigd voor dat geweldige diner gisteravond. Het eten was buitengewoon.
-              </p>
+              <p className="headline-2 testi-text">{homeThanks}</p>
 
               <div className="wrapper">
                 <div className="separator"></div>

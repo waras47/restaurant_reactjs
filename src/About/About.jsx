@@ -5,12 +5,18 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Navbar from "../Components/Navbar";
 import '../assets/css/style.css';
+import useTranslations from '../assets/js/useTranslations';
 
 import { AboutBanner, Badge2, Shape3 } from '../assets/js/images';
 
 
 const AboutUs = () => {
-    const {t}  = useTranslation();
+    const translations = useTranslations();
+    const {
+        ourStory,
+        flavorStory,
+        descStory
+    } = translations.about;
     const [xOffset, setXOffset] = useState(0);
     const [yOffset, setYOffset] = useState(0);
 
@@ -49,11 +55,11 @@ const AboutUs = () => {
 
                     <div className="about-content">
 
-                        <p className="label-2 section-subtitle" id="about-label">Our Story</p>
+                        <p className="label-2 section-subtitle" id="about-label">{ourStory}</p>
 
-                        <h2 className="headline-1 section-title">{t("title")}</h2>
+                        <h2 className="headline-1 section-title">{flavorStory}</h2>
 
-                        <p className="section-text">{t("description")}</p>
+                        <p className="section-text">{descStory}</p>
 
                         <div className="contact-label">Book Through Call</div>
 
@@ -94,8 +100,7 @@ const AboutUs = () => {
                         </div>
 
                     </figure>
-
-                    <img src={Shape3} width="197" height="194" loading="lazy" alt="" className="shape" />
+                    <img src={Shape3}   />
 
                 </div>
             </section>
