@@ -12,7 +12,7 @@ import {
     Shape5,
     Shape6
 } from '../../assets/js/images';
-import { useTranslation } from "react-i18next";
+
 const Meals = () => {
     const [isNavbarActive, setIsNavbarActive] = useState(false);
     const { calculateConvertedPrice } = useExchangeRates();
