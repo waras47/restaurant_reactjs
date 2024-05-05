@@ -29,13 +29,19 @@ import Badge2 from '../images/badge-2.png';
 
 import SpecialDish from '../images/special-dish-banner.jpg';
 
+import EsCendol from '../images/cendol.png';
 import DummyImage from '../images/dummy.png';
+import EsCampur from '../images/es-campur.png';
+import EsTeller from '../images/es-teller.png';
+import Gadogado from '../images/gado-gado.png';
 import Menu1 from '../images/menu-1.png';
 import Menu2 from '../images/menu-2.png';
 import Menu3 from '../images/menu-3.png';
 import Menu4 from '../images/menu-4.png';
 import Menu5 from '../images/menu-5.png';
 import Menu6 from '../images/menu-6.png';
+import NasiRames from '../images/nasi-rames.png';
+import SateMaaltijden from '../images/sate.png';
 
 import TestAvatar from '../images/testi-avatar.jpg';
 import TestimonialBg from '../images/testimonial-bg.jpg';
@@ -52,17 +58,12 @@ import Event3 from '../images/event-3.jpg';
 import FooterBg from '../images/footer-bg.jpg';
 
 export {
-  AboutAbs, AboutBanner, Badge1,
-  Badge2, DummyImage, Event1,
-  Event2,
-  Event3, Feature1,
-  Feature2,
-  Feature3,
-  Feature4, FooterBg, FormPattern, HeroIcon, Logo, Menu1, Menu2,
-  Menu3,
+  AboutAbs, AboutBanner, Badge1, Badge2, DummyImage, EsCampur, EsCendol, EsTeller, Event1, Event2, Event3, Feature1,
+  Feature2, Feature3,
+  Feature4, FooterBg, FormPattern, Gadogado, HeroIcon, Logo, Menu1, Menu2, Menu3,
   Menu4,
   Menu5,
-  Menu6, Service1,
+  Menu6, NasiRames, SateMaaltijden, Service1,
   Service2,
   Service3,
   Shape1,

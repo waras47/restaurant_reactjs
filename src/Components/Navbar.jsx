@@ -166,21 +166,21 @@ const Navbar = ({
   const slides = [
     {
       image: Slider1,
-      subtitle: 'Traditional & Hygiene',
-      title: 'For the love of delicious food',
-      text: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Traditioneel & Hygiëne',
+      title: 'Voor de liefde van heerlijk eten',
+      text: 'Kom met je gezin en geniet van het heerlijke eten',
     },
     {
       image: Slider2,
-      subtitle: 'Delightful Experience',
-      title: 'Flavors Inspired by the Seasons ',
-      text: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Heerlijke ervaring',
+      title: 'Smaken geïnspireerd door de seizoenen',
+      text: 'Kom met je gezin en geniet van het heerlijke eten',
     },
     {
       image: Slider3,
-      subtitle: 'Amazing & Delicious',
-      title: 'Where every flavor tells a story',
-      text: 'Come with family & feel the joy of mouthwatering food',
+      subtitle: 'Verbazingwekkend & Heerlijk',
+      title: 'Waar elke smaak een verhaal vertelt',
+      text: 'Kom met je gezin en geniet van het heerlijke eten',
     },
   ];
   return (
@@ -224,22 +224,22 @@ const Navbar = ({
               <span className="span">Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten</span>
             </div>
 
-            <a href="tel:+11234567890" className="topbar-item link">
+            <a href="tel:+31631034439" className="topbar-item link">
               <div className="icon">
                 <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
               </div>
 
-              <span className="span">+1 123 456 7890</span>
+              <span className="span">+31 6 31034439</span>
             </a>
 
             <div className="separator"></div>
 
-            <a href="mailto:booking@restaurant.com" className="topbar-item link">
+            <a href="mailto:niang@restaurant.com" className="topbar-item link">
               <div className="icon">
                 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
               </div>
 
-              <span className="span">booking@gmail.com</span>
+              <span className="span">niang@gmail.com</span>
             </a>
 
           </div>
@@ -251,7 +251,7 @@ const Navbar = ({
           <div className="container">
 
             <a href="#" className="logo">
-              <img src={Logo} width="250" height="100" alt="Grilli - Home" />
+              <img src={Logo} width="250" height="100" alt="niang - Home" />
             </a>
 
             <nav className={`navbar ${isNavbarOpen ? 'active' : ''}`} data-navbar>
@@ -261,7 +261,7 @@ const Navbar = ({
               </button>
 
               <a href="" className="logo">
-                <img src={Logo} width="160" height="50" alt="Grilli - Home" />
+                <img src={Logo} width="160" height="50" alt="niang - Home" />
               </a>
 
               <ul className="navbar-list">
@@ -361,14 +361,14 @@ const Navbar = ({
 
                 <p className="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
 
-                <a href="mailto:booking@grilli.com" className="body-4 sidebar-link">booking@grilli.com</a>
+                <a href="mailto:niang@gmail.com" className="body-4 sidebar-link">niang@gmail.com</a>
 
                 <div className="separator"></div>
 
                 <p className="contact-label">Booking Request</p>
 
-                <a href="tel:+88123123456" className="body-1 contact-number hover-underline">
-                  +88-123-123456
+                <a href="tel:+31631034439" className="body-1 contact-number hover-underline">
+                +31 6 31034439
                 </a>
               </div>
 

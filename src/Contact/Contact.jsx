@@ -58,8 +58,8 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
             }
         }
         hour = `${hourValue}:${minuteValue < 10 ? "0" + minuteValue : minuteValue} ${amPm}`;
-        const whatsappMessage = `Hallo i want booking%AName: ${name}%0ANumber: ${number}%0APerson: ${person}%0ADate: ${date}%0AHour: ${hour}%0AMessage: ${message}`;
-        const whatsappLink = `https://wa.me/6285291932739/?text=${whatsappMessage}`;
+        const whatsappMessage = `Hallo ik wil reserveren%0AName: ${name}%0ANumber: ${number}%0APerson: ${person}%0ADate: ${date}%0AHour: ${hour}%0AMessage: ${message}`;
+        const whatsappLink = `https://wa.me/+31631034439/?text=${whatsappMessage}`;
         window.open(whatsappLink, '_blank');
     };
 
@@ -74,11 +74,11 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                         <form action="" onSubmit={handleSubmit} className="form-left">
 
-                            <h2 className="headline-1 text-center">Online Reservation</h2>
+                            <h2 className="headline-1 text-center">Online Reserveren</h2>
 
                             <p className="form-text text-center">
-                                Booking request <a href="tel:+88123123456" className="link"> +62-123-123456 </a>
-                                or fill out the order form
+                            Reserveringsaanvraag <a href="tel:+31631034439" className="link"> +31 6 31034439 </a>
+                            of vul het bestelformulier in
                             </p>
 
                             <div className="input-wrapper">
@@ -150,9 +150,9 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                             <textarea name="message" placeholder="Message" autoComplete="off" className="input-field" onChange={handleChange}   ></textarea>
 
                             <button type="submit" className="btn btn-secondary">
-                                <span className="text text-1">Book A Table</span>
+                                <span className="text text-1">Reserveer een tafel</span>
 
-                                <span className="text text-2" aria-hidden="true">Book A Table</span>
+                                <span className="text text-2" aria-hidden="true">Reserveer een tafel</span>
                             </button>
 
                         </form>
@@ -161,9 +161,9 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
 
                             <h2 className="headline-1 text-center">Contact Us</h2>
 
-                            <p className="contact-label">Booking Request</p>
+                            <p className="contact-label"> Reserveringsaanvraag</p>
 
-                            <a href="tel:+88123123456" className="body-1 contact-number hover-underline">+62-123-123456</a>
+                            <a href="tel:+31631034439" className="body-1 contact-number hover-underline">+31 6 31034439</a>
 
                             <div className="separator"></div>
 

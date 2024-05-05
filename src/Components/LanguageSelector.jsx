@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const languages = [
-  { code: "en", lang: "English" },
-  { code: "nl", lang: "Dutch" },
+  { code: "en", lang: "EN" },
+  { code: "nl", lang: "NL" },
 ];
 
 const LanguageSelector = ({
