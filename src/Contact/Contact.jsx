@@ -88,7 +88,13 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
     let whatsLang = i18n.language === 'en' ? whatsEN : whatsNL;
     let  whatsappMessageText = "";
     if(i18n.language === whatsLang){
-        whatsappMessageText = `${whatsTitle} ${whatsName}: ${name}%0A${whatsNumber}: ${number}%0A${whatsPerson}: ${person}%0A${whatsDate}: ${date}%0A${whatsHour}: ${hour}%0A${whatsMessage}: ${message}`;
+        whatsappMessageText = `${whatsTitle} 
+                                \n${whatsName}: ${name}\n
+                                ${whatsNumber}: ${number}\n
+                                ${whatsPerson}: ${person}\n
+                                ${whatsDate}: ${date}\n
+                                ${whatsHour}: ${hour}\n
+                                ${whatsMessage}: ${message}`;
     }
     // Construct the WhatsApp message
     const whatsappLink = `https://wa.me/+6285291932739/?text=${encodeURIComponent(whatsappMessageText)}`;
