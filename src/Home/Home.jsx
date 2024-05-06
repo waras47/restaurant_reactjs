@@ -65,23 +65,17 @@ const Home = () => {
     specialSelection,
     deliciousMenu,
     homeThanks,
+    ourStrength,
+    chooseUs,
+    freshEnvironment,
+    hygienicFood,
+    skillChefs ,
+    eventParty,
+    bookingRequest,
+    newsOffers,
+    yourEmail,
+    subscribe
   } = translations.home;
- 
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      const { clientX, clientY } = event;
-      const x = (clientX / window.innerWidth - 0.5) * 40; // Adjust the multiplier for the parallax effect
-      const y = (clientY / window.innerHeight - 0.5) * 40; // Adjust the multiplier for the parallax effect
-      setXOffset(x);
-      setYOffset(y);
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-    };
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -606,9 +600,9 @@ const Home = () => {
           <section className="section features text-center" aria-label="features">
             <div className="container">
 
-              <p className="section-subtitle label-2">Why Choose Us</p>
+              <p className="section-subtitle label-2">{ourStrength}</p>
 
-              <h2 className="headline-1 section-title">Our Strength</h2>
+              <h2 className="headline-1 section-title">{chooseUs}</h2>
 
               <ul className="grid-list">
 
@@ -619,7 +613,7 @@ const Home = () => {
                       <img src={Feature1} width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
-                    <h3 className="title-2 card-title">Hygienic Food</h3>
+                    <h3 className="title-2 card-title">{hygienicFood}</h3>
 
                     <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
 
@@ -633,7 +627,7 @@ const Home = () => {
                       <img src={Feature2} width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
-                    <h3 className="title-2 card-title">Fresh Environment</h3>
+                    <h3 className="title-2 card-title">{freshEnvironment}</h3>
 
                     <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
 
@@ -647,7 +641,7 @@ const Home = () => {
                       <img src={Feature3} width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
-                    <h3 className="title-2 card-title">Skilled Chefs</h3>
+                    <h3 className="title-2 card-title">{skillChefs}</h3>
 
                     <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
 
@@ -661,7 +655,7 @@ const Home = () => {
                       <img src={Feature4}  width="100" height="80" loading="lazy" alt="icon" />
                     </div>
 
-                    <h3 className="title-2 card-title">Event & Party</h3>
+                    <h3 className="title-2 card-title">{eventParty}</h3>
 
                     <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
 
@@ -786,7 +780,7 @@ const Home = () => {
 
                 <a href="mailto:booking@grilli.com" className="body-4 contact-link">niang@gmail.com</a>
 
-                <a href="tel:+31631034439" className="body-4 contact-link">Booking Request : +31 6 31034439</a>
+                <a href="tel:+31631034439" className="body-4 contact-link">{bookingRequest} : +31 6 31034439</a>
 
                 <p className="body-4">
                 Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten
@@ -798,7 +792,7 @@ const Home = () => {
                   <div className="separator"></div>
                 </div>
 
-                <p className="title-1">Get News & Offers</p>
+                <p className="title-1">{newsOffers}</p>
 
                 <p className="label-1">
                   Subscribe us & Get <span className="span">20% Off.</span>
@@ -808,13 +802,13 @@ const Home = () => {
                   <div className="icon-wrapper">
                     <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-                    <input type="email" name="email_address" placeholder="Your email" autoComplete="off" className="input-field" />
+                    <input type="email" name="email_address" placeholder={yourEmail} autoComplete="off" className="input-field" />
                   </div>
 
                   <button type="submit" className="btn btn-secondary">
-                    <span className="text text-1">Subscribe</span>
+                    <span className="text text-1">{subscribe}</span>
 
-                    <span className="text text-2" aria-hidden="true">Subscribe</span>
+                    <span className="text text-2" aria-hidden="true">{subscribe}</span>
                   </button>
                 </form>
 

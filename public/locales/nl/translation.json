@@ -17,13 +17,23 @@
       "specialDish" : "Speciaal gerecht",
       "specialSelection" : "Speciale selectie",
       "deliciousMenu" : "Heerlijk Menu",
-      "homeThanks" : "Ik wilde je bedanken dat je me hebt uitgenodigd voor dat geweldige diner gisteravond. Het eten was buitengewoon."
+      "homeThanks" : "Ik wilde je bedanken dat je me hebt uitgenodigd voor dat geweldige diner gisteravond. Het eten was buitengewoon.",
+      "chooseUs" : "Waarom voor ons kiezen",
+      "ourStrength" : "Onze kracht",
+      "hygienicFood" : "Hygiënisch voedsel",
+      "Fresh Environment" : "Frisse omgeving",
+      "hygienicFood" : "Hygiënisch voedsel",
+      "skillChefs" : "Geschoolde koks",
+      "eventParty": "Event & Party",
+      "bookingRequest" : "Boekingsaanvraag",
+      "newsOffers" : "Nieuws & aanbiedingen ontvangen",
+      "yourEmail" : "Uw e-mail",
+      "subscribe" : "Abonneren"
     },
     "menu" : {
       "meals" : {
         "meal" : "Maaltijden",
-        "descRames" : "1 Soorten vlees of kip naar keuze, 1 groenten."
-        
+        "descRames" : "1 Soorten vlees of kip naar keuze, 1 groenten."    
       }
     },
     "about": {
@@ -44,8 +54,8 @@
       "location": "Locatie",
       "tuesdayToSaturday": "Dinsdag T/M Zaterdag",
       "sunday": "Zondag",
-      "whatsTitle": "Hallo ik wil reserveren",
-      "whatsName" : "Naam",
+      "whatsTitle": "Hallo Niang Restaurant, ik wil graag reserveren.",
+      "whatsName" : "Name",
       "whatsNumber" : "Telefoon",
       "whatsPerson" : "Persoon",
       "whatsDate" : "NamDatum",
@@ -53,5 +63,6 @@
       "whatsMessage" : "Bericht",
       "whatsEN": "en",
       "whatsNL": "nl"
+  
     }
   }

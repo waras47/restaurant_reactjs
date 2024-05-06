@@ -11,16 +11,16 @@ const useExchangeRates = () => {
     useEffect(() => {
         const fetchExchangeRates = async () => {
             try {
-                let base = "USD";
-                let convert = "EUR";             
+                let base = "EUR";
+                let convert = "USD";             
 
-                if (i18n.language === "nl") {
-                    base = "EUR";
-                    convert = "USD";
+                if (i18n.language === "en") {
+                    base = "USD";
+                    convert = "EUR";
                 }
                 
-                const response = await axios.get(`https://v6.exchangerate-api.com/v6/95954953d77f35226659c5b6/pair/${base}/${convert}`);
-                const conversionResult = parseFloat(response.data.conversion_rate).toFixed(2);
+                const response = await axios.get(`https://v6.exchangerate-api.com/v6/95954953d77f35226659c5b6/pair/EUR/USD`);
+                const conversionResult = response.data.conversion_rate;
                 
                 setExchangeRates(conversionResult);
                 setBaseCurrency(base);
@@ -36,15 +36,18 @@ const useExchangeRates = () => {
     }, [i18n.language]);
 
     const calculateConvertedPrice = (price) => {
-        const rate = parseFloat(exchangeRates);
-        const convertedPrice = parseFloat(price + rate).toFixed(2);
-
-        const priceDefault = parseFloat(price).toFixed(2) 
+        let rate = exchangeRates;
+        let convertedPrice = parseFloat(price * rate).toFixed(2);
+        const priceDefault = parseFloat(price).toFixed(2) ;
+        
         if (baseCurrency === "EUR") {
             return `€${priceDefault} `;
-        } else {
-            return `$${convertedPrice}`;
-        }
+        } 
+
+        if(baseCurrency === "USD"){
+        return `$${convertedPrice}`
+    }
+   
     };
 
     return { calculateConvertedPrice };

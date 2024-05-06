@@ -22,9 +22,21 @@ const useTranslations = () => {
             specialSelection : t("home.specialSelection"),
             deliciousMenu : t("home.deliciousMenu"),
             homeThanks : t("home.homeThanks"),
+            chooseUs: t("home.chooseUs"),
+            ourStrength: t("home.ourStrength"),
+            hygienicFood : t("home.hygienicFood"),
+            freshEnvironment : t("home.freshEnvironment"),
+            hygienicFood :t("home.hygienicFood"),
+            skillChefs :t("home.skillChefs"),
+            eventParty: t("home.eventParty"),
+            bookingRequest : t("home.bookingRequest"),
+            newsOffers :t("home.newsOffers"),
+            yourEmail : t("home.yourEmail"),
+            subscribe : t("home.subscribe"),
         },
         menu:{
-          meals: t("menu.meals")
+          meal: t("menu.meals.meal"),
+          descRames:  t("menu.meals.descRames"),
         },
         about: {
           ourStory: t("about.ourStory"),
