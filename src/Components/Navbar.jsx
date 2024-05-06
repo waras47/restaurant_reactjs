@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import '../assets/css/dropdown.css';
 import '../assets/css/style.css';
+import useTranslations from "../assets/js/useTranslations";
 
 import {
   setActiveDropdown,
@@ -40,10 +41,15 @@ const Navbar = ({
   setIsNavbarOpen
 }) => {
 
+  
   const navigate = useNavigate();
   const location = useLocation();
   const dropdownRef = useRef(null);
 
+  const translations = useTranslations();
+  const {
+      meal
+    } = translations.menu; 
   useEffect(() => {
     const handleLoad = () => {
       setIsLoaded(true);
@@ -124,13 +130,6 @@ const Navbar = ({
     };
   }, [lastScrollPos]);
 
-  useEffect(() => {
-    const autoSlideInterval = setInterval(() => {
-      setCurrentSlidePos((prevPos) => (prevPos >= slides.length - 1 ? 0 : prevPos + 1));
-    }, 7000);
-
-    return () => clearInterval(autoSlideInterval);
-  }, []);
 
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
@@ -163,34 +162,9 @@ const Navbar = ({
   };
   
 
-  const slides = [
-    {
-      image: Slider1,
-      subtitle: 'Traditioneel & Hygiëne',
-      title: 'Voor de liefde van heerlijk eten',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
-    },
-    {
-      image: Slider2,
-      subtitle: 'Heerlijke ervaring',
-      title: 'Smaken geïnspireerd door de seizoenen',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
-    },
-    {
-      image: Slider3,
-      subtitle: 'Verbazingwekkend & Heerlijk',
-      title: 'Waar elke smaak een verhaal vertelt',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
-    },
-  ];
   return (
     <div>
-        <Helmet>
-        {/* Preload slider images */}
-        {slides.map((slide, index) => (
-          <link key={index} rel="preload" as="image" href={slide.image} />
-        ))}
-      </Helmet>
+
 
       {/* Preloader component */}
       <div className={`preload ${isLoaded ? 'loaded' : ''}`} data-preaload>
@@ -289,7 +263,7 @@ const Navbar = ({
                       <ul>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/meals')}`} onClick={() => handleMenuClick('/meals')}>
-                            <Link to="/meals" ><span className="span">Maaltijden</span></Link>
+                            <Link to="/meals" ><span className="span">{meal}</span></Link>
                           </a>
                         </li>
                         <li>
