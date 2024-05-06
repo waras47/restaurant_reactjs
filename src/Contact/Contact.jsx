@@ -91,7 +91,7 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
         whatsappMessageText = `${whatsTitle} \n${whatsName}: ${name}\n${whatsNumber}: ${number}\n${whatsPerson}: ${person}\n${whatsDate}: ${date}\n${whatsHour}: ${hour}\n${whatsMessage}: ${message}`;
     }
     // Construct the WhatsApp message
-    const whatsappLink = `https://wa.me/+6285291932739/?text=${encodeURIComponent(whatsappMessageText)}`;
+    const whatsappLink = `https://wa.me/+31631034439/?text=${encodeURIComponent(whatsappMessageText)}`;
     window.open(whatsappLink, '_blank');
     };
 
