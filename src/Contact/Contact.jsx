@@ -85,11 +85,13 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
         }
         hour = `${hourValue}:${minuteValue < 10 ? "0" + minuteValue : minuteValue} ${amPm}`;
           // Get the WhatsApp message format based on the selected language
-   whatsTitle = i18n.language === 'en' ? whatsEN : whatsNL;
-
+    const whatsLang = i18n.language === 'en' ? whatsEN : whatsNL;
+    let  whatsappMessageText = "";
+    if(i18n.language === whatsLang){
+        whatsappMessageText = `${whatsTitle}${whatsName}: ${name}%0A${whatsNumber}: ${number}%0A${whatsPerson}: ${person}%0A${whatsDate}: ${date}%0A${whatsHour}: ${hour}%0A${whatsMessage}: ${message}`;
+    }
     // Construct the WhatsApp message
-    const whatsappMessageText = `${whatsTitle}%0A${whatsName}: ${name}%0A${whatsNumber}: ${number}%0A${whatsPerson}: ${person}%0A${whatsDate}: ${date}%0A${whatsHour}: ${hour}%0A${whatsMessage}: ${message}`;
-    const whatsappLink = `https://wa.me/+31631034439/?text=${encodeURIComponent(whatsappMessageText)}`;
+    const whatsappLink = `https://wa.me/+6285291932739/?text=${encodeURIComponent(whatsappMessageText)}`;
     window.open(whatsappLink, '_blank');
     };
 
