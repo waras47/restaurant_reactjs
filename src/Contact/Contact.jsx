@@ -82,8 +82,8 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
             if (hourValue > 12) {
                 hourValue -= 12;
             }
+        hour = `${hourValue}:${minuteValue < 10 ? "0" + minuteValue : minuteValue} ${amPm}`;
         }
-    hour = `${hourValue}:${minuteValue < 10 ? "0" + minuteValue : minuteValue} ${amPm}`;
           // Get the WhatsApp message format based on the selected language
     let whatsLang = i18n.language === 'en' ? whatsEN : whatsNL;
     let  whatsappMessageText = "";
