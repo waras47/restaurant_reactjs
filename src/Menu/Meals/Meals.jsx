@@ -3,7 +3,7 @@ import '../../assets/css/style.css';
 import axios from "axios";
 
 import Navbar from "../../Components/Navbar";
-import useExchangeRates from "../../assets/js/useExchangeRates";
+// import useExchangeRates from "../../assets/js/useExchangeRates";
 import {
     DummyImage,
     Gadogado,
@@ -15,7 +15,7 @@ import {
 
 const Meals = () => {
     const [isNavbarActive, setIsNavbarActive] = useState(false);
-    const { calculateConvertedPrice } = useExchangeRates();
+    // const { calculateConvertedPrice } = useExchangeRates();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -61,7 +61,7 @@ const Meals = () => {
                                             <a href="#" className="card-title">Rames Regular</a>
                                         </h3>
 
-                                        <span className="span title-2">{calculateConvertedPrice(12.00)}</span>
+                                        {/* <span className="span title-2">{calculateConvertedPrice(12.00)}</span> */}
                                     </div>
 
                                     <p className="card-text label-1">

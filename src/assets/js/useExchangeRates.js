@@ -33,7 +33,7 @@ const useExchangeRates = () => {
 
         fetchExchangeRates();
 
-    }, []);
+    }, [i18n.language]);
 
     const calculateConvertedPrice = (price) => {
         const rate = parseFloat(exchangeRates);
@@ -47,7 +47,7 @@ const useExchangeRates = () => {
         }
     };
 
-    return { exchangeRates, baseCurrency, convertCurrency, calculateConvertedPrice };
+    return { calculateConvertedPrice };
 };
 
 export default useExchangeRates;
