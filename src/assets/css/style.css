@@ -188,7 +188,7 @@ body {
 
 body.loaded { overflow: overlay; }
 
-body.nav-active { overflow: auto; }
+body.nav-active { overflow: auto; -webkit-tap-highlight-color: transparent; }
 
 ::-webkit-scrollbar { width: 5px; }
 
@@ -630,6 +630,7 @@ body.nav-active { overflow: auto; }
 .nav-open-btn {
   padding: 12px;
   padding-inline-end: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-open-btn .line {
@@ -640,6 +641,7 @@ body.nav-active { overflow: auto; }
   transform-origin: left;
   animation: menuBtn 400ms ease-in-out alternate infinite;
 }
+
 
 @keyframes menuBtn {
   0% { transform: scaleX(1); }
@@ -678,6 +680,7 @@ body.nav-active { overflow: auto; }
   border-radius: var(--radius-circle);
   margin-inline-start: auto;
   margin-block: 30px 20px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar .close-btn ion-icon { --ionicon-stroke-width: 40px; }
@@ -703,6 +706,7 @@ body.nav-active { overflow: auto; }
   text-transform: uppercase;
   padding-block: 10px;
   max-width: unset;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar-link::after { display: none; }
