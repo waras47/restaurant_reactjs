@@ -1,5 +1,25 @@
-{
-  "title" : "Every Flavor Tells a Story",
-  "description": "In the heart of the bustling city, Niang offers authentic Indonesian culinary offerings. Prepared with love and care, the dishes embody Indonesia's diverse culinary landscape. From the fiery rendang of Padang to the fragrant fried rice of Java, each dish tells a story of tradition and flavor. Niang is not just another restaurant; it is a cultural landmark, where guests from diverse backgrounds come together to laugh and connect over a bowl of delicious food. With every bite, Niang delivers the flavors of Indonesia, leaving guests enchanted and longing for more."
+  {
+    "contact": {
+    "onlineReservation" : "Online Reserveren",
+    "bookingRequest" : "Reservering Aanvraag",
+    "fillForm": "of vul het bestelformulier in",
+    "yourName": "Uw naam",
+    "phoneNumber" : "Telefoon Nummer",
+    "numberPersons": "Aantal Personen",
+    "message": "Bericht",
+    "bookTable": "Reserver Een Tafel",
+    "reservationRequest": "Reservering Aanvraag",
+    "location": "Locatie",
+    "tuesdayToSaturday": "Dinsdag T/M Zaterdag",
+    "sunday": "Zondag",
+    "whatsTitle": "Hallo ik wil reserveren",
+    "whatsName" : "Name",
+    "whatsNumber" : "Telefoon",
+    "whatsPerson" : "Persoon",
+    "whatsDate" : "NamDatum",
+    "whatsHour" : "Uur",
+    "whatsMessage" : "Bericht",
+    "whatsEN": "en",
+    "whatsNL": "nl"
+  }
 }
-
