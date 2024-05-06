@@ -32,8 +32,36 @@
     },
     "menu" : {
       "meals" : {
-        "meal" : "Maaltijden",
-        "descRames" : "1 Soorten vlees of kip naar keuze, 1 groenten."    
+        "meal1" : "Maaltijden",
+        "descRames" : "1 Soorten vlees of kip naar keuze, 1 groenten.",
+        "descRamesIkan":" garnalen of makreel, 1 groente.",
+        "descRamesSpecial":"2 soorten vlees of kip, 2 groenten.",
+        "descRamesIkanSpecial":"1 soort vlees of kip & garnalen of makreel, 2 groenten.",
+        "descNiangSpesial":"2 soorten vlees of kip, 1 stokje saté en ei + mini lumpia.,",
+        "descNiangIkanSpesial":"2 soorten vlees of kip, garnalen of makreel, 2 groenten, ei & stokje saté + mini lumpia.", 
+        "descGado": "Gestoomde groenten met pindasaus.",
+        "descSoto":"Witte rijst/mihoen met kip, taugé & ei, bok choy, ui & frietjes.",
+        "descSate":"3 Sticks kipsaté.",
+        "descNasiRamesVeg":"2 Groenten + Tempeschotels.",
+        "descSateMeal":"3 Shakes kipsaté met witte rijst of nasi bami en groenten.",
+        "vegetary" : "Vegetarisch",
+        "meal2" : "Maaltijd",
+        "special": "speciaal"
+      },
+      "meatVegetable": {
+
+      },
+      "Adverts" : {
+
+      },
+      "sandwich": {
+
+      },
+      "snack": {
+
+      },
+      "drink" : {
+        
       }
     },
     "about": {

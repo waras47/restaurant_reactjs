@@ -35,8 +35,32 @@ const useTranslations = () => {
             subscribe : t("home.subscribe"),
         },
         menu:{
-          meal: t("menu.meals.meal"),
+          //meal
+          meal1: t("menu.meals.meal1"),
           descRames:  t("menu.meals.descRames"),
+          descRamesIkan:  t("menu.meals.descRamesIkan"),
+          descRamesSpecial:  t("menu.meals.descRamesSpecial"),
+          descRamesIkanSpecial:  t("menu.meals.descRamesIkanSpecial"),
+          descNiangSpesial:  t("menu.meals.descNiangSpesial"),
+          descNiangIkanSpesial:  t("menu.meals.descNiangIkanSpesial"),
+          descGado:  t("menu.meals.descGado"),
+          descSoto:  t("menu.meals.descSoto"),
+          descSate:  t("menu.meals.descSate"),
+          descNasiRamesVeg:  t("menu.meals.descNasiRamesVeg"),
+          descSateMeal:  t("menu.meals.descSateMeal"),
+          vegetary:  t("menu.meals.vegetary"),
+          meal2:  t("menu.meals.meal2"),
+          special:  t("menu.meals.special"),
+
+          //meals and vegetables
+
+          //adverts
+
+          //sandwich
+
+          //snack
+
+          //drink
         },
         about: {
           ourStory: t("about.ourStory"),

@@ -20,8 +20,21 @@ const Meals = () => {
 
     const translations = useTranslations();
     const {
-        meal,
-        descRames
+        meal1,
+        descRames,
+        descRamesIkan,
+        descRamesSpecial,
+        descRamesIkanSpecial,
+        descNiangSpesial,
+        descNiangIkanSpesial,
+        descGado,
+        descSoto,
+        descSate,
+        descNasiRamesVeg,
+        descSateMeal,
+        vegetary,
+        meal2,
+        special
       } = translations.menu; 
     useEffect(() => {
         const handleScroll = () => {
@@ -46,7 +59,7 @@ const Meals = () => {
 
             <section className="section menu" aria-label="menu-label" id="menu" style={{ marginTop: '150px' }}>
                 <div className="container">
-                    <h2 className="headline-1 section-title text-center">{meal}</h2>
+                    <h2 className="headline-1 section-title text-center">{meal1}</h2>
 
                     <ul className="grid-list">
                         <li>
@@ -90,11 +103,11 @@ const Meals = () => {
                                             <a href="#" className="card-title">Gado - gado</a>
                                         </h3>
 
-                                        <span className="span title-2">€9.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(9.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        Gestoomde groenten met pindasaus.
+                                        {descGado}
                                     </p>
 
                                 </div>
@@ -116,11 +129,11 @@ const Meals = () => {
                                             <a href="#" className="card-title">Rames Ikan</a>
                                         </h3>
 
-                                        <span className="span title-2">€13.95</span>
+                                        <span className="span title-2">{calculateConvertedPrice(13.95)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        Garnalen of makreel, 1 groenten.
+                                        {descRamesIkan}
                                     </p>
 
                                 </div>
@@ -142,11 +155,11 @@ const Meals = () => {
                                             <a href="#" className="card-title">Soto Ayam</a>
                                         </h3>
 
-                                        <span className="span title-2">€9.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(9.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        Witte rijst/mihoen met kip, tauge en ejeren, gebokken, uitjen chipsfrietjes.
+                                        {descSoto}
                                     </p>
 
                                 </div>
@@ -165,14 +178,14 @@ const Meals = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Rames Speciaal</a>
+                                            <a href="#" className="card-title">Rames {special}</a>
                                         </h3>
 
-                                        <span className="span title-2">€15.95</span>
+                                        <span className="span title-2">{calculateConvertedPrice(15.95)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        2 Soorten vlees of kip, 2 groenten,
+                                        {descRamesSpecial}
                                     </p>
 
                                 </div>
@@ -194,11 +207,11 @@ const Meals = () => {
                                             <a href="#" className="card-title">Sate Ayam Los</a>
                                         </h3>
 
-                                        <span className="span title-2">€9.00</span>
+                                        <span className="span title-2"> {calculateConvertedPrice(9.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        3 Stokjes kipsate.
+                                        {descSate}
                                     </p>
 
                                 </div>
@@ -217,14 +230,14 @@ const Meals = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Rames Ikan Speciaal</a>
+                                            <a href="#" className="card-title">Rames Ikan {special}</a>
                                         </h3>
 
-                                        <span className="span title-2">€17.50</span>
+                                        <span className="span title-2"> {calculateConvertedPrice(17.50)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        1 Soort vlees of kip & garnalen of makreel, 2 groenten.
+                                        {descRamesIkanSpecial}
                                     </p>
 
                                 </div>
@@ -243,14 +256,14 @@ const Meals = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Nasi Rames Vegetarisch</a>
+                                            <a href="#" className="card-title">Nasi Rames {vegetary}</a>
                                         </h3>
 
-                                        <span className="span title-2">€11.00</span>
+                                        <span className="span title-2"> {calculateConvertedPrice(11.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        2 Groenten + Tempe Gerecht
+                                        {descNasiRamesVeg}
                                     </p>
 
                                 </div>
@@ -269,14 +282,14 @@ const Meals = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Niang Speciaal</a>
+                                            <a href="#" className="card-title">Niang {special}</a>
                                         </h3>
 
-                                        <span className="span title-2">€18.50</span>
+                                        <span className="span title-2"> {calculateConvertedPrice(18.50)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        2 Soorten vlees of kip, 1 stokje sate en ei + mini lumpia.
+                                        {descNiangSpesial}
                                     </p>
 
                                 </div>
@@ -295,14 +308,14 @@ const Meals = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Sate Ayam Maaltijd</a>
+                                            <a href="#" className="card-title">Sate Ayam {meal2}</a>
                                         </h3>
 
-                                        <span className="span title-2">€12.00</span>
+                                        <span className="span title-2"> {calculateConvertedPrice(12.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        3 Shakjes kipsate met witte rijst of nasi bami en groenten.
+                                        {descSateMeal}
                                     </p>
 
                                 </div>
@@ -322,15 +335,14 @@ const Meals = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Niang Ikan Speciaal</a>
+                                            <a href="#" className="card-title">Niang Ikan {special}</a>
                                         </h3>
 
-                                        <span className="span title-2">€20.95</span>
+                                        <span className="span title-2"> {calculateConvertedPrice(20.95)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        2 Soorten vlees of kip, garnalen of makreel, 2 groenten,
-                                        ei & stokje sate + mini lumpia.
+                                        {descNiangIkanSpesial}
                                     </p>
 
                                 </div>

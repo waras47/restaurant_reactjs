@@ -31,8 +31,35 @@
     },
     "menu" : {
       "meals" : {
-        "meal" : "Meals",
-        "descRames" : "1 types of meat or chicken of your choice, 1 vegetables."
+        "meal1" : "Meals",
+        "descRames" : "1 types of meat or chicken of your choice, 1 vegetables.",
+        "descRamesIkan":" shrimp or mackerel, 1 vegetable.",
+        "descRamesSpecial":"2 types of meat or chicken, 2 vegetables.",
+        "descRamesIkanSpecial":"1 kind of meat or chicken & shrimp or mackerel, 2 vegetables.",
+        "descNiangSpesial":"2 types of meat or chicken, 1 stick of satay and egg + mini lumpia.,",
+        "descNiangIkanSpesial":"2 types of meat or chicken, shrimp or mackerel, 2 vegetables, egg & stick of sate + mini lumpia.",
+        "descGado": "Steamed vegetables with peanut sauce.",
+        "descSoto":"White rice/mihun with chicken, bean sprouts & egg, bok choy, onion & French fry fries.",
+        "descSate":"3 Sticks of chicken satay.",
+        "descNasiRamesVeg":"2 Vegetables + Tempe Dishes.",
+        "descSateMeal":"3 Shakes of chicken satay with white rice or nasi noodles and vegetables.",
+        "vegetary" : "Vegetarian",
+        "meal2" : "meal",
+        "special": "special"
+      },
+      "meatVegetable": {
+
+      },
+      "Adverts" : {
+
+      },
+      "sandwich": {
+
+      },
+      "snack": {
+
+      },
+      "drink" : {
         
       }
     },
