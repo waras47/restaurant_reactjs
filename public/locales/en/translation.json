@@ -48,19 +48,19 @@
         "special": "special"
       },
       "meatVegetable": {
-
+        "meatVegetables": "Meat & Vegetables"
       },
-      "Adverts" : {
-
+      "adverts" : {
+        "advert" : "Adverts"
       },
       "sandwich": {
-
+        "sandwiches" : "sandwiches"
       },
       "snack": {
-
+        "snacks" : "snaks"
       },
       "drink" : {
-        
+        "drinks" : "drinks"
       }
     },
     "about": {

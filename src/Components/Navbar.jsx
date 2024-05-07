@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
+import useTranslations from "../assets/js/useTranslations";
 import '../assets/css/dropdown.css';
 import '../assets/css/style.css';
 
@@ -19,9 +19,6 @@ import {
 
 import {
   Logo,
-  Slider1,
-  Slider2,
-  Slider3,
 } from '../assets/js/images';
 import LanguageSelector from './LanguageSelector';
 
@@ -43,6 +40,15 @@ const Navbar = ({
   const navigate = useNavigate();
   const location = useLocation();
   const dropdownRef = useRef(null);
+  const translations = useTranslations();
+    const {
+        advert,
+        sandwiches,
+        snack,
+        drink,
+        meal1,
+        meatVegetables
+      } = translations.menu; 
 
   useEffect(() => {
     const handleLoad = () => {
@@ -124,14 +130,6 @@ const Navbar = ({
     };
   }, [lastScrollPos]);
 
-  useEffect(() => {
-    const autoSlideInterval = setInterval(() => {
-      setCurrentSlidePos((prevPos) => (prevPos >= slides.length - 1 ? 0 : prevPos + 1));
-    }, 7000);
-
-    return () => clearInterval(autoSlideInterval);
-  }, []);
-
   const toggleNavbar = () => {
     setIsNavbarOpen(!isNavbarOpen);
     document.body.classList.toggle('nav-active');
@@ -141,7 +139,6 @@ const Navbar = ({
   const handleNavigation = (route) => {
     toggleNavbar();
     navigate(route);
-    // setIsNavbarOpen(!isNavbarOpen);
   };
 
   const isActiveLink = (route) => {
@@ -150,12 +147,8 @@ const Navbar = ({
 
   const handleDropdownToggle = (dropdownName) => {
     setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
-    // setIsNavbarOpen(true); 
+
   };
-  
-  // const handleDropdownHover = (dropdownName) => {
-  //   setActiveDropdown(dropdownName);
-  // };
 
   const handleMenuClick = async (route) => {
     handleNavigation(route);
@@ -163,34 +156,10 @@ const Navbar = ({
   };
   
 
-  const slides = [
-    {
-      image: Slider1,
-      subtitle: 'Traditioneel & Hygiëne',
-      title: 'Voor de liefde van heerlijk eten',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
-    },
-    {
-      image: Slider2,
-      subtitle: 'Heerlijke ervaring',
-      title: 'Smaken geïnspireerd door de seizoenen',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
-    },
-    {
-      image: Slider3,
-      subtitle: 'Verbazingwekkend & Heerlijk',
-      title: 'Waar elke smaak een verhaal vertelt',
-      text: 'Kom met je gezin en geniet van het heerlijke eten',
-    },
-  ];
+
   return (
     <div>
-        <Helmet>
-        {/* Preload slider images */}
-        {slides.map((slide, index) => (
-          <link key={index} rel="preload" as="image" href={slide.image} />
-        ))}
-      </Helmet>
+
 
       {/* Preloader component */}
       <div className={`preload ${isLoaded ? 'loaded' : ''}`} data-preaload>
@@ -290,32 +259,32 @@ const Navbar = ({
                       <ul>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/meals')}`} onClick={() => handleMenuClick('/meals')}>
-                            <Link to="/meals" ><span className="span">Maaltijden</span></Link>
+                            <Link to="/meals" ><span className="span">{meal1}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/meat-vegetables')}`} onClick={() => handleMenuClick('/meat-vegetables')}>
-                            <Link to="/meat-vegetables" ><span className="span">Vlees & Groenten</span></Link>
+                            <Link to="/meat-vegetables" ><span className="span">{meatVegetables}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/side-dishes')}`} onClick={() => handleMenuClick('/side-dishes')}>
-                            <Link to="/side-dishes" ><span className="span">Bijgerchten</span></Link>
+                            <Link to="/side-dishes" ><span className="span">{advert}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/sandwich')}`} onClick={() => handleMenuClick('/sandwich')}>
-                            <Link to="/sandwich" ><span className="span">Broodjes</span></Link>
+                            <Link to="/sandwich" ><span className="span">{sandwiches}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/snacks')}`} onClick={() => handleMenuClick('/snacks')}>
-                            <Link to="/snacks" ><span className="span">Snacks</span></Link>
+                            <Link to="/snacks" ><span className="span">{snack}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/drinks')}`} onClick={() => handleMenuClick('/drinks')}>
-                            <Link to="/drinks" ><span className="span">Dranken</span></Link>
+                            <Link to="/drinks" ><span className="span">{drink}</span></Link>
                           </a>
                         </li>
                       </ul>

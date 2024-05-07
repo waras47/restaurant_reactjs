@@ -53,14 +53,16 @@ const useTranslations = () => {
           special:  t("menu.meals.special"),
 
           //meals and vegetables
-
+          meatVegetables : t("menu.meatVegetable.meatVegetables"),
           //adverts
-
+          advert:  t("menu.adverts.advert"),
           //sandwich
-
+          sandwiches : t("menu.sandwich.sandwiches"),
           //snack
+          snack: t("menu.snack.snacks"),
 
           //drink
+          drink: t("menu.drink.drinks"),
         },
         about: {
           ourStory: t("about.ourStory"),
