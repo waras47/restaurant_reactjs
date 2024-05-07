@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import '../assets/css/style.css';
 import useTranslations from "../assets/js/useTranslations";
+import { Link } from 'react-router-dom';
 
 import {
   Badge1,
@@ -847,17 +848,10 @@ const Home = () => {
                 <li>
                   <a href="#" className="label-2 footer-link hover-underline">Instagram</a>
                 </li>
-
-                {/* <li>
-                  <a href="#" className="label-2 footer-link hover-underline">Twitter</a>
-                </li>
-
                 <li>
-                  <a href="#" className="label-2 footer-link hover-underline">Youtube</a>
-                </li> */}
-
-                <li>
-                  <a href="#" className="label-2 footer-link hover-underline">Google Map</a>
+                  <a href="" className="label-2 footer-link hover-underline">
+                  <Link to="/contact#map" ><span className="span">Google Map</span></Link>
+                  </a>
                 </li>
 
               </ul>

@@ -49,19 +49,19 @@
         "special": "speciaal"
       },
       "meatVegetable": {
-
+        "meatVegetables" : "Vlees & Groenten"
       },
       "Adverts" : {
-
+        "advert" : "Bijgerchten"
       },
       "sandwich": {
-
+        "sandwiches" : "Broodjes"
       },
       "snack": {
-
+        "snacks" : "snaks"
       },
       "drink" : {
-        
+        "drinks" : "Dranken"
       }
     },
     "about": {

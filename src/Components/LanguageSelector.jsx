@@ -101,7 +101,7 @@ const LanguageSelector = ({
         }}      
       >
         {languages.map((lng) => (
-          <option key={lng.code} value={lng.code} >
+          <option key={lng.code} value={lng.code} style={{background:"hsla(180, 2%, 8%, 1)", fontWeight: "900"}}>
             {lng.lang}
           </option>
         ))}
