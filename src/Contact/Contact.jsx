@@ -173,13 +173,13 @@ const Contact = ({ isNavbarActive, setIsNavbarActive }) => {
                             <p className="contact-label">{tuesdayToSaturday}</p>
 
                             <p className="body-4">
-                            12.00 - 20.00
+                            12:00 PM - 8:00 PM
                             </p>
 
                             <p className="contact-label">{sunday}</p>
 
                             <p className="body-4">
-                            14.00 - 20.00
+                            2:00 PM - 8:00 PM
                             </p>
 
                         </div>
