@@ -6,7 +6,11 @@ import Navbar from "../../Components/Navbar";
 import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
+    BakmiGoreng,
     DummyImage,
+    NasiGoreng,
+    NasiKuning,
+    NasiPutih,
     Shape5,
     Shape6
 } from '../../assets/js/images';
@@ -64,7 +68,7 @@ const SideDishes = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiPutih} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -116,7 +120,7 @@ const SideDishes = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiGoreng} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -168,7 +172,7 @@ const SideDishes = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={NasiKuning} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
                                 <div>
@@ -219,7 +223,7 @@ const SideDishes = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={BakmiGoreng} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 

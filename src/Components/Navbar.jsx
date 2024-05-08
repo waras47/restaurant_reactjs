@@ -208,7 +208,7 @@ const Navbar = ({
                 <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
               </div>
 
-              <span className="span">niang@gmail.com</span>
+              <span className="span">info@tasteofniang.nl</span>
             </a>
 
           </div>
@@ -330,7 +330,7 @@ const Navbar = ({
 
                 <p className="body-4 navbar-text">Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten</p>
 
-                <a href="mailto:niang@gmail.com" className="body-4 sidebar-link">niang@gmail.com</a>
+                <a href="mailto:niang@gmail.com" className="body-4 sidebar-link">info@tasteofniang.nl</a>
 
                 <div className="separator"></div>
 
