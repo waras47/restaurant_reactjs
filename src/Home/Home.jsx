@@ -3,7 +3,7 @@ import Navbar from '../Components/Navbar';
 import '../assets/css/style.css';
 import useTranslations from "../assets/js/useTranslations";
 import { Link } from 'react-router-dom';
-
+import emailjs from '@emailjs/browser';
 import {
   Badge1,
   Feature1,
@@ -163,7 +163,11 @@ const Home = () => {
     setCurrentSlidePos((prevPos) => (prevPos <= 0 ? slides.length - 1 : prevPos - 1));
   };
 
-
+  const sendEmail = (e) => {
+    e.preventDefault();
+    
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID , process.env.REACT_APP_TEMPLATE_ID , process.env.REACT_APP_PUBLIC_KEY)
+  }
   const slides = [
     {
       image: Slider1,
@@ -799,11 +803,11 @@ const Home = () => {
                   Subscribe us & Get <span className="span">20% Off.</span>
                 </p>
 
-                <form action="" className="input-wrapper">
+                <form action="" className="input-wrapper" onSubmit={sendEmail}>
                   <div className="icon-wrapper">
                     <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
-                    <input type="email" name="email_address" placeholder={yourEmail} autoComplete="off" className="input-field" />
+                    <input type="email" name="email_from" id="emailFrom"  placeholder={yourEmail} autoComplete="off" className="input-field" />
                   </div>
 
                   <button type="submit" className="btn btn-secondary">
