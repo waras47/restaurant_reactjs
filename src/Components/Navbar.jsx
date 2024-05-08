@@ -325,11 +325,10 @@ const Navbar = ({
                 <p className="headline-1 navbar-title">Visit Us</p>
 
                 <address className="body-4">
-                  Restaurant St, Delicious City, <br />
-                  London 9578, UK
+                Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509.
                 </address>
 
-                <p className="body-4 navbar-text">Open: 9.30 am - 2.30pm</p>
+                <p className="body-4 navbar-text">Dinsdag T/M Zaterdag 12.00 - 20.00 | Zondag 14.00 - 20.00 Maandag Gesloten</p>
 
                 <a href="mailto:niang@gmail.com" className="body-4 sidebar-link">niang@gmail.com</a>
 

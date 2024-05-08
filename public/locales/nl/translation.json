@@ -1,35 +1,52 @@
-
-  {
-    "home" : {
-      "traditionalHygines" : "Traditioneel & Hygiëne",
-      "loveFood": "Voor de liefde van heerlijk eten",
-      "comeFamily" : "Kom met je gezin en geniet van het heerlijke eten",
-      "delightExp": "Heerlijke ervaring",
-      "inspiredSeasons": "Smaken geïnspireerd door de seizoenen",
-      "AmazingDelicious": "Verbazingwekkend & Heerlijk",
-      "tellStory": "Waar elke smaak een verhaal vertelt",
-      "bookTable": "Reserver Een Tafel",
-      "flavorRoyalty" : "Smaken Voor Royalty",
-      "topQuality" : "We Bieden Topkwaliteit",
-      "breakfeast" : "Ontbijt",
-      "appetizers" : "Voorgerechten",
-      "drink" : "Dranken",
-      "specialDish" : "Speciaal gerecht",
-      "specialSelection" : "Speciale selectie",
-      "deliciousMenu" : "Heerlijk Menu",
-      "homeThanks" : "Ik wilde je bedanken dat je me hebt uitgenodigd voor dat geweldige diner gisteravond. Het eten was buitengewoon.",
-      "chooseUs" : "Waarom voor ons kiezen",
-      "ourStrength" : "Onze kracht",
-      "hygienicFood" : "Hygiënisch voedsel",
-      "Fresh Environment" : "Frisse omgeving",
-      "hygienicFood" : "Hygiënisch voedsel",
-      "skillChefs" : "Geschoolde koks",
-      "eventParty": "Event & Party",
-      "bookingRequest" : "Boekingsaanvraag",
-      "newsOffers" : "Nieuws & aanbiedingen ontvangen",
-      "yourEmail" : "Uw e-mail",
-      "subscribe" : "Abonneren"
+{
+  "home": {
+    "traditionalHygines": "Traditioneel & Hygiëne",
+    "loveFood": "Voor de liefde van heerlijk eten",
+    "comeFamily": "Kom met je gezin en geniet van het heerlijke eten",
+    "delightExp": "Heerlijke ervaring",
+    "inspiredSeasons": "Smaken geïnspireerd door de seizoenen",
+    "AmazingDelicious": "Verbazingwekkend & Heerlijk",
+    "tellStory": "Waar elke smaak een verhaal vertelt",
+    "bookTable": "Reserver Een Tafel",
+    "flavorRoyalty": "Smaken Voor Royalty",
+    "topQuality": "We Bieden Topkwaliteit",
+    "breakfeast": "Ontbijt",
+    "appetizers": "Voorgerechten",
+    "drink": "Dranken",
+    "specialDish": "Speciaal gerecht",
+    "specialSelection": "Speciale selectie",
+    "deliciousMenu": "Heerlijk Menu",
+    "homeThanks": "Ik wilde je bedanken dat je me hebt uitgenodigd voor dat geweldige diner gisteravond. Het eten was buitengewoon.",
+    "chooseUs": "Waarom voor ons kiezen",
+    "ourStrength": "Onze kracht",
+    "hygienicFood": "Hygiënisch voedsel",
+    "Fresh Environment": "Frisse omgeving",
+    "skillChefs": "Geschoolde koks",
+    "eventParty": "Event & Party",
+    "bookingRequest": "Boekingsaanvraag",
+    "newsOffers": "Nieuws & aanbiedingen ontvangen",
+    "yourEmail": "Uw e-mail",
+    "subscribe": "Abonneren"
+  },
+  "menu": {
+    "meals": {
+      "meal1": "Maaltijden",
+      "descRames": "1 Soorten vlees of kip naar keuze, 1 groenten.",
+      "descRamesIkan": " garnalen of makreel, 1 groente.",
+      "descRamesSpecial": "2 soorten vlees of kip, 2 groenten.",
+      "descRamesIkanSpecial": "1 soort vlees of kip & garnalen of makreel, 2 groenten.",
+      "descNiangSpesial": "2 soorten vlees of kip, 1 stokje saté en ei + mini lumpia.,",
+      "descNiangIkanSpesial": "2 soorten vlees of kip, garnalen of makreel, 2 groenten, ei & stokje saté + mini lumpia.",
+      "descGado": "Gestoomde groenten met pindasaus.",
+      "descSoto": "Witte rijst/mihoen met kip, taugé & ei, bok choy, ui & frietjes.",
+      "descSate": "3 Sticks kipsaté.",
+      "descNasiRamesVeg": "2 Groenten + Tempeschotels.",
+      "descSateMeal": "3 Shakes kipsaté met witte rijst of nasi bami en groenten.",
+      "vegetary": "Vegetarisch",
+      "meal2": "Maaltijd",
+      "special": "speciaal"
     },
+<<<<<<< Updated upstream
     "menu" : {
       "meals" : {
         "meal1" : "Maaltijden",
@@ -63,34 +80,90 @@
       "drink" : {
         "drinks" : "Dranken"
       }
+=======
+    "meatVegetable": {
+      "meatVegetables": "Vlees & Groente Keuzes Maaltijden",
+      "menuRondvlees": "Rondvlees / Daging",
+      "descRondvlees": "- Rendang 🌶︎ - Vlees stoofpot - Belado vlees 🌶︎ - Balinese Ronde",
+      "menuGroenten": "Groenten / Sayur",
+      "descGroenten": "- Aubergine belado 🌶︎🌶︎🌶︎ - Sambal Goreng Boontjes 🌶︎ - Sayur Lodeh - Tjap tjai",
+      "menuVis": "Vis / Ikan",
+      "descVis": "- Garnalen - Bakkeljauw",
+      "menuVegetarisch": "Vegetarisch",
+      "descVegetarisch": "- Gedroogde zoete tempeh",
+      "menuKip": "Kip / Ayam",
+      "descKip": "- Belado kip 🌶︎ - Ketjap kip - Zoetzure kip - Cashew kip - Char Siu kip - Surinaamse kip kerrie"
+>>>>>>> Stashed changes
     },
-    "about": {
-      "ourStory": "Ons Verhaal",
-      "flavorStory": "Elke Smaak Vertelt Een Verhaal",
-      "descStory": " In het hart van een bruisende stad lokt Niang met de aantrekkingskracht van authentieke Indonesische keuken. Onder leiding van Ibu Ratna worden de gerechten met liefde en precisie bereid, waarbij ze het diverse culinaire landschap van het land belichamen. Van het vurige rendang uit Padang tot de geurige nasi goreng van Java, elk gerecht vertelt een verhaal van traditie en smaak. Niang is niet zomaar een restaurant; het is een culturele oase, waar gasten van alle rangen en standen samenkomen om te lachen en verbindingen te smeden over dampende kommen vol heerlijkheden. Met elke hap geeft Niang een voorproefje van de ziel van Indonesië, waardoor gasten betoverd worden en verlangen naar meer."
+    "sideDishes": {
+      "titleSideDishes": "Bijgerchten",
+      "menuWitteRijstPortie": "Witte Rijst Portie",
+      "menuPindasaus": "Pindasaus",
+      "menuNasiGorengBakje": "Nasi Goreng Bakje",
+      "menuPindasausGroot": "Pindasaus Groot",
+      "menuNasiKuningBakje": "Nasi Kuning Bakje",
+      "menuAtjarKomkommer": "Atjar Komkommer",
+      "menuBamiGorengBakje": "Bami Goreng Bakje",
+      "menuAtjarKomkommerGroot": "Atjar KomkommerGroot",
+      "menuKroepokEmpingCassave": "Kroepok Emping / Cassave"
     },
-    "contact": {
-      "onlineReservation" : "Online Reserveren",
-      "bookingRequest" : "Reservering Aanvraag",
-      "fillForm": "of vul het bestelformulier in",
-      "yourName": "Uw naam",
-      "phoneNumber" : "Telefoon Nummer",
-      "numberPersons": "Aantal Personen",
-      "message": "Bericht",
-      "bookTable": "Reserver Een Tafel",
-      "reservationRequest": "Reservering Aanvraag",
-      "location": "Locatie",
-      "tuesdayToSaturday": "Dinsdag T/M Zaterdag",
-      "sunday": "Zondag",
-      "whatsTitle": "Hallo Niang Restaurant, ik wil graag reserveren.",
-      "whatsName" : "Name",
-      "whatsNumber" : "Telefoon",
-      "whatsPerson" : "Persoon",
-      "whatsDate" : "NamDatum",
-      "whatsHour" : "Uur",
-      "whatsMessage" : "Bericht",
-      "whatsEN": "en",
-      "whatsNL": "nl"
-  
+    "sandwiches": {
+      "titleSandwiches": "Surinaamse Broodjes",
+      "menuBroodjeKerrie": "Broodje Kerrie / Tempe / Veg",
+      "menuBroodjeRendang": "Broodje Rendang",
+      "menuBroodjeKipKerrie": "Broodje Kip Kerrie",
+      "menuBroodjeSemurDaging": "Broodje Semur Daging",
+      "menuBroodjeKipCharSieuw": "Broodje Kip Char Sieuw",
+      "menuBroodjeGarnalen": "Broodje Garnalen",
+      "menuBroodjeDynamite": "Broodje Dynamite",
+      "menuBroodjeKousebandGarnalen": "Broodje Kouseband Garnalen",
+      "menuBroodjeBakkeljauw": "Broodje Bakkeljauw"
+    },
+    "snack": {
+      "titleSnacks": "Hapjes",
+      "menuLemper": "Lemper (Kip)",
+      "menuVietnameseLoempia": "Vietnamese Loempia",
+      "menuRisolles": "Risolles (Kip)",
+      "menuSpekkoekStuk": "Spekkoek Stuk",
+      "menuPastel": "Pastel (Kip)",
+      "menuIndischKroket": "Indisch Kroket",
+      "menuMiniLoempia": "Mini Loempia's (Vegetarisch)"
+    },
+    "drink": {
+      "titleDranken": "Dranken",
+      "menuFrisdrankInBuk": "Frisdrank In Buk",
+      "menuEsCampur": "Es Campur",
+      "menuFrisdrankInPetflessen": "Frisdrank In Petflessen",
+      "menuEsTeller": "Es Teller",
+      "menuEsTjendol": "Es Tjendol"
     }
+  },
+  "about": {
+    "ourStory": "Ons Verhaal",
+    "flavorStory": "Elke Smaak Vertelt Een Verhaal",
+    "descStory": " In het hart van een bruisende stad lokt Niang met de aantrekkingskracht van authentieke Indonesische keuken. Onder leiding van Ibu Ratna worden de gerechten met liefde en precisie bereid, waarbij ze het diverse culinaire landschap van het land belichamen. Van het vurige rendang uit Padang tot de geurige nasi goreng van Java, elk gerecht vertelt een verhaal van traditie en smaak. Niang is niet zomaar een restaurant; het is een culturele oase, waar gasten van alle rangen en standen samenkomen om te lachen en verbindingen te smeden over dampende kommen vol heerlijkheden. Met elke hap geeft Niang een voorproefje van de ziel van Indonesië, waardoor gasten betoverd worden en verlangen naar meer."
+  },
+  "contact": {
+    "onlineReservation": "Online Reserveren",
+    "bookingRequest": "Reservering Aanvraag",
+    "fillForm": "of vul het bestelformulier in",
+    "yourName": "Uw naam",
+    "phoneNumber": "Telefoon Nummer",
+    "numberPersons": "Aantal Personen",
+    "message": "Bericht",
+    "bookTable": "Reserver Een Tafel",
+    "reservationRequest": "Reservering Aanvraag",
+    "location": "Locatie",
+    "tuesdayToSaturday": "Dinsdag T/M Zaterdag",
+    "sunday": "Zondag",
+    "whatsTitle": "Hallo Niang Restaurant, ik wil graag reserveren.",
+    "whatsName": "Name",
+    "whatsNumber": "Telefoon",
+    "whatsPerson": "Persoon",
+    "whatsDate": "NamDatum",
+    "whatsHour": "Uur",
+    "whatsMessage": "Bericht",
+    "whatsEN": "en",
+    "whatsNL": "nl"
   }
+}

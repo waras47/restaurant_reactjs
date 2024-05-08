@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import '../../assets/css/style.css';
+import useTranslations from "../../assets/js/useTranslations";
 
 import Navbar from "../../Components/Navbar";
+import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
     DummyImage,
@@ -14,6 +16,17 @@ import {
 
 const Drinks = () => {
     const [isNavbarActive, setIsNavbarActive] = useState(false);
+    const { calculateConvertedPrice } = useExchangeRates();
+
+    const translations = useTranslations();
+    const {
+        titleDranken,
+        menuFrisdrankInBuk,
+        menuEsCampur,
+        menuFrisdrankInPetflessen,
+        menuEsTeller,
+        menuEsTjendol,
+      } = translations.menu; 
 
     useEffect(() => {
         const handleScroll = () => {
@@ -42,7 +55,7 @@ const Drinks = () => {
                 <div className="container">
 
                     {/* <p className="section-subtitle text-center label-2">Special Selection</p> */}
-                    <h2 className="headline-1 section-title text-center">Dranken</h2>
+                    <h2 className="headline-1 section-title text-center">{titleDranken}</h2>
                     {/* <p className="headline-3 section-title text-center">Keuze uit witte rust, Nasi kuning, Bami of Nasi</p> */}
 
                     <ul className="grid-list">
@@ -58,10 +71,10 @@ const Drinks = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Frisdrank In Buk</a>
+                                            <a href="#" className="card-title">{menuFrisdrankInBuk}</a>
                                         </h3>
 
-                                        <span className="span title-2">€2.50</span>
+                                        <span className="span title-2">{calculateConvertedPrice(2.50)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -84,10 +97,10 @@ const Drinks = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Es Campur</a>
+                                            <a href="#" className="card-title">{menuEsCampur}</a>
                                         </h3>
 
-                                        <span className="span title-2">€5.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(5.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -110,10 +123,10 @@ const Drinks = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Frisdrank In Petflessen</a>
+                                            <a href="#" className="card-title">{menuFrisdrankInPetflessen}</a>
                                         </h3>
 
-                                        <span className="span title-2">€3.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(3.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -136,10 +149,10 @@ const Drinks = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Es Teller</a>
+                                            <a href="#" className="card-title">{menuEsTeller}</a>
                                         </h3>
 
-                                        <span className="span title-2">€5.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(5.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -162,10 +175,10 @@ const Drinks = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Es Tjendol</a>
+                                            <a href="#" className="card-title">{menuEsTjendol}</a>
                                         </h3>
 
-                                        <span className="span title-2">€5.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(5.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
