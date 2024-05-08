@@ -1,11 +1,11 @@
+import emailjs from '@emailjs/browser';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 import '../assets/css/style.css';
-import useTranslations from "../assets/js/useTranslations";
-import { Link } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
 import {
   Badge1,
+  DummyImage,
   Feature1,
   Feature2,
   Feature3,
@@ -13,12 +13,6 @@ import {
   FooterBg,
   HeroIcon,
   Logo,
-  Menu1,
-  Menu2,
-  Menu3,
-  Menu4,
-  Menu5,
-  Menu6,
   Service1,
   Service2,
   Service3,
@@ -37,6 +31,7 @@ import {
   TestAvatar,
   TestimonialBg
 } from '../assets/js/images';
+import useTranslations from "../assets/js/useTranslations";
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -393,7 +388,7 @@ const Home = () => {
                   <div className="menu-card hover:card">
 
                     <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={Menu1} width="100" height="100" loading="lazy" alt="Greek Salad"
+                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Greek Salad"
                         className="img-cover" />
                     </figure>
 
@@ -422,7 +417,7 @@ const Home = () => {
                   <div className="menu-card hover:card">
 
                     <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={Menu2} width="100" height="100" loading="lazy" alt="Lasagne"
+                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Lasagne"
                         className="img-cover" />
                     </figure>
 
@@ -449,7 +444,7 @@ const Home = () => {
                   <div className="menu-card hover:card">
 
                     <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={Menu3} width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
+                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
                         className="img-cover" />
                     </figure>
 
@@ -477,7 +472,7 @@ const Home = () => {
                   <div className="menu-card hover:card">
 
                     <figure className="card-banner img-holder" style={{ width: '100', height: '100px'}}>
-                      <img src={Menu4} width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
+                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
                         className="img-cover" />
                     </figure>
 
@@ -504,7 +499,7 @@ const Home = () => {
                   <div className="menu-card hover:card">
 
                     <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={Menu5} width="100" height="100" loading="lazy" alt="Olivas Rellenas"
+                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Olivas Rellenas"
                         className="img-cover" />
                     </figure>
 
@@ -531,7 +526,7 @@ const Home = () => {
                   <div className="menu-card hover:card">
 
                     <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={Menu6} width="100" height="100" loading="lazy" alt="Opu Fish"
+                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
                         className="img-cover" />
                     </figure>
 
@@ -783,7 +778,7 @@ const Home = () => {
                 Bergse Dorpstraat 102 3054 GG Rotterdam 010 750 9509
                 </address>
 
-                <a href="mailto:booking@grilli.com" className="body-4 contact-link">niang@gmail.com</a>
+                <a href="mailto:booking@grilli.com" className="body-4 contact-link">info@tasteofniang.nl</a>
 
                 <a href="tel:+31631034439" className="body-4 contact-link">{bookingRequest} : +31 6 31034439</a>
 

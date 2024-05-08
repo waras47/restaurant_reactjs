@@ -6,12 +6,13 @@ import Navbar from "../../Components/Navbar";
 import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
-    DummyImage,
     EsCampur,
     EsCendol,
     EsTeller,
+    Petflessen,
     Shape5,
-    Shape6
+    Shape6,
+    TehBotol
 } from '../../assets/js/images';
 
 const Drinks = () => {
@@ -63,7 +64,7 @@ const Drinks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={TehBotol} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -115,7 +116,7 @@ const Drinks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Petflessen} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
