@@ -2,9 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
-import useTranslations from "../assets/js/useTranslations";
 import '../assets/css/dropdown.css';
 import '../assets/css/style.css';
+import useTranslations from "../assets/js/useTranslations";
 
 import {
   setActiveDropdown,
@@ -42,10 +42,10 @@ const Navbar = ({
   const dropdownRef = useRef(null);
   const translations = useTranslations();
     const {
-        advert,
-        sandwiches,
-        snack,
-        drink,
+      titleSideDishes,
+      titleSandwiches,
+        titleSnacks,
+        titleDranken,
         meal1,
         meatVegetables
       } = translations.menu; 
@@ -269,22 +269,22 @@ const Navbar = ({
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/side-dishes')}`} onClick={() => handleMenuClick('/side-dishes')}>
-                            <Link to="/side-dishes" ><span className="span">{advert}</span></Link>
+                            <Link to="/side-dishes" ><span className="span">{titleSideDishes}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/sandwich')}`} onClick={() => handleMenuClick('/sandwich')}>
-                            <Link to="/sandwich" ><span className="span">{sandwiches}</span></Link>
+                            <Link to="/sandwich" ><span className="span">{titleSandwiches}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/snacks')}`} onClick={() => handleMenuClick('/snacks')}>
-                            <Link to="/snacks" ><span className="span">{snack}</span></Link>
+                            <Link to="/snacks" ><span className="span">{titleSnacks}</span></Link>
                           </a>
                         </li>
                         <li>
                           <a href="" className={`navbar-link hover-underline ${isActiveLink('/drinks')}`} onClick={() => handleMenuClick('/drinks')}>
-                            <Link to="/drinks" ><span className="span">{drink}</span></Link>
+                            <Link to="/drinks" ><span className="span">{titleDranken}</span></Link>
                           </a>
                         </li>
                       </ul>
