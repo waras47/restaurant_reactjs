@@ -52,49 +52,6 @@ const useTranslations = () => {
       meal2: t("menu.meals.meal2"),
       special: t("menu.meals.special"),
 
-<<<<<<< Updated upstream
-          //meals and vegetables
-          meatVegetables : t("menu.meatVegetable.meatVegetables"),
-          //adverts
-          advert:  t("menu.adverts.advert"),
-          //sandwich
-          sandwiches : t("menu.sandwich.sandwiches"),
-          //snack
-          snack: t("menu.snack.snacks"),
-
-          //drink
-          drink: t("menu.drink.drinks"),
-        },
-        about: {
-          ourStory: t("about.ourStory"),
-          flavorStory: t("about.flavorStory"),
-          descStory: t("about.descStory"),
-        },
-        contact: {
-            onlineReservation: t("contact.onlineReservation"),
-            bookingRequest: t("contact.bookingRequest"),
-            fillForm: t("contact.fillForm"),
-            yourName: t("contact.yourName"),
-            phoneNumber: t("contact.phoneNumber"),
-            numberPersons: t("contact.numberPersons"),
-            message: t("contact.message"),
-            bookTable: t("contact.bookTable"),
-            reservationRequest: t("contact.reservationRequest"),
-            location: t("contact.location"),
-            tuesdayToSaturday: t("contact.tuesdayToSaturday"),
-            sunday: t("contact.sunday"),
-            whatsTitle: t("contact.whatsTitle"),
-            whatsName: t("contact.whatsName"),
-            whatsNumber: t("contact.whatsNumber"),
-            whatsPerson: t("contact.whatsPerson"),
-            whatsDate: t("contact.whatsDate"),
-            whatsHour: t("contact.whatsHour"),
-            whatsMessage: t("contact.whatsMessage"),
-            whatsEN: t("contact.whatsEN"),
-            whatsNL: t("contact.whatsNL")
-        } 
-    };
-=======
       //meals and vegetables
       meatVegetables: t("menu.meatVegetable.meatVegetables"),
       menuRondvlees: t("menu.meatVegetable.menuRondvlees"),
@@ -150,7 +107,6 @@ const useTranslations = () => {
       menuFrisdrankInPetflessen: t("menu.drink.menuFrisdrankInPetflessen"),
       menuEsTeller: t("menu.drink.menuEsTeller"),
       menuEsTjendol: t("menu.drink.menuEsTjendol"),
->>>>>>> Stashed changes
 
     },
     about: {

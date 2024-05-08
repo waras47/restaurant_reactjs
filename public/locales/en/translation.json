@@ -47,21 +47,6 @@
         "special": "special"
       },
       "meatVegetable": {
-<<<<<<< Updated upstream
-        "meatVegetables": "Meat & Vegetables"
-      },
-      "adverts" : {
-        "advert" : "Adverts"
-      },
-      "sandwich": {
-        "sandwiches" : "sandwiches"
-      },
-      "snack": {
-        "snacks" : "snaks"
-      },
-      "drink" : {
-        "drinks" : "drinks"
-=======
         "meatVegetables": "Meat & Vegetables Choices Meals",
         "menuRondvlees": "Round meat / Daging",
         "descRondvlees": "- Rendang 🌶︎ - Meat Stews - Belado Meat 🌶︎ - Balinese Ronde",
@@ -115,7 +100,6 @@
         "menuFrisdrankInPetflessen": "Soft Drinks in cap Bottles",
         "menuEsTeller": "Ice Teller",
         "menuEsTjendol": "Ice Tjendol"
->>>>>>> Stashed changes
       }
     },
     "about": {
