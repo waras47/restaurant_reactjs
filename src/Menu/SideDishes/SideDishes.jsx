@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import '../../assets/css/style.css';
+import useTranslations from "../../assets/js/useTranslations";
 
 import Navbar from "../../Components/Navbar";
+import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
     DummyImage,
@@ -11,6 +13,21 @@ import {
 
 const SideDishes = () => {
     const [isNavbarActive, setIsNavbarActive] = useState(false);
+    const { calculateConvertedPrice } = useExchangeRates();
+
+    const translations = useTranslations();
+    const {
+        titleSideDishes,
+        menuWitteRijstPortie,
+        menuPindasaus,
+        menuNasiGorengBakje,
+        menuPindasausGroot,
+        menuNasiKuningBakje,
+        menuAtjarKomkommer,
+        menuBamiGorengBakje,
+        menuAtjarKomkommerGroot,
+        menuKroepokEmpingCassave
+    } = translations.menu;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,7 +56,7 @@ const SideDishes = () => {
                 <div className="container">
 
                     {/* <p className="section-subtitle text-center label-2">Special Selection</p> */}
-                    <h2 className="headline-1 section-title text-center">Bijgerchten</h2>
+                    <h2 className="headline-1 section-title text-center">{titleSideDishes}</h2>
                     {/* <p className="headline-3 section-title text-center">Keuze uit witte rust, Nasi kuning, Bami of Nasi</p> */}
 
                     <ul className="grid-list">
@@ -55,10 +72,10 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Witte Rijst Portie</a>
+                                            <a href="#" className="card-title">{menuWitteRijstPortie}</a>
                                         </h3>
 
-                                        <span className="span title-2">€5.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(5.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -81,10 +98,10 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Pindasaus</a>
+                                            <a href="#" className="card-title">{menuPindasaus}</a>
                                         </h3>
 
-                                        <span className="span title-2">€3.50</span>
+                                        <span className="span title-2">{calculateConvertedPrice(3.50)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -107,10 +124,10 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Nasi Goreng Bakje</a>
+                                            <a href="#" className="card-title">{menuNasiGorengBakje}</a>
                                         </h3>
 
-                                        <span className="span title-2">€6.50</span>
+                                        <span className="span title-2">{calculateConvertedPrice(6.50)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -133,10 +150,10 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Pindasaus Groot</a>
+                                            <a href="#" className="card-title">{menuPindasausGroot}</a>
                                         </h3>
 
-                                        <span className="span title-2">€6.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(6.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -158,36 +175,10 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Nasi Kuning Bakje</a>
+                                            <a href="#" className="card-title">{menuNasiKuningBakje}</a>
                                         </h3>
 
-                                        <span className="span title-2">€6.00</span>
-                                    </div>
-
-                                    <p className="card-text label-1">
-                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </li>
-                        <li>
-                            <div className="menu-card hover:card">
-
-                                <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
-                                        className="img-cover" />
-                                </figure>
-
-                                <div>
-
-                                    <div className="title-wrapper">
-                                        <h3 className="title-3">
-                                            <a href="#" className="card-title">Atjar Komkommer</a>
-                                        </h3>
-
-                                        <span className="span title-2">€2.20</span>
+                                        <span className="span title-2">{calculateConvertedPrice(6.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -210,10 +201,10 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Bami Goreng Bakje</a>
+                                            <a href="#" className="card-title">{menuAtjarKomkommer}</a>
                                         </h3>
 
-                                        <span className="span title-2">€6.00</span>
+                                        <span className="span title-2">{calculateConvertedPrice(2.20)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -236,10 +227,10 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Atjar Komkommer Groot</a>
+                                            <a href="#" className="card-title">{menuBamiGorengBakje}</a>
                                         </h3>
 
-                                        <span className="span title-2">€4.20</span>
+                                        <span className="span title-2">{calculateConvertedPrice(6.00)}</span>
                                     </div>
 
                                     <p className="card-text label-1">
@@ -262,10 +253,36 @@ const SideDishes = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Kroepok Emping / Cassave</a>
+                                            <a href="#" className="card-title">{menuAtjarKomkommerGroot}</a>
                                         </h3>
 
-                                        <span className="span title-2">€3.50</span>
+                                        <span className="span title-2">{calculateConvertedPrice(4.20)}</span>
+                                    </div>
+
+                                    <p className="card-text label-1">
+                                        {/* 1 Soorten vlees of kip naar keuze, 1 groenten. */}
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
+                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">{menuKroepokEmpingCassave}</a>
+                                        </h3>
+
+                                        <span className="span title-2">{calculateConvertedPrice(3.50)}</span>
                                     </div>
 
                                     <p className="card-text label-1">

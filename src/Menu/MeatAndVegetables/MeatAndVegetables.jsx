@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import '../../assets/css/style.css';
+import useTranslations from "../../assets/js/useTranslations";
 
 import Navbar from "../../Components/Navbar";
+import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
     DummyImage,
@@ -11,6 +13,22 @@ import {
 
 const MeatAndVegetables = () => {
     const [isNavbarActive, setIsNavbarActive] = useState(false);
+    const { calculateConvertedPrice } = useExchangeRates();
+
+    const translations = useTranslations();
+    const {
+        meatVegetables,
+        menuRondvlees,
+        descRondvlees,
+        menuGroenten,
+        descGroenten,
+        menuVis,
+        descVis,
+        menuVegetarisch,
+        descVegetarisch,
+        menuKip,
+        descKip
+    } = translations.menu;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,8 +57,7 @@ const MeatAndVegetables = () => {
                 <div className="container">
 
                     {/* <p className="section-subtitle text-center label-2">Special Selection</p> */}
-                    <h2 className="headline-1 section-title text-center">Vlees & Groenten
-                        Keuzen Maaltijden</h2>
+                    <h2 className="headline-1 section-title text-center">{meatVegetables}</h2>
                     {/* <p className="headline-3 section-title text-center">Keuze uit witte rust, Nasi kuning, Bami of Nasi</p> */}
 
                     <ul className="grid-list">
@@ -56,17 +73,14 @@ const MeatAndVegetables = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Rondvlees / Daging</a>
+                                            <a href="#" className="card-title">{menuRondvlees}</a>
                                         </h3>
 
-                                        <span className="span title-2">€4.50 per 100g</span>
+                                        <span className="span title-2">{calculateConvertedPrice(4.50)} per 100g</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        - Rendang
-                                        - Semur Daging
-                                        - Belado Daging
-                                        - Rund Bali
+                                        {descRondvlees}
                                     </p>
 
                                 </div>
@@ -85,15 +99,14 @@ const MeatAndVegetables = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Vis / Ikan</a>
+                                            <a href="#" className="card-title">{menuVis}</a>
                                         </h3>
 
-                                        <span className="span title-2">€4.75 per 100g</span>
+                                        <span className="span title-2">{calculateConvertedPrice(4.75)} per 100g</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        - Garnalen
-                                        - Bakkeljauw
+                                        {descVis}
                                     </p>
 
                                 </div>
@@ -112,17 +125,14 @@ const MeatAndVegetables = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Groenten / Sayur</a>
+                                            <a href="#" className="card-title">{menuGroenten}</a>
                                         </h3>
 
-                                        <span className="span title-2">€3.25 per 100g</span>
+                                        <span className="span title-2">{calculateConvertedPrice(3.25)} per 100g</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        - Terong (Aubergine) belado
-                                        - Sambal Goreng Boonrjes
-                                        - Sayur Lodeh
-                                        - Tjap tjai
+                                        {descGroenten}
                                     </p>
 
                                 </div>
@@ -141,15 +151,15 @@ const MeatAndVegetables = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Vegetarisch</a>
+                                            <a href="#" className="card-title">{menuVegetarisch}</a>
                                         </h3>
 
-                                        <span className="span title-2">€3.50 per 100g</span>
+                                        <span className="span title-2">{calculateConvertedPrice(3.50)} per 100g</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        - Tempe Manis Kering
-                                     
+                                    {descVegetarisch}
+
                                     </p>
 
                                 </div>
@@ -168,19 +178,14 @@ const MeatAndVegetables = () => {
 
                                     <div className="title-wrapper">
                                         <h3 className="title-3">
-                                            <a href="#" className="card-title">Kip / Ayam</a>
+                                            <a href="#" className="card-title">{menuKip}</a>
                                         </h3>
 
-                                        <span className="span title-2">€3.95 per 100g</span>
+                                        <span className="span title-2">{calculateConvertedPrice(3.95)} per 100g</span>
                                     </div>
 
                                     <p className="card-text label-1">
-                                        - Ayam Belado
-                                        - Ayam Ketjap
-                                        - Ayam Zoetzuur
-                                        - Kip Cashewnoten
-                                        - Kip Char Siu
-                                        - Surinaamse Kip Kerrie
+                                      {descKip}
                                     </p>
 
                                 </div>
