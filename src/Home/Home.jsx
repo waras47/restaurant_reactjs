@@ -54,6 +54,8 @@ const Home = () => {
     bookTable,
     flavorRoyalty,
     topQuality,
+    descTopQuality,
+    descNasiTumpeng,
     appetizers,
     breakfeast,
     drink,
@@ -64,9 +66,13 @@ const Home = () => {
     ourStrength,
     chooseUs,
     freshEnvironment,
+    descFreshEnvironment,
     hygienicFood,
-    skillChefs ,
+    descHygienicFood,
+    skillChefs,
+    descSkillChefs,
     eventParty,
+    descdescEventParty,
     bookingRequest,
     newsOffers,
     yourEmail,
@@ -244,7 +250,7 @@ const Home = () => {
                 <h2 className="headline-1 section-title">{topQuality}</h2>
 
                 <p className="section-text">
-                Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
+                {descTopQuality}
                 </p>
 
                 <ul className="grid-list">
@@ -347,7 +353,7 @@ const Home = () => {
                   <h2 className="headline-1 section-title">Nasi Tumpeng</h2>
 
                   <p className="section-text">
-                  Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
+                  {descNasiTumpeng}
                   </p>
 
                   {/* <div className="wrapper">
@@ -615,7 +621,7 @@ const Home = () => {
 
                     <h3 className="title-2 card-title">{hygienicFood}</h3>
 
-                    <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                    <p className="label-1 card-text">{descHygienicFood}</p>
 
                   </div>
                 </li>
@@ -629,7 +635,7 @@ const Home = () => {
 
                     <h3 className="title-2 card-title">{freshEnvironment}</h3>
 
-                    <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                    <p className="label-1 card-text">{descFreshEnvironment}</p>
 
                   </div>
                 </li>
@@ -643,7 +649,7 @@ const Home = () => {
 
                     <h3 className="title-2 card-title">{skillChefs}</h3>
 
-                    <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                    <p className="label-1 card-text">{descSkillChefs}</p>
 
                   </div>
                 </li>
@@ -657,7 +663,7 @@ const Home = () => {
 
                     <h3 className="title-2 card-title">{eventParty}</h3>
 
-                    <p className="label-1 card-text">Lorem Ipsum is simply dummy printing and typesetting.</p>
+                    <p className="label-1 card-text">{descdescEventParty}</p>
 
                   </div>
                 </li>
