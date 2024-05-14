@@ -1,4 +1,3 @@
-import emailjs from '@emailjs/browser';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
@@ -41,6 +40,8 @@ const Home = () => {
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [xOffset, setXOffset] = useState(0);
   const [yOffset, setYOffset] = useState(0);
+  const [visibleItems, setVisibleItems] = useState(8);
+  const [showAllItems, setShowAllItems] = useState(false);
 
   const translations = useTranslations();
   const {
@@ -78,6 +79,19 @@ const Home = () => {
     yourEmail,
     subscribe
   } = translations.home;
+
+  const menuItems = [
+    { id: 1, name: "Greek Salad", image: DummyImage },
+    { id: 2, name: "Lasagne", image: DummyImage },
+    { id: 3, name: "Butternut Pumpkin", image: DummyImage },
+    { id: 4, name: "Tokusen Wagyu", image: DummyImage },
+    { id: 5, name: "Olivas Rellenas", image: DummyImage },
+    { id: 6, name: "Opu Fish", image: DummyImage },
+    { id: 7, name: "Opu Fish", image: DummyImage },
+    { id: 8, name: "Opu Fish", image: DummyImage },
+    { id: 9, name: "Opu Fish", image: DummyImage },
+    { id: 10, name: "Opu Fish", image: DummyImage },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -164,11 +178,7 @@ const Home = () => {
     setCurrentSlidePos((prevPos) => (prevPos <= 0 ? slides.length - 1 : prevPos - 1));
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID , process.env.REACT_APP_TEMPLATE_ID , process.env.REACT_APP_PUBLIC_KEY)
-  }
+ 
   const slides = [
     {
       image: Slider1,
@@ -190,6 +200,10 @@ const Home = () => {
     },
   ];
 
+  const toggleViewMore = () => {
+    setShowAllItems(!showAllItems);
+    setVisibleItems(showAllItems ? 8 : menuItems.length);
+  };
 
   return (
     <div>
@@ -212,12 +226,6 @@ const Home = () => {
                   <h1 className="headline-1 hero-title slider-reveal">{slide.title}</h1>
 
                   <p className="body-2 hero-text slider-reveal">{slide.text}</p>
-
-                  {/* <a href="#" className="btn btn-primary slider-reveal">
-                    <span className="text text-1">Bekijk ons menu</span>
-
-                    <span className="text text-2" aria-hidden="true">Bekijk ons menu</span>
-                  </a> */}
 
                 </li>
                 ))}
@@ -325,6 +333,7 @@ const Home = () => {
                   </li>
 
                 </ul>
+                
 
                 <img src={Shape1} width="246" height="412" loading="lazy" alt="shape"
                   className="shape shape-1 move-anim" />
@@ -381,7 +390,7 @@ const Home = () => {
 
           {/* -====#MENU==== */}
 
-          <section className="section menu" aria-label="menu-label" id="menu">
+          <section className="section menu-home" aria-label="menu-label" id="menu-home">
             <div className="container">
 
               <p className="section-subtitle text-center label-2">{specialSelection}</p>
@@ -390,172 +399,30 @@ const Home = () => {
 
               <ul className="grid-list">
 
-                <li>
-                  <div className="menu-card hover:card">
-
-                    <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Greek Salad"
-                        className="img-cover" />
-                    </figure>
-
-                    <div>
-
-                      <div className="title-wrapper">
-                        <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
-                        </h3>
-
-                        <span className="badge label-1">Seasonal</span>
-
-                        <span className="span title-2">€0.00</span>
-                      </div>
-
-                      <p className="card-text label-1">
-                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
-                      </p>
-
+               {menuItems.slice(0, visibleItems).map(item => (
+                  <li key={item.id}>
+                    <div className="menu-card hover:card">
+                      <figure className="card-banner img-holder">
+                        <img src={item.image} width="100" height="100" loading="lazy" alt={item.name} className="img-cover" />
+                        <div className="title-wrapper">
+                          <h3 className="title-3">
+                            <a href="#" className="card-title">{item.name}</a>
+                          </h3>
+                        </div>
+                      </figure>
                     </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div className="menu-card hover:card">
-
-                    <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Lasagne"
-                        className="img-cover" />
-                    </figure>
-
-                    <div>
-
-                    <div className="title-wrapper">
-                        <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
-                        </h3>
-
-                        <span className="span title-2">€0.00</span>
-                      </div>
-
-                      <p className="card-text label-1">
-                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
-                      </p>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div className="menu-card hover:card">
-
-                    <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Butternut Pumpkin"
-                        className="img-cover" />
-                    </figure>
-
-                    <div>
-
-                    <div className="title-wrapper">
-                        <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
-                        </h3>
-
-                        <span className="span title-2">€0.00</span>
-                      </div>
-
-                      <p className="card-text label-1">
-                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
-
-                      </p>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div className="menu-card hover:card">
-
-                    <figure className="card-banner img-holder" style={{ width: '100', height: '100px'}}>
-                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Tokusen Wagyu"
-                        className="img-cover" />
-                    </figure>
-
-                    <div>
-                    <div className="title-wrapper">
-                        <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
-                        </h3>
-
-                        <span className="span title-2">€0.00</span>
-                      </div>
-
-                      <p className="card-text label-1">
-                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
-
-                      </p>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div className="menu-card hover:card">
-
-                    <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Olivas Rellenas"
-                        className="img-cover" />
-                    </figure>
-
-                    <div>
-
-                    <div className="title-wrapper">
-                        <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
-                        </h3>
-
-                        <span className="span title-2">€0.00</span>
-                      </div>
-
-                      <p className="card-text label-1">
-                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
-                      </p>
-
-                    </div>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div className="menu-card hover:card">
-
-                    <figure className="card-banner img-holder" style={{ width: '100px', height: '100px'}}>
-                      <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
-                        className="img-cover" />
-                    </figure>
-
-                    <div>
-
-                      <div className="title-wrapper">
-                        <h3 className="title-3">
-                          <a href="#" className="card-title">Nama Menu</a>
-                        </h3>
-
-                        <span className="span title-2">€0.00</span>
-                      </div>
-
-                      <p className="card-text label-1">
-                      Lorem Ipsum is de standaard dummytekst in de industrie sinds de tijd dat een onbekende drukker een proefdruk van een letter nam.
-                      </p>
-
-                    </div>
-
-                  </div>
-                </li>
-
+                  </li>
+                ))}
               </ul>
+    
+              <div className="text-center">
+                {menuItems.length > 8 && (
+                    <button onClick={toggleViewMore}>
+                      {showAllItems ? "Hide" : "View More"}
+                    </button>
+                  )}                
+              </div>
+
 
               {/* <p className="menu-text text-center">
                 During winter daily from <span className="span">7:00 pm</span> to <span className="span">9:00 pm</span>
@@ -804,7 +671,7 @@ const Home = () => {
                   Subscribe us & Get <span className="span">20% Off.</span>
                 </p>
 
-                <form action="" className="input-wrapper" onSubmit={sendEmail}>
+                <form action="mailto:saudinwahyudin@gmail.com" className="input-wrapper" >
                   <div className="icon-wrapper">
                     <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
 
