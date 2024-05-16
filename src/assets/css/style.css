@@ -1048,8 +1048,9 @@ body.nav-active { overflow: auto; -webkit-tap-highlight-color: transparent; }
 \*-----------------------------------*/
 
 .menu .section-title { margin-block-end: 40px; }
+.menu .grid-list { margin-block-end: 50px; }
 
-.menu .grid-list { 
+.menu-home .grid-list { 
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Define 4 equal columns */
   align-items: flex-start;
