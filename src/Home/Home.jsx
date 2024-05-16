@@ -96,7 +96,7 @@ const Home = () => {
     { id: 5, name: "Semur Daging", image: SemurDaging },
     { id: 6, name: "Balado Kip", image: BaladoKip },
     { id: 7, name: "Tempe Kering", image: TempeKering },
-    { id: 8, name: "AyamZ oetzuur", image: AyamZoetzuur },
+    { id: 8, name: "Ayam Zoetzuur", image: AyamZoetzuur },
     { id: 9, name: "Opu Fish", image: DummyImage },
     { id: 10, name: "Opu Fish", image: DummyImage },
   ];
