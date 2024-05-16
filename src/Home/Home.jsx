@@ -12,6 +12,9 @@ import {
   FooterBg,
   HeroIcon,
   Logo,
+  Menu1,
+  Menu2,
+  Menu3,
   Service1,
   Service2,
   Service3,
@@ -81,16 +84,16 @@ const Home = () => {
   } = translations.home;
 
   const menuItems = [
-    { id: 1, name: "Greek Salad", image: DummyImage },
-    { id: 2, name: "Lasagne", image: DummyImage },
-    { id: 3, name: "Butternut Pumpkin", image: DummyImage },
-    { id: 4, name: "Tokusen Wagyu", image: DummyImage },
-    { id: 5, name: "Olivas Rellenas", image: DummyImage },
-    { id: 6, name: "Opu Fish", image: DummyImage },
-    { id: 7, name: "Opu Fish", image: DummyImage },
-    { id: 8, name: "Opu Fish", image: DummyImage },
-    { id: 9, name: "Opu Fish", image: DummyImage },
-    { id: 10, name: "Opu Fish", image: DummyImage },
+    { id: 1, name: "Name", image: Menu1 },
+    { id: 2, name: "Name", image: Menu2 },
+    { id: 3, name: "Name", image: Menu3 },
+    { id: 4, name: "Name", image: DummyImage },
+    { id: 5, name: "Name", image: DummyImage },
+    { id: 6, name: "Name", image: DummyImage },
+    { id: 7, name: "Name", image: DummyImage },
+    { id: 8, name: "Name", image: DummyImage },
+    { id: 9, name: "Name", image: DummyImage },
+    { id: 10, name: "Name", image: DummyImage },
   ];
 
   useEffect(() => {

@@ -35,6 +35,9 @@ import DummyImage from '../images/dummy.png';
 import EsCampur from '../images/es-campur.png';
 import EsTeller from '../images/es-teller.png';
 import Gadogado from '../images/gado-gado.png';
+import Menu1 from '../images/menu1.JPG';
+import Menu2 from '../images/menu2.JPG';
+import Menu3 from '../images/menu3.JPG';
 import NasiGoreng from '../images/nasi-goreng.png';
 import NasiKuning from '../images/nasi-kuning.png';
 import NasiPutih from '../images/nasi-putih.png';
@@ -62,9 +65,8 @@ import FooterBg from '../images/footer-bg.jpg';
 
 export {
   AboutAbs, AboutBanner, Badge1, Badge2, BakmiGoreng, DummyImage, EsCampur, EsCendol, EsTeller, Event1, Event2, Event3, Feature1,
-  Feature2, Feature3, Feature4, FooterBg, FormPattern, Gadogado, HeroIcon, Logo, NasiGoreng, NasiKuning, NasiPutih, NasiRames, Petflessen, SateLos, SateMaaltijden, Service1, Service2, Service3,
-  Shape1, Shape2, Shape3,
-  Shape4,
+  Feature2, Feature3, Feature4, FooterBg, FormPattern, Gadogado, HeroIcon, Logo, Menu1, Menu2, Menu3, NasiGoreng, NasiKuning, NasiPutih, NasiRames, Petflessen, SateLos, SateMaaltijden, Service1, Service2, Service3,
+  Shape1, Shape2, Shape3, Shape4,
   Shape5,
   Shape6,
   Shape7,
