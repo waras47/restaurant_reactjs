@@ -11,6 +11,15 @@ import Service1 from '../images/service-1.jpg';
 import Service2 from '../images/service-2.jpg';
 import Service3 from '../images/service-3.jpg';
 
+import AyamZoetzuur from '../images/ayam-zoetzuur.jpeg';
+import BaladoKip from '../images/balado-kip.jpeg';
+import KipCharSieuw from '../images/kip-char-sieuw.jpeg';
+import SambelBoontjes from '../images/sambel-boontjes.jpeg';
+import SambelGarnalen from '../images/sambel-garnalen.JPG';
+import SambelTelor from '../images/sambel-telor.JPG';
+import SemurDaging from '../images/semur-daging.jpeg';
+import TempeKering from '../images/tempe-kering.jpeg';
+
 import Shape1 from '../images/shape-1.png';
 import Shape2 from '../images/shape-2.png';
 import Shape3 from '../images/shape-3.png';
@@ -61,16 +70,9 @@ import Event3 from '../images/event-3.jpg';
 import FooterBg from '../images/footer-bg.jpg';
 
 export {
-  AboutAbs, AboutBanner, Badge1, Badge2, BakmiGoreng, DummyImage, EsCampur, EsCendol, EsTeller, Event1, Event2, Event3, Feature1,
-  Feature2, Feature3, Feature4, FooterBg, FormPattern, Gadogado, HeroIcon, Logo, NasiGoreng, NasiKuning, NasiPutih, NasiRames, Petflessen, SateLos, SateMaaltijden, Service1, Service2, Service3,
-  Shape1, Shape2, Shape3,
-  Shape4,
-  Shape5,
-  Shape6,
-  Shape7,
-  Shape8,
-  Shape9, Slider1,
-  Slider2,
-  Slider3, SpecialDish, TehBotol, Tempe, TestAvatar, TestimonialBg
+  AboutAbs, AboutBanner, AyamZoetzuur, Badge1, Badge2, BakmiGoreng, BaladoKip, DummyImage, EsCampur, EsCendol, EsTeller, Event1, Event2, Event3, Feature1,
+  Feature2, Feature3, Feature4, FooterBg, FormPattern, Gadogado, HeroIcon, KipCharSieuw, Logo, NasiGoreng, NasiKuning, NasiPutih, NasiRames, Petflessen, SambelBoontjes, SambelGarnalen, SambelTelor, SateLos, SateMaaltijden, SemurDaging, Service1, Service2, Service3,
+  Shape1, Shape2, Shape3, Shape4, Shape5, Shape6, Shape7, Shape8, Shape9, Slider1,
+  Slider2, Slider3, SpecialDish, TehBotol, Tempe, TempeKering, TestAvatar, TestimonialBg
 };
 
