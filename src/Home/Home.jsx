@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 import '../assets/css/style.css';
 import {
+  AyamZoetzuur,
   Badge1,
+  BaladoKip,
   DummyImage,
   Feature1,
   Feature2,
@@ -11,7 +13,12 @@ import {
   Feature4,
   FooterBg,
   HeroIcon,
+  KipCharSieuw,
   Logo,
+  SambelBoontjes,
+  SambelGarnalen,
+  SambelTelor,
+  SemurDaging,
   Service1,
   Service2,
   Service3,
@@ -27,6 +34,7 @@ import {
   Slider2,
   Slider3,
   SpecialDish,
+  TempeKering,
   TestAvatar,
   TestimonialBg
 } from '../assets/js/images';
@@ -81,14 +89,14 @@ const Home = () => {
   } = translations.home;
 
   const menuItems = [
-    { id: 1, name: "Greek Salad", image: DummyImage },
-    { id: 2, name: "Lasagne", image: DummyImage },
-    { id: 3, name: "Butternut Pumpkin", image: DummyImage },
-    { id: 4, name: "Tokusen Wagyu", image: DummyImage },
-    { id: 5, name: "Olivas Rellenas", image: DummyImage },
-    { id: 6, name: "Opu Fish", image: DummyImage },
-    { id: 7, name: "Opu Fish", image: DummyImage },
-    { id: 8, name: "Opu Fish", image: DummyImage },
+    { id: 1, name: "Sambel Garnalen", image: SambelGarnalen },
+    { id: 2, name: "Sambel Boontjes", image: SambelBoontjes },
+    { id: 3, name: "Sambel Telor", image: SambelTelor },
+    { id: 4, name: "Kip Char Sieuw", image: KipCharSieuw },
+    { id: 5, name: "Semur Daging", image: SemurDaging },
+    { id: 6, name: "Balado Kip", image: BaladoKip },
+    { id: 7, name: "Tempe Kering", image: TempeKering },
+    { id: 8, name: "AyamZ oetzuur", image: AyamZoetzuur },
     { id: 9, name: "Opu Fish", image: DummyImage },
     { id: 10, name: "Opu Fish", image: DummyImage },
   ];
@@ -299,7 +307,7 @@ const Home = () => {
                       <div className="card-content">
 
                         <h3 className="title-4 card-title">
-                          <a href="#">{appetizers}</a>
+                          <a href="#">Nasi Rames</a>
                         </h3>
 
                         <a href="/meals" className="btn-text hover-underline label-2">View Menu</a>
