@@ -1545,8 +1545,7 @@ textarea.input-field {
    }
  
    .menu-home .title-wrapper{
-     /* background: rgb(27, 24, 24); */
-     background: red;
+     background: rgb(10, 10, 10);  
      padding: 10px;
 
    }
