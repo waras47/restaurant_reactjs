@@ -8,10 +8,13 @@ import {
     DummyImage,
     Gadogado,
     NasiRames,
+    NiangSpecial,
+    RamesIkanSpecial,
     SateLos,
     SateMaaltijden,
     Shape5,
-    Shape6
+    Shape6,
+    SotoAyam
 } from '../../assets/js/images';
 import useExchangeRates from "../../assets/js/useExchangeRates";
 
@@ -145,7 +148,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={SotoAyam} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -223,7 +226,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={RamesIkanSpecial} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -275,7 +278,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={NiangSpecial} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
