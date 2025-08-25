@@ -6,9 +6,15 @@ import Navbar from "../../Components/Navbar";
 import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
-    DummyImage,
+    Kroket,
+    Lemper,
+    Lumpia,
+    Pastel,
+    Risoles,
     Shape5,
-    Shape6
+    Shape6,
+    Spekkoek,
+    VietnamseLumpia
 } from '../../assets/js/images';
 
 const Snacks = () => {
@@ -62,7 +68,7 @@ const Snacks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Lemper} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -88,7 +94,7 @@ const Snacks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={VietnamseLumpia} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -114,7 +120,7 @@ const Snacks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Risoles} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -140,7 +146,7 @@ const Snacks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Spekkoek} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -166,7 +172,7 @@ const Snacks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Pastel} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -192,7 +198,7 @@ const Snacks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Kroket} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -218,7 +224,7 @@ const Snacks = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Lumpia} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 

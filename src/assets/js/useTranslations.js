@@ -64,6 +64,7 @@ const useTranslations = () => {
       menuGroenten: t("menu.meatVegetable.menuGroenten"),
       descGroenten: t("menu.meatVegetable.descGroenten"),
       menuVis: t("menu.meatVegetable.menuVis"),
+      menuSambalGoreng: t("menu.meatVegetable.menuSambalGoreng"),
       descVis: t("menu.meatVegetable.descVis"),
       menuVegetarisch: t("menu.meatVegetable.menuVegetarisch"),
       descVegetarisch: t("menu.meatVegetable.descVegetarisch"),

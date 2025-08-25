@@ -6,9 +6,14 @@ import Navbar from "../../Components/Navbar";
 import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
-    DummyImage,
+    Ayam,
+    Ikan,
+    Rendang,
+    SambelTelor,
+    Sayur,
     Shape5,
-    Shape6
+    Shape6,
+    Vegetarisch
 } from '../../assets/js/images';
 
 const MeatAndVegetables = () => {
@@ -22,6 +27,7 @@ const MeatAndVegetables = () => {
         descRondvlees,
         menuGroenten,
         descGroenten,
+        menuSambalGoreng,
         menuVis,
         descVis,
         menuVegetarisch,
@@ -65,7 +71,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={Rendang} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -91,7 +97,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={Ikan} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -117,7 +123,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={Sayur} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -143,7 +149,7 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={Vegetarisch} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -170,7 +176,34 @@ const MeatAndVegetables = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={SambelTelor} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                        className="img-cover" />
+                                </figure>
+
+                                <div>
+
+                                    <div className="title-wrapper">
+                                        <h3 className="title-3">
+                                            <a href="#" className="card-title">{menuSambalGoreng}</a>
+                                        </h3>
+
+                                        <span className="span title-2">{calculateConvertedPrice(1.50)} per 100g</span>
+                                    </div>
+
+                                    {/* <p className="card-text label-1">
+                                    {descVegetarisch}
+
+                                    </p> */}
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div className="menu-card hover:card">
+
+                                <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
+                                    <img src={Ayam} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 

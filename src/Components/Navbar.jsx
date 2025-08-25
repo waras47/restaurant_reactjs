@@ -198,7 +198,7 @@ const Navbar = ({
                 <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
               </div>
 
-              <span className="span">+31 6 31034439</span>
+              <span className="span">010 750 9509</span>
             </a>
 
             <div className="separator"></div>

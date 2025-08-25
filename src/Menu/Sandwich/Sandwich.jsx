@@ -6,9 +6,17 @@ import Navbar from "../../Components/Navbar";
 import useExchangeRates from "../../assets/js/useExchangeRates";
 
 import {
-    DummyImage,
+    Bakkeljauw,
+    BRendang,
+    Dynamite,
+    Garnalen,
+    Kerrie,
+    KipChar,
+    KipKerrie,
+    Kouseband,
     Shape5,
-    Shape6
+    Shape6,
+    Smoor
 } from '../../assets/js/images';
 
 const Sandwich = () => {
@@ -64,7 +72,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Kerrie} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -90,7 +98,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={BRendang} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -116,7 +124,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={KipKerrie} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -142,7 +150,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Smoor} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -168,7 +176,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={KipChar} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -194,7 +202,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Garnalen} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -220,7 +228,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Dynamite} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -246,7 +254,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Kouseband} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -272,7 +280,7 @@ const Sandwich = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '60px', height: '60px' }}>
-                                    <img src={DummyImage} width="60" height="60" loading="lazy" alt="Opu Fish"
+                                    <img src={Bakkeljauw} width="60" height="60" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 

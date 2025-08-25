@@ -5,11 +5,14 @@ import useTranslations from "../../assets/js/useTranslations";
 
 import Navbar from "../../Components/Navbar";
 import {
-    DummyImage,
     Gadogado,
     NasiRames,
+    NiangIkanSpecial,
     NiangSpecial,
+    RamesIkan,
     RamesIkanSpecial,
+    RamesSpecial,
+    RamesVeg,
     SateLos,
     SateMaaltijden,
     Shape5,
@@ -122,7 +125,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={RamesIkan} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -174,7 +177,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={RamesSpecial} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -252,7 +255,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={RamesVeg} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
@@ -331,7 +334,7 @@ const Meals = () => {
                             <div className="menu-card hover:card">
 
                                 <figure className="card-banner img-holder" style={{ width: '100px', height: '100px' }}>
-                                    <img src={DummyImage} width="100" height="100" loading="lazy" alt="Opu Fish"
+                                    <img src={NiangIkanSpecial} width="100" height="100" loading="lazy" alt="Opu Fish"
                                         className="img-cover" />
                                 </figure>
 
