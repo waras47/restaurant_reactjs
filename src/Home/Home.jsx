@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar';
 import '../assets/css/style.css';
@@ -34,9 +34,7 @@ import {
   Slider2,
   Slider3,
   SpecialDish,
-  TempeKering,
-  TestAvatar,
-  TestimonialBg
+  TempeKering
 } from '../assets/js/images';
 import useTranslations from "../assets/js/useTranslations";
 
@@ -428,7 +426,7 @@ const Home = () => {
 
           {/* -====#TESTIMONIALS==== */}
 
-          <section className="section testi text-center has-bg-image"
+          {/* <section className="section testi text-center has-bg-image"
             style={{backgroundImage: `url(${TestimonialBg})`}} aria-label="testimonials">
             <div className="container">
 
@@ -450,7 +448,7 @@ const Home = () => {
               </div>
 
             </div>
-          </section>
+          </section> */}
       
           {/* -====#FEATURES==== */}
 
